@@ -101,16 +101,18 @@
   };
 </script>
 
-  <meta name="description" content="平凡的人做不平凡的事">
-<meta property="og:type" content="website">
-<meta property="og:title" content="mlik5hao">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="Coroutine作用部分并发编程的需要  Unity3D借助C#的Generator机制实现的「Coroutine」，适用于不少游戏特定的业务情景。最常见的例子就是定时器，我们不再需要在主循环里检查或是注册callback，现在只要定义成IEnumerator，在中间插入Wait代码，跟写同步逻辑基本一样。 除了C#很早就支持了async/await，但是像JS和python这种互联网中流砥柱都">
+<meta name="keywords" content="C#,协程,语法糖,Lua,Unity">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Coroutine">
+<meta property="og:url" content="http://yoursite.com/2019/10/25/Coroutine/index.html">
 <meta property="og:site_name" content="mlik5hao">
-<meta property="og:description" content="平凡的人做不平凡的事">
+<meta property="og:description" content="Coroutine作用部分并发编程的需要  Unity3D借助C#的Generator机制实现的「Coroutine」，适用于不少游戏特定的业务情景。最常见的例子就是定时器，我们不再需要在主循环里检查或是注册callback，现在只要定义成IEnumerator，在中间插入Wait代码，跟写同步逻辑基本一样。 除了C#很早就支持了async/await，但是像JS和python这种互联网中流砥柱都">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-10-30T11:54:28.737Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="mlik5hao">
-<meta name="twitter:description" content="平凡的人做不平凡的事">
+<meta name="twitter:title" content="Coroutine">
+<meta name="twitter:description" content="Coroutine作用部分并发编程的需要  Unity3D借助C#的Generator机制实现的「Coroutine」，适用于不少游戏特定的业务情景。最常见的例子就是定时器，我们不再需要在主循环里检查或是注册callback，现在只要定义成IEnumerator，在中间插入Wait代码，跟写同步逻辑基本一样。 除了C#很早就支持了async/await，但是像JS和python这种互联网中流砥柱都">
 
 
 
@@ -120,7 +122,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2019/10/25/Coroutine/">
 
 
 
@@ -131,7 +133,7 @@
 </script>
 
   
-  <title>mlik5hao</title>
+  <title>Coroutine | mlik5hao</title>
   
 
 
@@ -179,8 +181,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -222,7 +223,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
 
     
     
@@ -362,184 +363,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/31/异步、并发、协程原理/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="冯海洋">
-      <meta itemprop="description" content="平凡的人做不平凡的事">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="mlik5hao">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/10/31/异步、并发、协程原理/" class="post-title-link" itemprop="url">异步、并发、协程原理</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-10-30 19:37:27 / 修改时间：11:45:24" itemprop="dateCreated datePublished" datetime="2019-10-30T19:37:27Z">2019-10-30</time>
-            </span>
-          
-
-          
-            
-
-            
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/基础/" itemprop="url" rel="index"><span itemprop="name">基础</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>
-              一、异步应用程序和内核内核具有最高权限，可以访问受保护的内存空间，可以访问底层的硬件设备。而这些是应用程序所不具备的，但应用程序可以通过调用内核提供的接口来间接访问或操作。所谓的常见的 IO 模型就是基于应用程序和内核之间的交互所提出来的。
-              ...
-            </p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/10/31/异步、并发、协程原理/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
 
   
 
@@ -571,10 +397,8 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/10/25/Coroutine/" class="post-title-link" itemprop="url">Coroutine</a>
+          <h1 class="post-title" itemprop="name headline">Coroutine
+
               
             
           </h1>
@@ -653,29 +477,98 @@
       
 
       
-        
-          
-            <p>
-              Coroutine作用部分并发编程的需要
+        <h1 id="Coroutine"><a href="#Coroutine" class="headerlink" title="Coroutine"></a>Coroutine</h1><h2 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h2><p>部分并发编程的需要</p>
+<ul>
+<li>Unity3D借助C#的Generator机制实现的「Coroutine」，适用于不少游戏特定的业务情景。最常见的例子就是<strong>定时器</strong>，我们不再需要在主循环里检查或是注册callback，现在只要定义成IEnumerator，在中间插入Wait代码，跟写同步逻辑基本一样。</li>
+<li>除了C#很早就支持了async/await，但是像JS和python这种互联网中流砥柱都是过了一两年才逐渐开始支持。没有async/await，想用同步方式写异步逻辑就只能借助coroutine。</li>
+</ul>
+<p>##定义</p>
+<p><strong>Process -&gt; Thread -&gt; Coroutine</strong></p>
+<p><strong>协程(Coroutine)编译器级的，进程(Process)和线程(Thread)操作系统级的</strong></p>
+<h2 id="优缺点"><a href="#优缺点" class="headerlink" title="优缺点"></a>优缺点</h2><ul>
+<li><p>非线程切换的执行效率，切换由程序本身控制</p>
+</li>
+<li><p>不需要多线程的锁机制</p>
+</li>
+</ul>
+<p><a href="https://www.jianshu.com/p/2782f8c49b2a" target="_blank" rel="noopener">参考文档</a></p>
+<h2 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h2><h3 id="C-迭代器"><a href="#C-迭代器" class="headerlink" title="C#迭代器"></a>C#迭代器</h3><h4 id="迭代器"><a href="#迭代器" class="headerlink" title="迭代器"></a>迭代器</h4><p>程序设计的<a href="https://baike.baidu.com/item/软件设计模式/2117635" target="_blank" rel="noopener">软件设计模式</a>，可在容器（container，例如<a href="https://baike.baidu.com/item/链表/9794473" target="_blank" rel="noopener">链表</a>或<a href="https://baike.baidu.com/item/阵列/2644035" target="_blank" rel="noopener">阵列</a>）上遍访的接口，设计人员无需关心容器的内容。<a href="https://baike.baidu.com/item/迭代器/3803342?fr=aladdin" target="_blank" rel="noopener">百度百科</a></p>
+<ul>
+<li>迭代器是产生值的有序序列的一个语句块。是实现函数成员的方式。</li>
+<li>迭代器块在C#语法中不是独特的元素，它们在几个方面受到限制，并且主要作用在函数成员声明的语义上，它们在语法上只是语句块而已。</li>
+</ul>
+<p>-TODO</p>
+<p><a href="https://www.cnblogs.com/w-wfy/p/7418464.html" target="_blank" rel="noopener">C# IEnumerator的详解</a></p>
+<h4 id="IEnumeraber-IEnumerator"><a href="#IEnumeraber-IEnumerator" class="headerlink" title="IEnumeraber IEnumerator"></a>IEnumeraber IEnumerator</h4><h4 id="Coroutine-1"><a href="#Coroutine-1" class="headerlink" title="Coroutine"></a>Coroutine</h4><p>####糖块yield</p>
+<p>yield 关键字向编译器指示它所在的方法是迭代器块</p>
+<h5 id="作用-1"><a href="#作用-1" class="headerlink" title="作用"></a>作用</h5><p>将当前集合中的元素立即返回</p>
+<ul>
+<li>yield return  返回元素</li>
+<li>yield break   终止迭代</li>
+</ul>
+<h5 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h5><ul>
+<li>返回类型必须为 IEnumerable、IEnumerable<t>、IEnumerator 或 IEnumerator<t></t></t></li>
+<li>参数前不能使用ref和out关键字</li>
+<li>匿名方法中 不能使用yield</li>
+<li>unsef中不能使用</li>
+<li>yield return 不能置于 try-catch 块中。 可置于 try-finally 语句的 try 块中。   yield break   能 try 块或 catch 块，        不置于 finally 块</li>
+</ul>
+<h3 id="Lua"><a href="#Lua" class="headerlink" title="Lua"></a>Lua</h3><p>编程语言Lua从5.0版开始支持协程的概念，极大的扩展了Lua的能力。<a href="https://baike.baidu.com/item/Lua/7570719" target="_blank" rel="noopener">Lua</a>的协程通过扩展库coroutine来实现，其中的所有函数如下（具体可以参考Lua的官方manual）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`coroutine.create``coroutine.resume``coroutine.running``coroutine.status``coroutine.wrap``coroutine.yield`</span><br></pre></td></tr></table></figure>
 
-Unity3D借助C#的Generator机制实现的「Coroutine」，适用于不少游戏特定的业务情景。最常见的例子就是定时器，我们不再需要在主循环里检查或是注册callback，现在只要定义成
-              ...
-            </p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/10/25/Coroutine/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
+<p>当前运行的代码可以看作运行在主协程中（就像C程序的main运行在主线程中），通过create可以创建一个协程，<a href="https://baike.baidu.com/item/resume/8876788" target="_blank" rel="noopener">resume</a>以运行此协程，直到新协程调用<a href="https://baike.baidu.com/item/yield/3824119" target="_blank" rel="noopener">yield</a>程序才能返回到”主协程“中运行。</p>
+<p><strong>coroutine.create()</strong></p>
+<p><strong>函数参数：</strong>接收单个参数，该参数是coroutine的主函数，即resume会执行的函数</p>
+<p><strong>函数返回值：</strong>返回其控制器，一个对象为thread的对象</p>
+<p><strong>函数作用：</strong>creat函数创建一个新的coroutine，定义了协程内的任务流程。从面对对象的角度来看，可以看成是coroutine类创建了一个对象co</p>
+<p><strong>coroutine.resume(co,[val1,val2,…])</strong></p>
+<p><strong>函数参数：</strong>第一个参数即creat的返回值，一个thread对象。第二个参数是coroutine中执行需要的参数，是一个变长参数，可以传入任意多个。</p>
+<p><strong>函数返回值：</strong>当程序运行没有错误的时候，返回true，同时返回前一个调用coroutine.yield中传入的参数。如果有错误，返回错误false以及错误信息。</p>
+<p><strong>函数作用：</strong>当第一次调用coroutine的resume方法的时候，其从主函数第一行开始执行，之后再coroutine开始运行后，它会一直运行到自身终止或者是coroutine的下一个yield函数。</p>
+<p><strong>coroutine.yield(…)</strong></p>
+<p><strong>函数参数：</strong>传入变长参数</p>
+<p><strong>函数返回值：</strong>返回在前一个resume中传入的参数值</p>
+<p><strong>函数作用：</strong>挂起当前的执行协程。该协程不能是一个C函数，一个元表或一个迭代器</p>
+<p><strong>coroutine.running()：</strong>返回当前正在执行的协程</p>
+<p><strong>coroutine.status()：</strong>返回当前协程的状态，有running/suspended/normal/dead等。</p>
+<h3 id="Unity协程实现"><a href="#Unity协程实现" class="headerlink" title="Unity协程实现"></a>Unity协程实现</h3><h4 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h4><p><a href="https://blog.csdn.net/qq_16054639/article/details/80151445" target="_blank" rel="noopener">Unity脚本编程</a></p>
+<p><a href="https://cloud.tencent.com/developer/article/1437157" target="_blank" rel="noopener">生命周期</a></p>
+<p>​        通过设置MonoBehaviour脚本的enabled对协程是没有影响的，但如果 gameObject.SetActive(false) 则已经启动的协程则完全停止了，即使在Inspector把gameObject 激活还是没有继续执行。也就说协程虽然是在MonoBehvaviour启动的（StartCoroutine）但是协程函数的地位完全是跟MonoBehaviour是一个层次的，不受MonoBehaviour的状态影响，但跟MonoBehaviour脚本一样受gameObject 控制，也应该是和MonoBehaviour脚本一样每帧“轮询” yield 的条件是否满足。</p>
+<p>####开启函数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">StartCoroutine(Test_00());</span><br><span class="line">StartCoroutine(&quot;Test_01&quot;);</span><br><span class="line">StartCoroutine(Test_02(5, 9));</span><br></pre></td></tr></table></figure>
+
+<h4 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h4><ul>
+<li><p>StopCoroutine(“<strong>name</strong>“)</p>
+</li>
+<li><p>StopAllCoroutines 只是停止<strong>当前脚本</strong>下的所有协程</p>
+</li>
+</ul>
+<p>####yield</p>
+<p>-TODO</p>
+<p>null</p>
+<p>WaitForEndOfFrame</p>
+<p>WaitForFixedUpdate</p>
+<p>WaitForSeconds</p>
+<p>WWW</p>
+<p>Another coroutine</p>
+<p>Wait</p>
+<p>False</p>
+<p>备注：曾经尝试在协程中加入停止后从新启用的功能，怕是个智障。</p>
+<p>Bool isTodo;</p>
+<p>ie test（）{</p>
+<p>​    while(isTodo){</p>
+<p>​    }</p>
+<p>yiled return </p>
+<p>Do Fun();</p>
+<p>}</p>
+
       
     </div>
 
     
 
+    
+      
     
 
     
@@ -693,385 +586,51 @@ Unity3D借助C#的Generator机制实现的「Coroutine」，适用于不少游�
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/01/FSM有限状态机/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="冯海洋">
-      <meta itemprop="description" content="平凡的人做不平凡的事">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="mlik5hao">
-    </span>
-
-    
-      <header class="post-header">
-
         
+          
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/08/01/FSM有限状态机/" class="post-title-link" itemprop="url">FSM有限状态机</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-
+        <div class="post-tags">
           
+            <a href="/tags/C/" rel="tag"># C#</a>
           
+            <a href="/tags/协程/" rel="tag"># 协程</a>
           
-
+            <a href="/tags/语法糖/" rel="tag"># 语法糖</a>
           
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-07-31 17:59:35 / 修改时间：11:18:10" itemprop="dateCreated datePublished" datetime="2019-07-31T17:59:35Z">2019-07-31</time>
-            </span>
+            <a href="/tags/Lua/" rel="tag"># Lua</a>
           
-
+            <a href="/tags/Unity/" rel="tag"># Unity</a>
           
-            
-
-            
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/AI/" itemprop="url" rel="index"><span itemprop="name">AI</span></a></span>
-
-                
-                
-                  ，
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/设计模式/" itemprop="url" rel="index"><span itemprop="name">设计模式</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          
-            <p>
-              简介了解FSM之前需要了解一下状态机
-FSM是状态机的一种实现方式，它把复杂的控制逻辑分解成有限个稳定状态，在每个状态上判断事件，变连续处理为离散数字。
-原理发生事件(event)后，根据当前状态(cur_state) ，决定执行的动作(a
-              ...
-            </p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/08/01/FSM有限状态机/#more" rel="contents">
-                阅读全文 &raquo;
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/08/01/FSM有限状态机/" rel="next" title="FSM有限状态机">
+                <i class="fa fa-chevron-left"></i> FSM有限状态机
               </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/31/windows-屏幕阅读器/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="冯海洋">
-      <meta itemprop="description" content="平凡的人做不平凡的事">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="mlik5hao">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/07/31/windows-屏幕阅读器/" class="post-title-link" itemprop="url">windows-屏幕阅读器</a>
-              
             
-          </h1>
-        
+          </div>
 
-        <div class="post-meta">
+          <span class="post-nav-divider"></span>
 
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-07-30 22:33:22" itemprop="dateCreated datePublished" datetime="2019-07-30T22:33:22Z">2019-07-30</time>
-            </span>
-          
-
-          
+          <div class="post-nav-prev post-nav-item">
             
-
+              <a href="/2019/10/31/异步、并发、协程原理/" rel="prev" title="异步、并发、协程原理">
+                异步、并发、协程原理 <i class="fa fa-chevron-right"></i>
+              </a>
             
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-07-31 11:17:48" itemprop="dateModified" datetime="2019-07-31T11:17:48Z">2019-07-31</time>
-              </span>
-            
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/windows/" itemprop="url" rel="index"><span itemprop="name">windows</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>
-              莫名开启的讲述人功能
-快捷键开启 ctr + window + Enter
-
-              
-            </p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/07/31/windows-屏幕阅读器/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -1081,387 +640,15 @@ FSM是状态机的一种实现方式，它把复杂的控制逻辑分解成有�
   </article>
 
 
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/27/状态机/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="冯海洋">
-      <meta itemprop="description" content="平凡的人做不平凡的事">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="mlik5hao">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/07/27/状态机/" class="post-title-link" itemprop="url">状态机</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-07-27 02:21:40" itemprop="dateCreated datePublished" datetime="2019-07-27T02:21:40Z">2019-07-27</time>
-            </span>
-          
-
-          
-            
-
-            
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-07-31 11:18:14" itemprop="dateModified" datetime="2019-07-31T11:18:14Z">2019-07-31</time>
-              </span>
-            
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/AI/" itemprop="url" rel="index"><span itemprop="name">AI</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>
-              简介状态机：描述一个实体基于事件反应的动态行为，显示了该实体如何根据当前所处的状态对不同的事件做出反应的模型。
-用来表示有限多个状态以及在这些状态（State）之间转移（Transition）和动作（Action）的数学模型。
-简单的说它可
-              ...
-            </p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/07/27/状态机/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/26/时间复杂度，空间复杂度和稳定性/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="冯海洋">
-      <meta itemprop="description" content="平凡的人做不平凡的事">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="mlik5hao">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/07/26/时间复杂度，空间复杂度和稳定性/" class="post-title-link" itemprop="url">时间复杂度，空间复杂度和稳定性</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-07-26 01:33:26" itemprop="dateCreated datePublished" datetime="2019-07-26T01:33:26Z">2019-07-26</time>
-            </span>
-          
-
-          
-            
-
-            
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-07-31 11:17:26" itemprop="dateModified" datetime="2019-07-31T11:17:26Z">2019-07-31</time>
-              </span>
-            
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/数据结构和算法/" itemprop="url" rel="index"><span itemprop="name">数据结构和算法</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>
-              时间复杂度，空间复杂度和稳定性
-时间复杂度指的是算法执行语句的次数（取最多次数的那个语句来表示）a^x^ =N（a&gt;0，且a≠1） ==&gt; x=logaN注： Hash的查找的时间复杂度是1，原因“key-value键值对”，离
-              ...
-            </p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/07/26/时间复杂度，空间复杂度和稳定性/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -1481,8 +668,17 @@ FSM是状态机的一种实现方式，它把复杂的控制逻辑分解成有�
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
 
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1637,6 +833,23 @@ FSM是状态机的一种实现方式，它把复杂的控制逻辑分解成有�
       </div>
 
       
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Coroutine"><span class="nav-number">1.</span> <span class="nav-text">Coroutine</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#作用"><span class="nav-number">1.1.</span> <span class="nav-text">作用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#优缺点"><span class="nav-number">1.2.</span> <span class="nav-text">优缺点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#补充"><span class="nav-number">1.3.</span> <span class="nav-text">补充</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#C-迭代器"><span class="nav-number">1.3.1.</span> <span class="nav-text">C#迭代器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#迭代器"><span class="nav-number">1.3.1.1.</span> <span class="nav-text">迭代器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#IEnumeraber-IEnumerator"><span class="nav-number">1.3.1.2.</span> <span class="nav-text">IEnumeraber IEnumerator</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Coroutine-1"><span class="nav-number">1.3.1.3.</span> <span class="nav-text">Coroutine</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#作用-1"><span class="nav-number">1.3.1.3.1.</span> <span class="nav-text">作用</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#注意"><span class="nav-number">1.3.1.3.2.</span> <span class="nav-text">注意</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Lua"><span class="nav-number">1.3.2.</span> <span class="nav-text">Lua</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Unity协程实现"><span class="nav-number">1.3.3.</span> <span class="nav-text">Unity协程实现</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#原理"><span class="nav-number">1.3.3.1.</span> <span class="nav-text">原理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#注意事项"><span class="nav-number">1.3.3.2.</span> <span class="nav-text">注意事项</span></a></li></ol></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
 
       
 
@@ -1751,6 +964,10 @@ FSM是状态机的一种实现方式，它把复杂的控制逻辑分解成有�
 
 
   
+  <script src="/js/scrollspy.js?v=7.2.0"></script>
+<script src="/js/post-details.js?v=7.2.0"></script>
+
+
 
   <script src="/js/next-boot.js?v=7.2.0"></script>
 
@@ -1771,6 +988,8 @@ FSM是状态机的一种实现方式，它把复杂的控制逻辑分解成有�
 
 
 
+
+  
 
 
 
