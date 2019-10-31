@@ -101,19 +101,19 @@
   };
 </script>
 
-  <meta name="description" content="Coroutine作用部分并发编程的需要  Unity3D借助C#的Generator机制实现的「Coroutine」，适用于不少游戏特定的业务情景。最常见的例子就是定时器，我们不再需要在主循环里检查或是注册callback，现在只要定义成IEnumerator，在中间插入Wait代码，跟写同步逻辑基本一样。 除了C#很早就支持了async/await，但是像JS和python这种互联网中流砥柱都">
+  <meta name="description" content="Coroutine##定义 Process -&amp;gt; Thread -&amp;gt; Coroutine 协程(Coroutine)编译器级的，进程(Process)和线程(Thread)操作系统级的 优点 非线程切换的执行效率，切换由程序本身控制  不需要多线程的锁机制   参考文档 详见-本博客异步 补充C#迭代器迭代器程序设计的软件设计模式，可在容器（container，例如链表或阵列）上遍访的">
 <meta name="keywords" content="C#,协程,语法糖,Lua,Unity">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Coroutine">
 <meta property="og:url" content="http://yoursite.com/2019/10/25/Coroutine/index.html">
 <meta property="og:site_name" content="mlik5hao">
-<meta property="og:description" content="Coroutine作用部分并发编程的需要  Unity3D借助C#的Generator机制实现的「Coroutine」，适用于不少游戏特定的业务情景。最常见的例子就是定时器，我们不再需要在主循环里检查或是注册callback，现在只要定义成IEnumerator，在中间插入Wait代码，跟写同步逻辑基本一样。 除了C#很早就支持了async/await，但是像JS和python这种互联网中流砥柱都">
+<meta property="og:description" content="Coroutine##定义 Process -&amp;gt; Thread -&amp;gt; Coroutine 协程(Coroutine)编译器级的，进程(Process)和线程(Thread)操作系统级的 优点 非线程切换的执行效率，切换由程序本身控制  不需要多线程的锁机制   参考文档 详见-本博客异步 补充C#迭代器迭代器程序设计的软件设计模式，可在容器（container，例如链表或阵列）上遍访的">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/2019/10/25/images/corountine_1.png">
-<meta property="og:updated_time" content="2019-10-31T14:26:25.159Z">
+<meta property="og:updated_time" content="2019-10-31T14:33:13.453Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Coroutine">
-<meta name="twitter:description" content="Coroutine作用部分并发编程的需要  Unity3D借助C#的Generator机制实现的「Coroutine」，适用于不少游戏特定的业务情景。最常见的例子就是定时器，我们不再需要在主循环里检查或是注册callback，现在只要定义成IEnumerator，在中间插入Wait代码，跟写同步逻辑基本一样。 除了C#很早就支持了async/await，但是像JS和python这种互联网中流砥柱都">
+<meta name="twitter:description" content="Coroutine##定义 Process -&amp;gt; Thread -&amp;gt; Coroutine 协程(Coroutine)编译器级的，进程(Process)和线程(Thread)操作系统级的 优点 非线程切换的执行效率，切换由程序本身控制  不需要多线程的锁机制   参考文档 详见-本博客异步 补充C#迭代器迭代器程序设计的软件设计模式，可在容器（container，例如链表或阵列）上遍访的">
 <meta name="twitter:image" content="http://yoursite.com/2019/10/25/images/corountine_1.png">
 
 
@@ -440,7 +440,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-10-31 14:26:25" itemprop="dateModified" datetime="2019-10-31T14:26:25Z">2019-10-31</time>
+                <time title="修改时间：2019-10-31 14:33:13" itemprop="dateModified" datetime="2019-10-31T14:33:13Z">2019-10-31</time>
               </span>
             
           
@@ -479,21 +479,17 @@
       
 
       
-        <h1 id="Coroutine"><a href="#Coroutine" class="headerlink" title="Coroutine"></a>Coroutine</h1><h2 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h2><p>部分并发编程的需要</p>
-<ul>
-<li>Unity3D借助C#的Generator机制实现的「Coroutine」，适用于不少游戏特定的业务情景。最常见的例子就是<strong>定时器</strong>，我们不再需要在主循环里检查或是注册callback，现在只要定义成IEnumerator，在中间插入Wait代码，跟写同步逻辑基本一样。</li>
-<li>除了C#很早就支持了async/await，但是像JS和python这种互联网中流砥柱都是过了一两年才逐渐开始支持。没有async/await，想用同步方式写异步逻辑就只能借助coroutine。</li>
-</ul>
-<p>##定义</p>
+        <h1 id="Coroutine"><a href="#Coroutine" class="headerlink" title="Coroutine"></a>Coroutine</h1><p>##定义</p>
 <p><strong>Process -&gt; Thread -&gt; Coroutine</strong></p>
 <p><strong>协程(Coroutine)编译器级的，进程(Process)和线程(Thread)操作系统级的</strong></p>
-<h2 id="优缺点"><a href="#优缺点" class="headerlink" title="优缺点"></a>优缺点</h2><ul>
+<h2 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h2><ul>
 <li><p>非线程切换的执行效率，切换由程序本身控制</p>
 </li>
 <li><p>不需要多线程的锁机制</p>
 </li>
 </ul>
 <p><a href="https://www.jianshu.com/p/2782f8c49b2a" target="_blank" rel="noopener">参考文档</a></p>
+<p>详见-本博客异步</p>
 <h2 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h2><h3 id="C-迭代器"><a href="#C-迭代器" class="headerlink" title="C#迭代器"></a>C#迭代器</h3><h4 id="迭代器"><a href="#迭代器" class="headerlink" title="迭代器"></a>迭代器</h4><p>程序设计的<a href="https://baike.baidu.com/item/软件设计模式/2117635" target="_blank" rel="noopener">软件设计模式</a>，可在容器（container，例如<a href="https://baike.baidu.com/item/链表/9794473" target="_blank" rel="noopener">链表</a>或<a href="https://baike.baidu.com/item/阵列/2644035" target="_blank" rel="noopener">阵列</a>）上遍访的接口，设计人员无需关心容器的内容。<a href="https://baike.baidu.com/item/迭代器/3803342?fr=aladdin" target="_blank" rel="noopener">百度百科</a></p>
 <ul>
 <li>迭代器是产生值的有序序列的一个语句块。是实现函数成员的方式。</li>
@@ -504,7 +500,7 @@
 <p><img src="../images/corountine_1.png" alt="corountine_1"></p>
 <p>####糖块yield</p>
 <p>yield 关键字向编译器指示它所在的方法是迭代器块</p>
-<h5 id="作用-1"><a href="#作用-1" class="headerlink" title="作用"></a>作用</h5><p>将当前集合中的元素立即返回</p>
+<h5 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h5><p>将当前集合中的元素立即返回</p>
 <ul>
 <li>yield return  返回元素</li>
 <li>yield break   终止迭代</li>
@@ -851,7 +847,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Coroutine"><span class="nav-number">1.</span> <span class="nav-text">Coroutine</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#作用"><span class="nav-number">1.1.</span> <span class="nav-text">作用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#优缺点"><span class="nav-number">1.2.</span> <span class="nav-text">优缺点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#补充"><span class="nav-number">1.3.</span> <span class="nav-text">补充</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#C-迭代器"><span class="nav-number">1.3.1.</span> <span class="nav-text">C#迭代器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#迭代器"><span class="nav-number">1.3.1.1.</span> <span class="nav-text">迭代器</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#IEnumeraber-IEnumerator"><span class="nav-number">1.3.1.1.1.</span> <span class="nav-text">IEnumeraber IEnumerator</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#作用-1"><span class="nav-number">1.3.1.1.2.</span> <span class="nav-text">作用</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#注意"><span class="nav-number">1.3.1.1.3.</span> <span class="nav-text">注意</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Lua"><span class="nav-number">1.3.2.</span> <span class="nav-text">Lua</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Unity协程实现"><span class="nav-number">1.3.3.</span> <span class="nav-text">Unity协程实现</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#原理"><span class="nav-number">1.3.3.1.</span> <span class="nav-text">原理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#终止函数"><span class="nav-number">1.3.3.2.</span> <span class="nav-text">终止函数</span></a></li></ol></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Coroutine"><span class="nav-number">1.</span> <span class="nav-text">Coroutine</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#优点"><span class="nav-number">1.1.</span> <span class="nav-text">优点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#补充"><span class="nav-number">1.2.</span> <span class="nav-text">补充</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#C-迭代器"><span class="nav-number">1.2.1.</span> <span class="nav-text">C#迭代器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#迭代器"><span class="nav-number">1.2.1.1.</span> <span class="nav-text">迭代器</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#IEnumeraber-IEnumerator"><span class="nav-number">1.2.1.1.1.</span> <span class="nav-text">IEnumeraber IEnumerator</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#作用"><span class="nav-number">1.2.1.1.2.</span> <span class="nav-text">作用</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#注意"><span class="nav-number">1.2.1.1.3.</span> <span class="nav-text">注意</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Lua"><span class="nav-number">1.2.2.</span> <span class="nav-text">Lua</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Unity协程实现"><span class="nav-number">1.2.3.</span> <span class="nav-text">Unity协程实现</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#原理"><span class="nav-number">1.2.3.1.</span> <span class="nav-text">原理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#终止函数"><span class="nav-number">1.2.3.2.</span> <span class="nav-text">终止函数</span></a></li></ol></li></ol></li></ol></li></ol></div>
             
 
           </div>
