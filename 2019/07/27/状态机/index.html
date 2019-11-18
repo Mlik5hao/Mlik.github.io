@@ -15,11 +15,11 @@
 
 
 <html class="theme-next muse use-motion" lang="zh-CN">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
-<meta name="theme-color" content="#222"/>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
 
 
 
@@ -48,14 +48,14 @@
 
 
 
-<link rel="stylesheet" href="/css/main.css?v=7.2.0"/>
+<link rel="stylesheet" href="/css/main.css?v=7.2.0">
 
 
 
 
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0"/>
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
 
 
 
@@ -65,7 +65,7 @@
     
     
   <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
-  <link rel="stylesheet" href="/lib/pace/pace-theme-flash.min.css?v=1.0.2"/>
+  <link rel="stylesheet" href="/lib/pace/pace-theme-flash.min.css?v=1.0.2">
 
 
 
@@ -101,24 +101,32 @@
   };
 </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="mlik5hao">
-<meta property="og:url" content="http://yoursite.com/404.html">
+  <meta name="description" content="简介状态机：描述一个实体基于事件反应的动态行为，显示了该实体如何根据当前所处的状态对不同的事件做出反应的模型。 用来表示有限多个状态以及在这些状态（State）之间转移（Transition）和动作（Action）的数学模型。 简单的说它可以将单位的所有行为去划分状态，状态与状态之间通过事件的触发形成。 状态机可归纳为4个要素，即现态，条件，动作，次态。  现态：是指当前所处的状态。 条件：又称为">
+<meta name="keywords" content="FSM,状态机,基础">
+<meta property="og:type" content="article">
+<meta property="og:title" content="状态机">
+<meta property="og:url" content="http://yoursite.com/2019/07/27/状态机/index.html">
 <meta property="og:site_name" content="mlik5hao">
+<meta property="og:description" content="简介状态机：描述一个实体基于事件反应的动态行为，显示了该实体如何根据当前所处的状态对不同的事件做出反应的模型。 用来表示有限多个状态以及在这些状态（State）之间转移（Transition）和动作（Action）的数学模型。 简单的说它可以将单位的所有行为去划分状态，状态与状态之间通过事件的触发形成。 状态机可归纳为4个要素，即现态，条件，动作，次态。  现态：是指当前所处的状态。 条件：又称为">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-07-25T16:45:16.000Z">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20190715014012283.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L01pbGVyS2V5,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==">
+<meta property="og:image" content="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==">
+<meta property="og:updated_time" content="2019-07-31T11:18:14.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="mlik5hao">
+<meta name="twitter:title" content="状态机">
+<meta name="twitter:description" content="简介状态机：描述一个实体基于事件反应的动态行为，显示了该实体如何根据当前所处的状态对不同的事件做出反应的模型。 用来表示有限多个状态以及在这些状态（State）之间转移（Transition）和动作（Action）的数学模型。 简单的说它可以将单位的所有行为去划分状态，状态与状态之间通过事件的触发形成。 状态机可归纳为4个要素，即现态，条件，动作，次态。  现态：是指当前所处的状态。 条件：又称为">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20190715014012283.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L01pbGVyS2V5,size_16,color_FFFFFF,t_70">
 
 
 
-  <link rel="alternate" href="/atom.xml" title="mlik5hao" type="application/atom+xml"/>
+  <link rel="alternate" href="/atom.xml" title="mlik5hao" type="application/atom+xml">
 
 
 
   
   
-  <link rel="canonical" href="http://yoursite.com/404"/>
+  <link rel="canonical" href="http://yoursite.com/2019/07/27/状态机/">
 
 
 
@@ -129,7 +137,7 @@
 </script>
 
   
-  <title> | mlik5hao</title>
+  <title>状态机 | mlik5hao</title>
   
 
 
@@ -303,7 +311,7 @@
             <a href="javascript:;" class="popup-trigger">
           
             
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br/>搜索</a>
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
         </li>
       
     </ul>
@@ -311,28 +319,6 @@
 
   
     
-
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
 
   
 
@@ -348,9 +334,7 @@
       <i class="fa fa-times-circle"></i>
     </span>
     <div class="local-search-input-wrapper">
-      <input autocomplete="off"
-             placeholder="搜索..." spellcheck="false"
-             type="text" id="local-search-input">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
     </div>
   </div>
   <div id="local-search-result"></div>
@@ -386,60 +370,235 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/27/状态机/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="冯海洋">
+      <meta itemprop="description" content="平凡的人做不平凡的事">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mlik5hao">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">
-
-</h1>
-
-<div class="post-meta">
-  
-  
-
-
-
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <!DOCTYPE HTML>
-<html>
-<head><meta name="generator" content="Hexo 3.9.0">
-  <meta http-equiv="content-type" content="text/html;charset=utf-8;">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="robots" content="all">
-  <meta name="robots" content="index,follow">
-  <link rel="stylesheet" type="text/css" href="https://qzone.qq.com/gy/404/style/404style.css">
-</head>
-<body>
-  <script type="text/plain" src="http://www.qq.com/404/search_children.js" charset="utf-8" homepageurl="/" homepagename="返回主页">
-  </script>
-  <script src="https://qzone.qq.com/gy/404/data.js" charset="utf-8"></script>
-  <script src="https://qzone.qq.com/gy/404/page.js" charset="utf-8"></script>
-</body>
-</html>
+          <h1 class="post-title" itemprop="name headline">状态机
+
+              
+            
+          </h1>
         
-      </div>
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-07-27 02:21:40" itemprop="dateCreated datePublished" datetime="2019-07-27T02:21:40Z">2019-07-27</time>
+            </span>
+          
+
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-07-31 11:18:14" itemprop="dateModified" datetime="2019-07-31T11:18:14Z">2019-07-31</time>
+              </span>
+            
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/AI/" itemprop="url" rel="index"><span itemprop="name">AI</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>状态机：描述一个实体基于事件反应的动态行为，显示了该实体如何根据当前所处的状态对不同的事件做出反应的模型。</p>
+<p>用来表示有限多个状态以及在这些状态（State）之间转移（Transition）和动作（Action）的数学模型。</p>
+<p>简单的说它可以<strong>将单位的所有行为去划分状态，状态与状态之间通过事件的触发形成。</strong></p>
+<p><strong>状态机可归纳为4个要素，即现态，条件，动作，次态。</strong></p>
+<ul>
+<li>现态：是指当前所处的状态。</li>
+<li>条件：又称为“事件”。当一个条件被满足，将会触发一个动作，或者执行一次状态的迁移。</li>
+<li>动作：条件满足后执行的动作。动作执行完毕后，可以迁移到新的状态，也可以仍旧保持原状态。<strong>动作不是必需的</strong></li>
+<li>次态：条件满足后要迁往的新状态。</li>
+</ul>
+<p>事件：1.检测转换条件 2.进行状态切换</p>
+<h2 id="设计状态机"><a href="#设计状态机" class="headerlink" title="设计状态机"></a>设计状态机</h2><ul>
+<li>可以用状态移动图表示</li>
+<li>可以用表格来表示，如：事件/状态表，现态/次态表…</li>
+</ul>
+<p>AI设计中个人喜欢现态/次态表</p>
+<p><img src="https://img-blog.csdnimg.cn/20190715014012283.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L01pbGVyS2V5,size_16,color_FFFFFF,t_70" alt="img">)<img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p>
+<h2 id="状态机分类"><a href="#状态机分类" class="headerlink" title="状态机分类"></a>状态机分类</h2><ul>
+<li>Moore状态机：输出只和状态有关而与输入无关</li>
+<li>Mealy状态机：输出不仅和状态有关而且和输入有关系</li>
+</ul>
+<h2 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h2><ul>
+<li>竖向：swich，if..else</li>
+<li>横向：FSM </li>
+</ul>
+<h2 id="附录：竖向写"><a href="#附录：竖向写" class="headerlink" title="附录：竖向写"></a>附录：竖向写</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line">cur_state = nxt_state;</span><br><span class="line"></span><br><span class="line">switch(cur_state)&#123; //在当前状态中判断事件</span><br><span class="line"></span><br><span class="line">case s0: //在s0状态</span><br><span class="line"></span><br><span class="line">if(e0_event)&#123; //如果发生e0事件，那么就执行a0动作，</span><br><span class="line"></span><br><span class="line">并保持状态不变；</span><br><span class="line"></span><br><span class="line">执行a0动作;</span><br><span class="line"></span><br><span class="line">//nxt_state = s0; //因为状态号是自身，所以可以删除此句</span><br><span class="line"></span><br><span class="line">，以提高运行速度。</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">else if(e1_event)&#123; //如果发生e1事件，那么就执行a1动作，</span><br><span class="line"></span><br><span class="line">并将状态转移到s1态；</span><br><span class="line"></span><br><span class="line">执行a1动作;</span><br><span class="line"></span><br><span class="line">nxt_state = s1;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">else if(e2_event)&#123; //如果发生e2事件，那么就执行a2动作，</span><br><span class="line"></span><br><span class="line">并将状态转移到s2态；</span><br><span class="line"></span><br><span class="line">执行a2动作;</span><br><span class="line"></span><br><span class="line">nxt_state = s2;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">break;</span><br><span class="line"></span><br><span class="line">case s1: //在s1状态</span><br><span class="line"></span><br><span class="line">if(e2_event)&#123; //如果发生e2事件，那么就执行a2动作，</span><br><span class="line"></span><br><span class="line">并将状态转移到s2态；</span><br><span class="line"></span><br><span class="line">执行a2动作;</span><br><span class="line"></span><br><span class="line">nxt_state = s2;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">break;</span><br><span class="line"></span><br><span class="line">case s2: //在s2状态</span><br><span class="line"></span><br><span class="line">if(e0_event)&#123; //如果发生e0事件，那么就执行a0动作，</span><br><span class="line"></span><br><span class="line">并将状态转移到s0态；</span><br><span class="line"></span><br><span class="line">执行a0动作;</span><br><span class="line"></span><br><span class="line">nxt_state = s0;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p>
+
       
     </div>
-    
-
-
 
     
+
+    
+      
+    
+
     
     
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        
+          
+        
+        <div class="post-tags">
+          
+            <a href="/tags/FSM/" rel="tag"># FSM</a>
+          
+            <a href="/tags/状态机/" rel="tag"># 状态机</a>
+          
+            <a href="/tags/基础/" rel="tag"># 基础</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/07/26/时间复杂度，空间复杂度和稳定性/" rel="next" title="时间复杂度，空间复杂度和稳定性">
+                <i class="fa fa-chevron-left"></i> 时间复杂度，空间复杂度和稳定性
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/07/31/windows-屏幕阅读器/" rel="prev" title="windows-屏幕阅读器">
+                windows-屏幕阅读器 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
   </div>
 
 
@@ -468,8 +627,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
 
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -695,6 +863,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设计状态机"><span class="nav-number">2.</span> <span class="nav-text">设计状态机</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#状态机分类"><span class="nav-number">3.</span> <span class="nav-text">状态机分类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实现"><span class="nav-number">4.</span> <span class="nav-text">实现</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#附录：竖向写"><span class="nav-number">5.</span> <span class="nav-text">附录：竖向写</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
