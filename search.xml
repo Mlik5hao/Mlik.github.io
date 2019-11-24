@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>HHTimeRecorder</title>
+    <url>/2019/11/21/HHTimeRecorder/</url>
+    <content><![CDATA[<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">public class HHTimeRecorder</span><br><span class="line">&#123;</span><br><span class="line">  private DateTime beginTime;</span><br><span class="line">  public void Begin()</span><br><span class="line">  &#123;</span><br><span class="line">    beginTime = DateTime.Now;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  public long End()</span><br><span class="line">  &#123;</span><br><span class="line">    var ret = DateTime.Now - beginTime;</span><br><span class="line">    return ret.Ticks / 10000;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  public void End(string prefix)</span><br><span class="line">  &#123;</span><br><span class="line">    var costTime = End();</span><br><span class="line">    HHLogger.DEBUG(prefix, &quot;cost time&quot;, costTime, &quot;ms&quot;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <tags>
+        <tag>Unity</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>泛型</title>
     <url>/2019/11/20/%E6%B3%9B%E5%9E%8B/</url>
     <content><![CDATA[]]></content>
@@ -62,8 +70,8 @@
 <p>2.整理之前写的Unity编辑器扩展。</p>
 ]]></content>
       <categories>
-        <category>读书</category>
         <category>Unity</category>
+        <category>读书</category>
         <category>Unity3D脚本编程</category>
       </categories>
       <tags>
@@ -84,8 +92,8 @@
 ]]></content>
       <categories>
         <category>C#</category>
-        <category>读书</category>
         <category>Unity</category>
+        <category>读书</category>
         <category>Unity3D脚本编程</category>
       </categories>
       <tags>
@@ -540,10 +548,10 @@
       </categories>
       <tags>
         <tag>C#</tag>
+        <tag>Unity</tag>
         <tag>协程</tag>
         <tag>语法糖</tag>
         <tag>Lua</tag>
-        <tag>Unity</tag>
       </tags>
   </entry>
   <entry>
