@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>C#文件处理</title>
+    <url>/2019/11/26/C-%E6%96%87%E4%BB%B6%E5%A4%84%E7%90%86/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>C#</category>
+      </categories>
+      <tags>
+        <tag>C#</tag>
+        <tag>文件处理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>C#数据处理</title>
+    <url>/2019/11/26/C-%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>C#</category>
+      </categories>
+      <tags>
+        <tag>C#</tag>
+        <tag>数据处理</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>LuaTable拷贝</title>
     <url>/2019/11/26/LuaTable%E6%8B%B7%E8%B4%9D/</url>
     <content><![CDATA[<h5 id="Shallow-Copy"><a href="#Shallow-Copy" class="headerlink" title="Shallow Copy"></a>Shallow Copy</h5><figure class="highlight lua"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">shallowcopy</span><span class="params">(orig)</span></span></span><br><span class="line">    <span class="keyword">local</span> orig_type = <span class="built_in">type</span>(orig)</span><br><span class="line">    <span class="keyword">local</span> copy</span><br><span class="line">    <span class="keyword">if</span> orig_type == <span class="string">'table'</span> <span class="keyword">then</span></span><br><span class="line">        copy = &#123;&#125;</span><br><span class="line">        <span class="keyword">for</span> orig_key, orig_value <span class="keyword">in</span> <span class="built_in">pairs</span>(orig) <span class="keyword">do</span></span><br><span class="line">            copy[orig_key] = orig_value</span><br><span class="line">        <span class="keyword">end</span></span><br><span class="line">    <span class="keyword">else</span> <span class="comment">-- number, string, boolean, etc</span></span><br><span class="line">        copy = orig</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">    <span class="keyword">return</span> copy</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
@@ -667,10 +691,10 @@ end
       </categories>
       <tags>
         <tag>C#</tag>
+        <tag>Unity</tag>
+        <tag>Lua</tag>
         <tag>协程</tag>
         <tag>语法糖</tag>
-        <tag>Lua</tag>
-        <tag>Unity</tag>
       </tags>
   </entry>
   <entry>
@@ -1017,6 +1041,55 @@ end
         <tag>算法</tag>
         <tag>数据结构</tag>
         <tag>基础</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Unity打包ios并上架</title>
+    <url>/2018/10/27/Unity%E6%89%93%E5%8C%85ios%E5%B9%B6%E4%B8%8A%E6%9E%B6/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Unity</category>
+      </categories>
+      <tags>
+        <tag>Unity</tag>
+        <tag>打包</tag>
+        <tag>ios</tag>
+        <tag>上架</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>UnityPlayerSettings</title>
+    <url>/2018/10/27/UnityPlayerSettings/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Unity</category>
+      </categories>
+      <tags>
+        <tag>打包</tag>
+        <tag>PlayerSetting</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>mac配置AndroidStudio打包环境</title>
+    <url>/2018/10/26/mac%E9%85%8D%E7%BD%AEAndroidStudio%E6%89%93%E5%8C%85%E7%8E%AF%E5%A2%83/</url>
+    <content><![CDATA[<h5 id="AS，SDK"><a href="#AS，SDK" class="headerlink" title="AS，SDK"></a>AS，SDK</h5><p><a href="https://www.androiddevtools.cn/" target="_blank" rel="noopener">https://www.androiddevtools.cn/</a></p>
+<h5 id="JDK-注册账号"><a href="#JDK-注册账号" class="headerlink" title="JDK -注册账号"></a>JDK -注册账号</h5><p><a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html?utm_source=androiddevtools&amp;utm_medium=website" target="_blank" rel="noopener">https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html?utm_source=androiddevtools&amp;utm_medium=website</a></p>
+<h5 id="NDK"><a href="#NDK" class="headerlink" title="NDK"></a>NDK</h5><p>直接在Unity中Download</p>
+<h5 id="打包Android-Project"><a href="#打包Android-Project" class="headerlink" title="打包Android Project"></a>打包Android Project</h5><p>Go to <strong>Build Settings</strong> and make sure Android is selected as the target platform. Change the <strong>Build System</strong> to <strong>Gradle</strong>, and tick the <strong>Export Project</strong> checkbox, as shown in the picture below.</p>
+<p><strong>Build Setting</strong></p>
+<ul>
+<li>Internal（Default）：Unity内置，仅需Android SDK支持。不能导出工程，适用于仅适用Unity开发的工程。</li>
+<li>Gradle（New）：使用Gradle进行构建，需要Android SDK与Gradle支持。可以导出Android Studio工程，选这个才能勾选下面的Export Project，适用于Unity与Android交互的项目。</li>
+</ul>
+<h5 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h5><p>–TODO</p>
+]]></content>
+      <categories>
+        <category>Unity</category>
+      </categories>
+      <tags>
+        <tag>Unity</tag>
+        <tag>打包</tag>
+        <tag>环境配置</tag>
       </tags>
   </entry>
 </search>
