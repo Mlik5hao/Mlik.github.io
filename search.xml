@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Unity2D精灵阴影问题</title>
+    <url>/2019/11/30/Unity2D%E7%B2%BE%E7%81%B5%E9%98%B4%E5%BD%B1%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">using System;</span><br><span class="line">using UnityEngine;</span><br><span class="line">[RequireComponent(typeof(SpriteRenderer))]</span><br><span class="line">public class SpriteShadow : MonoBehaviour&#123;</span><br><span class="line">    [HideInInspector]</span><br><span class="line">	public Vector2 offset;</span><br><span class="line">	public float offsetX;</span><br><span class="line">	public float offsetY;</span><br><span class="line">	private SpriteRenderer sprRndCaster;</span><br><span class="line">	private SpriteRenderer sprRndShadow;</span><br><span class="line">	private Transform transCaster;</span><br><span class="line">	private Transform transShadow;</span><br><span class="line">    [HideInInspector]</span><br><span class="line">    public Material ShadowMaterial;</span><br><span class="line">    [Tooltip(&quot;Order in Layer&quot;)]</span><br><span class="line">    //public int sortingOrder;</span><br><span class="line">    public int sortingOrderDifference;</span><br><span class="line"></span><br><span class="line">    //public int sortingOrderDifference;</span><br><span class="line">    //public bool updateSpriteOverTime = true;</span><br><span class="line">    public bool updatePositionOverTime = true;</span><br><span class="line">    private void Start()&#123;</span><br><span class="line">		this.offset = new Vector2(this.offsetX, this.offsetY);</span><br><span class="line">		this.transCaster = this.transform;</span><br><span class="line">		this.transShadow = new GameObject().transform;</span><br><span class="line">		this.transShadow.parent = this.transCaster;</span><br><span class="line">		this.transShadow.gameObject.name = &quot;Shadow&quot;;</span><br><span class="line">		this.transShadow.localRotation = Quaternion.identity;</span><br><span class="line">		var vector = Vector3.one;</span><br><span class="line">		var parent = this.transShadow;</span><br><span class="line">		while (parent != null)&#123;</span><br><span class="line">            //vector.Multiply(parent.localScale);  //  放大 x * x， y * y</span><br><span class="line">            parent = parent.parent;</span><br><span class="line">		&#125;</span><br><span class="line">		this.transShadow.localScale = vector;</span><br><span class="line">		this.sprRndCaster = this.GetComponent&lt;SpriteRenderer&gt;();</span><br><span class="line">        this.sprRndShadow = this.transShadow.gameObject.AddComponent&lt;SpriteRenderer&gt;();</span><br><span class="line">        //this.sprRndShadow.material = this.ShadowMaterial;</span><br><span class="line">        this.sprRndShadow.material = this.sprRndCaster.material;</span><br><span class="line">        //HHLogger.DEBUG(this.ShadowMaterial, this.sprRndCaster.material);</span><br><span class="line">        this.sprRndShadow.material.color = new Color(1,1,1,0.35f);</span><br><span class="line">		//this.sprRndShadow.color = Color.white;</span><br><span class="line">        this.sprRndShadow.color = Color.black;</span><br><span class="line">        this.sprRndShadow.sortingLayerName = this.sprRndCaster.sortingLayerName;</span><br><span class="line">        this.sprRndShadow.sortingOrder = this.sprRndCaster.sortingOrder + this.sortingOrderDifference - 1;</span><br><span class="line">        this.transShadow.position = new Vector2(this.transCaster.position.x + this.offset.x, this.transCaster.position.y + this.offset.y);</span><br><span class="line">        //this.transShadow.localPosition = new Vector3(this.offset.x, this.offset.y, 0);</span><br><span class="line">        this.sprRndShadow.sprite = this.sprRndCaster.sprite;</span><br><span class="line">        this.sprRndShadow.flipX = this.sprRndCaster.flipX;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    private void LateUpdate()</span><br><span class="line">    &#123;</span><br><span class="line">        //if (this.updateSpriteOverTime)&#123;</span><br><span class="line">        //	this.sprRndShadow.sprite = this.sprRndCaster.sprite;</span><br><span class="line">        //	this.sprRndShadow.flipX = this.sprRndCaster.flipX;</span><br><span class="line">        //&#125;</span><br><span class="line">        if (this.updatePositionOverTime)</span><br><span class="line">        &#123;</span><br><span class="line">            this.transShadow.position = new Vector2(this.transCaster.position.x + this.offset.x, this.transCaster.position.y + this.offset.y);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Unity</category>
+      </categories>
+      <tags>
+        <tag>Unity</tag>
+        <tag>精灵</tag>
+        <tag>阴影</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>C#文件处理</title>
     <url>/2019/11/26/C-%E6%96%87%E4%BB%B6%E5%A4%84%E7%90%86/</url>
     <content><![CDATA[]]></content>
@@ -167,15 +182,40 @@ end
   <entry>
     <title>委托</title>
     <url>/2019/11/18/%E5%A7%94%E6%89%98/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<h5 id="委托"><a href="#委托" class="headerlink" title="委托"></a>委托</h5><p>是对方法的引用。本质类。</p>
+<blockquote>
+<p>委托是类型安全的：只能让委托引用与委托签名匹配的方法。</p>
+<p>派生自System.MulticastDelegate(派生自System.Delegate)</p>
+</blockquote>
+<p>定义后，创建实例初始化</p>
+<ul>
+<li>显式初始化 </li>
+<li>在用+=等时自动初始化</li>
+</ul>
+<blockquote>
+<p>未初始化 抛出异常NullReferenException</p>
+</blockquote>
+<h5 id="内置"><a href="#内置" class="headerlink" title="内置"></a>内置</h5><ul>
+<li>Func&lt;&gt;    返回值，最后一个参数是返回值</li>
+<li>Action&lt;&gt; 无返回值</li>
+<li>匿名方法 delegate(){}</li>
+<li>Lambda表达式()=&gt;{}， x =&gt; return x;</li>
+</ul>
+<h5 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h5><p>类的成员。 </p>
+<blockquote>
+<p>公共事件只能在定义它的那个类中的方法引发。在类外部引用会造成编译时错误。</p>
+<p>记得判null。</p>
+</blockquote>
+<h5 id="适配器"><a href="#适配器" class="headerlink" title="适配器"></a>适配器</h5><p>作为两个不兼容的接口之间的桥梁</p>
+]]></content>
       <categories>
-        <category>读书</category>
-        <category>CLR via C#</category>
+        <category>C#</category>
       </categories>
       <tags>
         <tag>C#</tag>
         <tag>笔记</tag>
         <tag>委托</tag>
+        <tag>事件</tag>
       </tags>
   </entry>
   <entry>
@@ -596,6 +636,59 @@ end
       </tags>
   </entry>
   <entry>
+    <title>Unity渲染层级</title>
+    <url>/2019/10/29/Unity%E6%B8%B2%E6%9F%93%E5%B1%82%E7%BA%A7/</url>
+    <content><![CDATA[<ul>
+<li>Camera Depth</li>
+<li>Sorting Layer</li>
+<li>Order in Layer（粒子）|Sorting Layer</li>
+<li>UI自然层级 | 2d或者3d 中z值</li>
+</ul>
+<p>其实还有一个Camera Clear Flags。</p>
+<p>SortingLayer差值2000.</p>
+<h5 id="渲染优先级"><a href="#渲染优先级" class="headerlink" title="渲染优先级"></a>渲染优先级</h5><p>渲染优先级有不同层次的控制 </p>
+<p>1.不同摄像机之间，通过Depth 来控制渲染顺序，这个优先级最高。 </p>
+<p>2.相同Depth情况下，通过修改SotingLayer来确定渲染顺序 </p>
+<p>3.相同SotingLayer下，通过sortingOrder（特效中叫做 Order in layer） 来控制。 </p>
+<p>Camera.Depth-&gt; Canvas.SotingLayer-&gt;Canvas.OrderInLayer </p>
+<p>#####UGUI 的Canvas 的render mode （渲染模式）的选择 </p>
+<p>1.Screen Space - Overlay  覆盖模式 </p>
+<p>此模式  不需要摄像机。Canvas自适应屏幕大小，不经过投影空间，直接在屏幕上绘制 </p>
+<p>这种适合做纯2D游戏。  缺点是对特效不友好，因为界面永远显示在屏幕最前方 </p>
+<p>会在任何情况下都会遮挡住特效。 </p>
+<p>2.ScreenSpace - Camera  屏幕坐标，相机模式 </p>
+<p>Canvas自适应屏幕大小，UI由相机负责渲染，这种非2D游戏都运用。 </p>
+<p>由于是相机负责渲染，所以，特效可以被显示出来。可以用UI相机显示， </p>
+<p>也可以又专门的特效相机或者主相机渲染。不同相机之间，通过Depth来 </p>
+<p>控制渲染优先级，相同相机或者Depth之间，通过SortingOrder来控制 </p>
+<p>渲染优先级。 </p>
+<p>3.WorldSpace  世界坐标，相机模式 </p>
+<p>Canvas不会自适应屏幕大小，UI相当于是平面物体，UI的大小和位置是 </p>
+<p>通过UI和相机之间的距离 和位置来决定的。 适合制作角色头顶的血条等 </p>
+<h5 id="Unity-Camera-相机-多个相机同时协作"><a href="#Unity-Camera-相机-多个相机同时协作" class="headerlink" title="Unity Camera 相机 多个相机同时协作"></a>Unity Camera 相机 多个相机同时协作</h5><p>每个相机都会渲染自己所渲染的层，对不渲染的层进行剔除。并具有<strong>颜色缓冲和Z缓冲</strong>。通过对每个相机不同的设置，可以达到意想不到的效果。如分屏效果，重点突出等。 </p>
+<p>Cuiling Mask：渲染层 </p>
+<p>clear flag ： 缓冲区 </p>
+<ul>
+<li><p>返回天空盒缓冲区并清除</p>
+</li>
+<li><p>固定颜色</p>
+</li>
+<li><p>只清楚深度缓冲区</p>
+</li>
+<li><p>不清除</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Unity</category>
+      </categories>
+      <tags>
+        <tag>Unity</tag>
+        <tag>Camera</tag>
+        <tag>渲染层级</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Coroutine</title>
     <url>/2019/10/25/Coroutine/</url>
     <content><![CDATA[<h1 id="Coroutine"><a href="#Coroutine" class="headerlink" title="Coroutine"></a>Coroutine</h1><p>##定义</p>
@@ -951,10 +1044,10 @@ end
 <p>快捷键开启 ctr + window + Enter</p>
 ]]></content>
       <categories>
-        <category>windows</category>
+        <category>随笔</category>
       </categories>
       <tags>
-        <tag>杂记</tag>
+        <tag>随笔</tag>
         <tag>Windows</tag>
       </tags>
   </entry>
@@ -1039,8 +1132,8 @@ end
       </categories>
       <tags>
         <tag>算法</tag>
-        <tag>数据结构</tag>
         <tag>基础</tag>
+        <tag>数据结构</tag>
       </tags>
   </entry>
   <entry>
@@ -1060,7 +1153,10 @@ end
   <entry>
     <title>UnityPlayerSettings</title>
     <url>/2018/10/27/UnityPlayerSettings/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<p><a href="https://www.jianshu.com/p/9bb8d6f6ddce" target="_blank" rel="noopener">https://www.jianshu.com/p/9bb8d6f6ddce</a></p>
+<p><a href="https://gameinstitute.qq.com/community/detail/127960" target="_blank" rel="noopener">https://gameinstitute.qq.com/community/detail/127960</a></p>
+<p><a href="https://blog.csdn.net/David_Dai_1108/article/details/79184249" target="_blank" rel="noopener">https://blog.csdn.net/David_Dai_1108/article/details/79184249</a></p>
+]]></content>
       <categories>
         <category>Unity</category>
       </categories>
