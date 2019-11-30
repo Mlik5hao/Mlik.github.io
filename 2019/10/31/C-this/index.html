@@ -56,18 +56,18 @@
   };
 </script>
 
-  <meta name="description" content="this原始类型扩展方法* 静态方法 * 第一个参数作用类型 * using引用命名空间 ​    static public GameObject AddChildNew(this GameObject parent) { return AddChild(parent, true); }   索引器#####显式调用一个类的方法和成员  略 串联构造函数 &amp;lt;=&amp;gt; 对比Base1234">
+  <meta name="description" content="this原始类型扩展方法* 静态方法 * 第一个参数作用类型 * using引用命名空间 ​    static public GameObject AddChildNew(this GameObject parent) { return AddChild(parent, true); }">
 <meta name="keywords" content="C#,this,base">
 <meta property="og:type" content="article">
 <meta property="og:title" content="C#this,base">
 <meta property="og:url" content="http://yoursite.com/2019/10/31/C-this/index.html">
 <meta property="og:site_name" content="mlik5hao">
-<meta property="og:description" content="this原始类型扩展方法* 静态方法 * 第一个参数作用类型 * using引用命名空间 ​    static public GameObject AddChildNew(this GameObject parent) { return AddChild(parent, true); }   索引器#####显式调用一个类的方法和成员  略 串联构造函数 &amp;lt;=&amp;gt; 对比Base1234">
+<meta property="og:description" content="this原始类型扩展方法* 静态方法 * 第一个参数作用类型 * using引用命名空间 ​    static public GameObject AddChildNew(this GameObject parent) { return AddChild(parent, true); }">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-11-30T12:29:26.161Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C#this,base">
-<meta name="twitter:description" content="this原始类型扩展方法* 静态方法 * 第一个参数作用类型 * using引用命名空间 ​    static public GameObject AddChildNew(this GameObject parent) { return AddChild(parent, true); }   索引器#####显式调用一个类的方法和成员  略 串联构造函数 &amp;lt;=&amp;gt; 对比Base1234">
+<meta name="twitter:description" content="this原始类型扩展方法* 静态方法 * 第一个参数作用类型 * using引用命名空间 ​    static public GameObject AddChildNew(this GameObject parent) { return AddChild(parent, true); }">
   <link rel="canonical" href="http://yoursite.com/2019/10/31/C-this/">
 
 
@@ -281,7 +281,7 @@
 * 第一个参数作用类型
 * using引用命名空间</code></pre><blockquote>
 <p>​    static public GameObject AddChildNew(this GameObject parent) { return AddChild(parent, true); } </p>
-</blockquote>
+</blockquote><a id="more"></a>
 <h5 id="索引器"><a href="#索引器" class="headerlink" title="索引器"></a>索引器</h5><p>#####显式调用一个类的方法和成员  略</p>
 <h5 id="串联构造函数-lt-gt-对比Base"><a href="#串联构造函数-lt-gt-对比Base" class="headerlink" title="串联构造函数 &lt;=&gt; 对比Base"></a>串联构造函数 &lt;=&gt; 对比Base</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">public class Test</span><br><span class="line">  &#123;</span><br><span class="line">    public Test()</span><br><span class="line">    &#123;</span><br><span class="line">      Console.WriteLine(&quot;无参构造函数&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">    // 这里的this()指向的是Test()无参构造函数</span><br><span class="line">    // 相当于继承了无参构造函数</span><br><span class="line">    public Test(string text) : this()</span><br><span class="line">    &#123;</span><br><span class="line">      // 程序进来后会先执行Test()无参函数，然后继续往下边执行</span><br><span class="line">      Console.WriteLine(text);</span><br><span class="line">      Console.WriteLine(&quot;有参构造函数&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
 
@@ -408,7 +408,7 @@
             <a href="/categories/">
           
         
-        <span class="site-state-item-count">15</span>
+        <span class="site-state-item-count">13</span>
         <span class="site-state-item-name">分类</span>
         </a>
       </div>

@@ -56,18 +56,18 @@
   };
 </script>
 
-  <meta name="description" content="1234567table.insert(table,[ pos,] value) table.remove(table[, pos]) table.concat(table[, sep[, i[, j]]]) table.sort(table[, comp]) // 见Lua排序table.getn() //5.0费table.maxn() //5.2费  #####insert, remove">
+  <meta name="description" content="1234567table.insert(table,[ pos,] value) table.remove(table[, pos]) table.concat(table[, sep[, i[, j]]]) table.sort(table[, comp]) // 见Lua排序table.getn() //5.0费table.maxn() //5.2费">
 <meta name="keywords" content="Lua,table函数,maxn">
 <meta property="og:type" content="article">
 <meta property="og:title" content="LuaTable函数库">
 <meta property="og:url" content="http://yoursite.com/2019/11/25/LuaTable函数库/index.html">
 <meta property="og:site_name" content="mlik5hao">
-<meta property="og:description" content="1234567table.insert(table,[ pos,] value) table.remove(table[, pos]) table.concat(table[, sep[, i[, j]]]) table.sort(table[, comp]) // 见Lua排序table.getn() //5.0费table.maxn() //5.2费  #####insert, remove">
+<meta property="og:description" content="1234567table.insert(table,[ pos,] value) table.remove(table[, pos]) table.concat(table[, sep[, i[, j]]]) table.sort(table[, comp]) // 见Lua排序table.getn() //5.0费table.maxn() //5.2费">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-11-25T08:34:34.291Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="LuaTable函数库">
-<meta name="twitter:description" content="1234567table.insert(table,[ pos,] value) table.remove(table[, pos]) table.concat(table[, sep[, i[, j]]]) table.sort(table[, comp]) // 见Lua排序table.getn() //5.0费table.maxn() //5.2费  #####insert, remove">
+<meta name="twitter:description" content="1234567table.insert(table,[ pos,] value) table.remove(table[, pos]) table.concat(table[, sep[, i[, j]]]) table.sort(table[, comp]) // 见Lua排序table.getn() //5.0费table.maxn() //5.2费">
   <link rel="canonical" href="http://yoursite.com/2019/11/25/LuaTable函数库/">
 
 
@@ -277,7 +277,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">table</span>.<span class="built_in">insert</span>(<span class="built_in">table</span>,[ pos,] value) </span><br><span class="line"><span class="built_in">table</span>.<span class="built_in">remove</span>(<span class="built_in">table</span>[, pos]) </span><br><span class="line"><span class="built_in">table</span>.<span class="built_in">concat</span>(<span class="built_in">table</span>[, sep[, i[, j]]]) </span><br><span class="line"><span class="built_in">table</span>.<span class="built_in">sort</span>(<span class="built_in">table</span>[, comp]) // 见Lua排序</span><br><span class="line"></span><br><span class="line"><span class="built_in">table</span>.<span class="built_in">getn</span>() //<span class="number">5.0</span>费</span><br><span class="line"><span class="built_in">table</span>.<span class="built_in">maxn</span>() //<span class="number">5.2</span>费</span><br></pre></td></tr></table></figure>
+        <figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">table</span>.<span class="built_in">insert</span>(<span class="built_in">table</span>,[ pos,] value) </span><br><span class="line"><span class="built_in">table</span>.<span class="built_in">remove</span>(<span class="built_in">table</span>[, pos]) </span><br><span class="line"><span class="built_in">table</span>.<span class="built_in">concat</span>(<span class="built_in">table</span>[, sep[, i[, j]]]) </span><br><span class="line"><span class="built_in">table</span>.<span class="built_in">sort</span>(<span class="built_in">table</span>[, comp]) // 见Lua排序</span><br><span class="line"></span><br><span class="line"><span class="built_in">table</span>.<span class="built_in">getn</span>() //<span class="number">5.0</span>费</span><br><span class="line"><span class="built_in">table</span>.<span class="built_in">maxn</span>() //<span class="number">5.2</span>费</span><br></pre></td></tr></table></figure><a id="more"></a>
 
 <p>#####insert, remove</p>
 <p>insert 和 remove 只能用于数组元素的插入和移出， 进行插入和移出时，会将后面的元素对齐起来。<br>  所以在 for 循环中进行 insert 和 remove 的时候要注意插入和移除时是否<strong>漏掉</strong>了某些项：<br>    local t = {1,2,3,3,5,3,6}<br>    for i,v in ipairs(t) do<br>      if v == 3 then<br>        table.remove(t,i)<br>      end<br>    end<br>    – 错误，第四个 3 没有被移除，ipairs 内部会维护一个变量记录遍历的位置，remove 掉第三个数字 3 之后，ipairs 下一个返回的值是 5 而不是 3 </p>
@@ -437,7 +437,7 @@ end
             <a href="/categories/">
           
         
-        <span class="site-state-item-count">15</span>
+        <span class="site-state-item-count">13</span>
         <span class="site-state-item-name">分类</span>
         </a>
       </div>

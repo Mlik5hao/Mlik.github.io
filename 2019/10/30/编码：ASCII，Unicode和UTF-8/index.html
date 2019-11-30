@@ -56,19 +56,19 @@
   };
 </script>
 
-  <meta name="description" content="一、ASCII 码我们知道，计算机内部，所有信息最终都是一个二进制值。每一个二进制位（bit）有0和1两种状态，因此八个二进制位就可以组合出256种状态，这被称为一个字节（byte）。也就是说，一个字节一共可以用来表示256种不同的状态，每一个状态对应一个符号，就是256个符号，从00000000到11111111。 上个世纪60年代，美国制定了一套字符编码，对英语字符与二进制位之间的关系，做了统">
+  <meta name="description" content="一、ASCII 码我们知道，计算机内部，所有信息最终都是一个二进制值。每一个二进制位（bit）有0和1两种状态，因此八个二进制位就可以组合出256种状态，这被称为一个字节（byte）。也就是说，一个字节一共可以用来表示256种不同的状态，每一个状态对应一个符号，就是256个符号，从00000000到11111111。">
 <meta name="keywords" content="编码,ascll,unicode,utf-8">
 <meta property="og:type" content="article">
 <meta property="og:title" content="编码：ASCII，Unicode和UTF-8">
 <meta property="og:url" content="http://yoursite.com/2019/10/30/编码：ASCII，Unicode和UTF-8/index.html">
 <meta property="og:site_name" content="mlik5hao">
-<meta property="og:description" content="一、ASCII 码我们知道，计算机内部，所有信息最终都是一个二进制值。每一个二进制位（bit）有0和1两种状态，因此八个二进制位就可以组合出256种状态，这被称为一个字节（byte）。也就是说，一个字节一共可以用来表示256种不同的状态，每一个状态对应一个符号，就是256个符号，从00000000到11111111。 上个世纪60年代，美国制定了一套字符编码，对英语字符与二进制位之间的关系，做了统">
+<meta property="og:description" content="一、ASCII 码我们知道，计算机内部，所有信息最终都是一个二进制值。每一个二进制位（bit）有0和1两种状态，因此八个二进制位就可以组合出256种状态，这被称为一个字节（byte）。也就是说，一个字节一共可以用来表示256种不同的状态，每一个状态对应一个符号，就是256个符号，从00000000到11111111。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://www.ruanyifeng.com/blog/2007/10/bg2007102801-thumb.jpg">
 <meta property="og:updated_time" content="2019-11-15T11:38:21.332Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="编码：ASCII，Unicode和UTF-8">
-<meta name="twitter:description" content="一、ASCII 码我们知道，计算机内部，所有信息最终都是一个二进制值。每一个二进制位（bit）有0和1两种状态，因此八个二进制位就可以组合出256种状态，这被称为一个字节（byte）。也就是说，一个字节一共可以用来表示256种不同的状态，每一个状态对应一个符号，就是256个符号，从00000000到11111111。 上个世纪60年代，美国制定了一套字符编码，对英语字符与二进制位之间的关系，做了统">
+<meta name="twitter:description" content="一、ASCII 码我们知道，计算机内部，所有信息最终都是一个二进制值。每一个二进制位（bit）有0和1两种状态，因此八个二进制位就可以组合出256种状态，这被称为一个字节（byte）。也就是说，一个字节一共可以用来表示256种不同的状态，每一个状态对应一个符号，就是256个符号，从00000000到11111111。">
 <meta name="twitter:image" content="http://www.ruanyifeng.com/blog/2007/10/bg2007102801-thumb.jpg">
   <link rel="canonical" href="http://yoursite.com/2019/10/30/编码：ASCII，Unicode和UTF-8/">
 
@@ -279,7 +279,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="一、ASCII-码"><a href="#一、ASCII-码" class="headerlink" title="一、ASCII 码"></a><strong>一、ASCII 码</strong></h2><p>我们知道，计算机内部，所有信息最终都是一个二进制值。每一个二进制位（bit）有<code>0</code>和<code>1</code>两种状态，因此八个二进制位就可以组合出256种状态，这被称为一个字节（byte）。也就是说，一个字节一共可以用来表示256种不同的状态，每一个状态对应一个符号，就是256个符号，从<code>00000000</code>到<code>11111111</code>。</p>
+        <h2 id="一、ASCII-码"><a href="#一、ASCII-码" class="headerlink" title="一、ASCII 码"></a><strong>一、ASCII 码</strong></h2><p>我们知道，计算机内部，所有信息最终都是一个二进制值。每一个二进制位（bit）有<code>0</code>和<code>1</code>两种状态，因此八个二进制位就可以组合出256种状态，这被称为一个字节（byte）。也就是说，一个字节一共可以用来表示256种不同的状态，每一个状态对应一个符号，就是256个符号，从<code>00000000</code>到<code>11111111</code>。</p><a id="more"></a>
 <p>上个世纪60年代，美国制定了一套字符编码，对英语字符与二进制位之间的关系，做了统一规定。这被称为 ASCII 码，一直沿用至今。</p>
 <p>ASCII 码一共规定了128个字符的编码，比如空格<code>SPACE</code>是32（二进制<code>00100000</code>），大写的字母<code>A</code>是65（二进制<code>01000001</code>）。这128个符号（包括32个不能打印出来的控制符号），只占用了一个字节的后面7位，最前面的一位统一规定为<code>0</code>。</p>
 <h2 id="二、非-ASCII-编码"><a href="#二、非-ASCII-编码" class="headerlink" title="二、非 ASCII 编码"></a><strong>二、非 ASCII 编码</strong></h2><p>英语用128个符号编码就够了，但是用来表示其他语言，128个符号是不够的。比如，在法语中，字母上方有注音符号，它就无法用 ASCII 码表示。于是，一些欧洲国家就决定，利用字节中闲置的最高位编入新的符号。比如，法语中的<code>é</code>的编码为130（二进制<code>10000010</code>）。这样一来，这些欧洲国家使用的编码体系，可以表示最多256个符号。</p>
@@ -449,7 +449,7 @@
             <a href="/categories/">
           
         
-        <span class="site-state-item-count">15</span>
+        <span class="site-state-item-count">13</span>
         <span class="site-state-item-name">分类</span>
         </a>
       </div>

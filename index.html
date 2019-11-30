@@ -520,16 +520,15 @@
 
       
           <h5 id="Shallow-Copy"><a href="#Shallow-Copy" class="headerlink" title="Shallow Copy"></a>Shallow Copy</h5><figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">shallowcopy</span><span class="params">(orig)</span></span></span><br><span class="line">    <span class="keyword">local</span> orig_type = <span class="built_in">type</span>(orig)</span><br><span class="line">    <span class="keyword">local</span> copy</span><br><span class="line">    <span class="keyword">if</span> orig_type == <span class="string">'table'</span> <span class="keyword">then</span></span><br><span class="line">        copy = &#123;&#125;</span><br><span class="line">        <span class="keyword">for</span> orig_key, orig_value <span class="keyword">in</span> <span class="built_in">pairs</span>(orig) <span class="keyword">do</span></span><br><span class="line">            copy[orig_key] = orig_value</span><br><span class="line">        <span class="keyword">end</span></span><br><span class="line">    <span class="keyword">else</span> <span class="comment">-- number, string, boolean, etc</span></span><br><span class="line">        copy = orig</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">    <span class="keyword">return</span> copy</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
-
-<h5 id="DeepCopy"><a href="#DeepCopy" class="headerlink" title="DeepCopy"></a>DeepCopy</h5><figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">deepcopy</span><span class="params">(orig)</span></span></span><br><span class="line">    <span class="keyword">local</span> orig_type = <span class="built_in">type</span>(orig)</span><br><span class="line">    <span class="keyword">local</span> copy</span><br><span class="line">    <span class="keyword">if</span> orig_type == <span class="string">'table'</span> <span class="keyword">then</span></span><br><span class="line">        copy = &#123;&#125;</span><br><span class="line">        <span class="keyword">for</span> orig_key, orig_value <span class="keyword">in</span> <span class="built_in">next</span>, orig, <span class="literal">nil</span> <span class="keyword">do</span></span><br><span class="line">            copy[deepcopy(orig_key)] = deepcopy(orig_value)</span><br><span class="line">        <span class="keyword">end</span></span><br><span class="line">        <span class="built_in">setmetatable</span>(copy, deepcopy(<span class="built_in">getmetatable</span>(orig)))</span><br><span class="line">    <span class="keyword">else</span> <span class="comment">-- number, string, boolean, etc</span></span><br><span class="line">        copy = orig</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">    <span class="keyword">return</span> copy</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">deepcopy</span><span class="params">(orig, copies)</span></span></span><br><span class="line">    copies = copies <span class="keyword">or</span> &#123;&#125;</span><br><span class="line">    <span class="keyword">local</span> orig_type = <span class="built_in">type</span>(orig)</span><br><span class="line">    <span class="keyword">local</span> copy</span><br><span class="line">    <span class="keyword">if</span> orig_type == <span class="string">'table'</span> <span class="keyword">then</span></span><br><span class="line">        <span class="keyword">if</span> copies[orig] <span class="keyword">then</span></span><br><span class="line">            copy = copies[orig]</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            copy = &#123;&#125;</span><br><span class="line">            copies[orig] = copy</span><br><span class="line">            <span class="built_in">setmetatable</span>(copy, deepcopy(<span class="built_in">getmetatable</span>(orig), copies))</span><br><span class="line">            <span class="keyword">for</span> orig_key, orig_value <span class="keyword">in</span> <span class="built_in">next</span>, orig, <span class="literal">nil</span> <span class="keyword">do</span></span><br><span class="line">                copy[deepcopy(orig_key, copies)] = deepcopy(orig_value, copies)</span><br><span class="line">            <span class="keyword">end</span></span><br><span class="line">        <span class="keyword">end</span></span><br><span class="line">    <span class="keyword">else</span> <span class="comment">-- number, string, boolean, etc</span></span><br><span class="line">        copy = orig</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">    <span class="keyword">return</span> copy</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">// 见链接二https://gist.github.com/Deco/<span class="number">3985043</span></span><br></pre></td></tr></table></figure>
-
-<p><a href="http://lua-users.org/wiki/CopyTable" target="_blank" rel="noopener">http://lua-users.org/wiki/CopyTable</a></p>
-<p><a href="https://gist.github.com/Deco/3985043" target="_blank" rel="noopener">https://gist.github.com/Deco/3985043</a></p>
-
+          <!--noindex-->
+          
+            <div class="post-button">
+              <a class="btn" href="/2019/11/26/LuaTable拷贝/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -620,29 +619,19 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p><strong>Lua判断表为空t = {}的逻辑</strong></p>
-<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="built_in">next</span>(a) == <span class="literal">nil</span> <span class="keyword">then</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>next(table[,index])</strong></p>
-<blockquote>
+          <p><strong>Lua判断表为空t = {}的逻辑</strong></p><figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="built_in">next</span>(a) == <span class="literal">nil</span> <span class="keyword">then</span></span><br></pre></td></tr></table></figure><p><strong>next(table[,index])</strong></p><blockquote>
 <p>运行程序来遍历表中的所有域。 第一个参数是要遍历的表，第二个参数是表中的某个键。 <code>next</code> 返回该键的下一个键及其关联的值。 如果用 <strong>nil</strong> 作为第二个参数调用 <code>next</code> 将返回初始键及其关联值。 当以最后一个键去调用，或是以 <strong>nil</strong> 调用一张空表时， <code>next</code> 返回 <strong>nil</strong>。 如果不提供第二个参数，将认为它就是 <strong>nil</strong>。 特别指出，你可以用 <code>next(t)</code> 来判断一张表是否是空的。</p>
 <p>索引在遍历过程中的次序无定义， <em>即使是数字索引也是这样</em>。 （如果想按数字次序遍历表，可以使用数字形式的 <strong>for</strong> 。） -Lua 5.3参考手册</p>
 </blockquote>
-<p><strong>(转)</strong>在项目的脚本lua中经常有这样的需求，</p>
-<p>1、local a = {}</p>
-<p>2、对a进行处理</p>
-<p>3、对a是否为空表进行判断</p>
-<p>关于对a是否为空表的判断，如果直接这样做：</p>
-<p>if a == {} then</p>
-<p>这样的结果就是a == {}永远返回false，是一个逻辑错误。因为这里比较的是table a和一个匿名table的内存地址。</p>
-<p>也有些代码如此做：</p>
-<p>if table.maxn(a) == 0 then</p>
-<p>这样做也不保险，除非table的key都是数字，而没有hash部分。</p>
-<p>难道真的要遍历table发现有东西就return false跳出才能断定它是否为空吗？这样做是可以的，至少目前项目中前人是这么封装的，不过代码太难看. </p>
-<p>网上小搜了一下，发现原来官方手册里早已经给了答案，那就是靠lua内置的next函数</p>
-<p>即如此用：if next(a) == nil then</p>
-<p>next其实就是pairs遍历table时用来取下一个内容的函数.</p>
-
+          <!--noindex-->
+          
+            <div class="post-button">
+              <a class="btn" href="/2019/11/25/LuaTable判空/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -734,50 +723,15 @@
 
       
           <figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">table</span>.<span class="built_in">insert</span>(<span class="built_in">table</span>,[ pos,] value) </span><br><span class="line"><span class="built_in">table</span>.<span class="built_in">remove</span>(<span class="built_in">table</span>[, pos]) </span><br><span class="line"><span class="built_in">table</span>.<span class="built_in">concat</span>(<span class="built_in">table</span>[, sep[, i[, j]]]) </span><br><span class="line"><span class="built_in">table</span>.<span class="built_in">sort</span>(<span class="built_in">table</span>[, comp]) // 见Lua排序</span><br><span class="line"></span><br><span class="line"><span class="built_in">table</span>.<span class="built_in">getn</span>() //<span class="number">5.0</span>费</span><br><span class="line"><span class="built_in">table</span>.<span class="built_in">maxn</span>() //<span class="number">5.2</span>费</span><br></pre></td></tr></table></figure>
-
-<p>#####insert, remove</p>
-<p>insert 和 remove 只能用于数组元素的插入和移出， 进行插入和移出时，会将后面的元素对齐起来。<br>  所以在 for 循环中进行 insert 和 remove 的时候要注意插入和移除时是否<strong>漏掉</strong>了某些项：<br>    local t = {1,2,3,3,5,3,6}<br>    for i,v in ipairs(t) do<br>      if v == 3 then<br>        table.remove(t,i)<br>      end<br>    end<br>    – 错误，第四个 3 没有被移除，ipairs 内部会维护一个变量记录遍历的位置，remove 掉第三个数字 3 之后，ipairs 下一个返回的值是 5 而不是 3 </p>
-<pre><code>local t = {1,2,3,3,5,3,6} 
-for i=1, #t do 
-  if t[i] == 3 then 
-    table.remove(t,i) 
-    i = i-1 
-  end 
-end 
--- 错误，i=i-1 这段代码没有用，i 的值始终是从 1 到 #t，for 循环里修改 i 的值不起作用 
-
-local t = {1,2,3,3,5,3,6} 
-for i=#t, 1, -1 do 
-  if t[i] == 3 then 
-    table.remove(t,i) 
-  end 
-end 
--- 正确，从后往前遍历 
-
-local t = {1,2,3,3,5,3,6} 
-local i = 1 
-while t[i] do 
-  if t[i] == 3 then 
-    table.remove(t,i) 
-  else 
-    i = i+1 
-  end 
-end 
--- 正确，自己控制 i 的值是否增加 </code></pre><h5 id="Concat"><a href="#Concat" class="headerlink" title="Concat"></a>Concat</h5><p>concat 可以将 table 的数组部分拼接成一个字符串，中间用 seq 分隔。<br>  lua 中字符串的存储方式与 C 不一样，lua 中的每个字符串都是单独的一个拷贝，拼接两个字符串会产生一个新的拷贝，如果拼接操作特别多，就会影响性能：<br>    local beginTime = os.clock()<br>    local str = “”<br>    for i=1, 30000 do<br>      str = str .. i<br>    end<br>    local endTime = os.clock()<br>    print(endTime - beginTime)<br>    – 消耗 0.613 秒，产生了 30000 个字符串拷贝，但只有最后一个是有用的</p>
-<p>​    local beginTime = os.clock()<br>​    local t = {}<br>​    for i=1, 30000 do<br>​      t[i] = i<br>​    end<br>​    local str = table.concat(t, “”)<br>​    local endTime = os.clock()<br>​    print(endTime - beginTime)<br>​    – 消耗 0.024 秒，利用 concat，一次性把字符串拼接出来，只产生了一个字符串拷贝 </p>
-<h5 id="maxn"><a href="#maxn" class="headerlink" title="maxn"></a>maxn</h5><ul>
-<li>原型：table.maxn (tab_table)</li>
-<li>解释：返回一个表<code>tab_table</code>中的最大正数索引，如果没有正数索引的话返回0。</li>
-<li>总结#<ul>
-<li>这个函数比较简单，行为和函数解释一致，<strong>不要求索引必须连续，返回一个最大的正数索引</strong>。</li>
-<li>有运行结果可知，当表中<strong>只有</strong>非数字索引或者负数索引时，函数返回0。</li>
-<li>其中官方文档中有一句话，大意是说这个函数的工作原理就是线性的遍历了这个表</li>
-</ul>
-</li>
-</ul>
-<p><a href="https://www.cnblogs.com/whiteyun/archive/2009/08/10/1543139.html" target="_blank" rel="noopener">https://www.cnblogs.com/whiteyun/archive/2009/08/10/1543139.html</a></p>
-<p><a href="https://www.cnblogs.com/slysky/p/5360387.html" target="_blank" rel="noopener">https://www.cnblogs.com/slysky/p/5360387.html</a></p>
-
+          <!--noindex-->
+          
+            <div class="post-button">
+              <a class="btn" href="/2019/11/25/LuaTable函数库/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -1063,32 +1017,22 @@ end
     <div class="post-body" itemprop="articleBody">
 
       
-          <h5 id="委托"><a href="#委托" class="headerlink" title="委托"></a>委托</h5><p>是对方法的引用。本质类。</p>
-<blockquote>
+          <h5 id="委托"><a href="#委托" class="headerlink" title="委托"></a>委托</h5><p>是对方法的引用。本质类。</p><blockquote>
 <p>委托是类型安全的：只能让委托引用与委托签名匹配的方法。</p>
 <p>派生自System.MulticastDelegate(派生自System.Delegate)</p>
-</blockquote>
-<p>定义后，创建实例初始化</p>
-<ul>
+</blockquote><p>定义后，创建实例初始化</p><ul>
 <li>显式初始化 </li>
 <li>在用+=等时自动初始化</li>
 </ul>
-<blockquote>
-<p>未初始化 抛出异常NullReferenException</p>
-</blockquote>
-<h5 id="内置"><a href="#内置" class="headerlink" title="内置"></a>内置</h5><ul>
-<li>Func&lt;&gt;    返回值，最后一个参数是返回值</li>
-<li>Action&lt;&gt; 无返回值</li>
-<li>匿名方法 delegate(){}</li>
-<li>Lambda表达式()=&gt;{}， x =&gt; return x;</li>
-</ul>
-<h5 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h5><p>类的成员。 </p>
-<blockquote>
-<p>公共事件只能在定义它的那个类中的方法引发。在类外部引用会造成编译时错误。</p>
-<p>记得判null。</p>
-</blockquote>
-<h5 id="适配器"><a href="#适配器" class="headerlink" title="适配器"></a>适配器</h5><p>作为两个不兼容的接口之间的桥梁</p>
-
+          <!--noindex-->
+          
+            <div class="post-button">
+              <a class="btn" href="/2019/11/18/委托/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -1196,20 +1140,16 @@ end
           <blockquote>
 <p>C#特性</p>
 <p>Unity特性</p>
-</blockquote>
-<h2 id="C"><a href="#C" class="headerlink" title="C#"></a>C#</h2><p>C#特性从本质上来说，自定义特性是一个标签。编译器会在托管模块的元数据中嵌入这些额外的信息。大多数的特性对编译器来说并没有意义，编译器只是机械的检测源码中的特性，并生成对应的元数据。</p>
-<p>特性其实是一个类型的实例，特性类必须有公共构造用于实例化一个实例。就像<code>[DllImport(&quot;PluginName&quot;)]</code></p>
-<p>所有特性直接或者间接的派生于<strong>System.Attribut</strong>，这样符合CLS(Common Language Specification)中关于特性的需求。</p>
-<p><strong>Dllmpot特性</strong></p>
-<p><strong>Serializable特性</strong></p>
-<h2 id="Unity"><a href="#Unity" class="headerlink" title="Unity"></a>Unity</h2><p>Unity中的特性类定义在两个命名空间中- UnityEngine和UnityEditor。同样它们符合CLS。</p>
-<h2 id="定义自己的特性类"><a href="#定义自己的特性类" class="headerlink" title="定义自己的特性类"></a>定义自己的特性类</h2><p>自定义的特性用<strong>基础库中的定义的特性类（System.AttributeAttribute）</strong>限制特性的适用范围。</p>
-<p>检测特性。</p>
-<p><img src="/Users/mlikeryour/Desktop/hexo/source/images/%E7%89%B9%E6%80%A7.png" alt="特性"></p>
-<p>备注：</p>
-<p>1.整理之前自己用到的C#特性与Unity特性。</p>
-<p>2.整理之前写的Unity编辑器扩展。</p>
-
+</blockquote><h2 id="C"><a href="#C" class="headerlink" title="C#"></a>C#</h2><p>C#特性从本质上来说，自定义特性是一个标签。编译器会在托管模块的元数据中嵌入这些额外的信息。大多数的特性对编译器来说并没有意义，编译器只是机械的检测源码中的特性，并生成对应的元数据。</p><p>特性其实是一个类型的实例，特性类必须有公共构造用于实例化一个实例。就像<code>[DllImport(&quot;PluginName&quot;)]</code></p>
+          <!--noindex-->
+          
+            <div class="post-button">
+              <a class="btn" href="/2019/11/18/Unity中的定制特性/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -1289,7 +1229,7 @@ end
             <a href="/categories/">
           
         
-        <span class="site-state-item-count">15</span>
+        <span class="site-state-item-count">13</span>
         <span class="site-state-item-name">分类</span>
         </a>
       </div>
