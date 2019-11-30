@@ -205,13 +205,13 @@ end
     <content><![CDATA[<h5 id="委托"><a href="#委托" class="headerlink" title="委托"></a>委托</h5><p>是对方法的引用。本质类。</p><blockquote>
 <p>委托是类型安全的：只能让委托引用与委托签名匹配的方法。</p>
 <p>派生自System.MulticastDelegate(派生自System.Delegate)</p>
-</blockquote><p>定义后，创建实例初始化</p><ul>
+</blockquote><p>定义后，创建实例初始化</p><a id="more"></a>
+
+
+<ul>
 <li>显式初始化 </li>
 <li>在用+=等时自动初始化</li>
-</ul><a id="more"></a>
-
-
-
+</ul>
 <blockquote>
 <p>未初始化 抛出异常NullReferenException</p>
 </blockquote>
@@ -244,9 +244,9 @@ end
     <content><![CDATA[<blockquote>
 <p>C#特性</p>
 <p>Unity特性</p>
-</blockquote><h2 id="C"><a href="#C" class="headerlink" title="C#"></a>C#</h2><p>C#特性从本质上来说，自定义特性是一个标签。编译器会在托管模块的元数据中嵌入这些额外的信息。大多数的特性对编译器来说并没有意义，编译器只是机械的检测源码中的特性，并生成对应的元数据。</p><p>特性其实是一个类型的实例，特性类必须有公共构造用于实例化一个实例。就像<code>[DllImport(&quot;PluginName&quot;)]</code></p><a id="more"></a>
+</blockquote><h2 id="C"><a href="#C" class="headerlink" title="C#"></a>C#</h2><p>C#特性从本质上来说，自定义特性是一个标签。编译器会在托管模块的元数据中嵌入这些额外的信息。大多数的特性对编译器来说并没有意义，编译器只是机械的检测源码中的特性，并生成对应的元数据。</p><a id="more"></a>
 
-
+<p>特性其实是一个类型的实例，特性类必须有公共构造用于实例化一个实例。就像<code>[DllImport(&quot;PluginName&quot;)]</code></p>
 <p>所有特性直接或者间接的派生于<strong>System.Attribut</strong>，这样符合CLS(Common Language Specification)中关于特性的需求。</p>
 <p><strong>Dllmpot特性</strong></p>
 <p><strong>Serializable特性</strong></p>
@@ -295,8 +295,8 @@ end
   <entry>
     <title>Type</title>
     <url>/2019/11/16/Type/</url>
-    <content><![CDATA[<p>Type类，是一个用来存储类型的特性和信息的类。对于程序中的每一个类型，都会有他自己的类信息，而根据Type提供的书信和方法获得这个类型的一切信息，包括字段，属性，事件，参数，构造函数等。</p><h2 id="生成Type对象"><a href="#生成Type对象" class="headerlink" title="生成Type对象"></a>生成Type对象</h2><p>Type type = typeof(Test);<br>Test test= new Test();<br>Type type2 = Test.GetType();</p><a id="more"></a>
-
+    <content><![CDATA[<p>Type类，是一个用来存储类型的特性和信息的类。对于程序中的每一个类型，都会有他自己的类信息，而根据Type提供的书信和方法获得这个类型的一切信息，包括字段，属性，事件，参数，构造函数等。</p><h2 id="生成Type对象"><a href="#生成Type对象" class="headerlink" title="生成Type对象"></a>生成Type对象</h2><a id="more"></a>
+<p>Type type = typeof(Test);<br>Test test= new Test();<br>Type type2 = Test.GetType();</p>
 <h2 id="获取该类型的信息"><a href="#获取该类型的信息" class="headerlink" title="获取该类型的信息"></a>获取该类型的信息</h2><p>//类的名称<br>string name = type.Name;<br>//类的命名空间<br>string space = type.Namespace;<br>//类的程序集<br>Assembly assembly = type.Assembly;<br>//类的共有字段<br>FieldInfo[] fieldInfos = type.GetFields();<br>//类的属性<br>PropertyInfo[] propertyInfos = type.GetProperties();<br>//类的方法<br>MethodInfo[] methodInfos = type.GetMethods();</p>
 <h2 id="typeof-和GetType的区别"><a href="#typeof-和GetType的区别" class="headerlink" title="typeof 和GetType的区别"></a>typeof 和GetType的区别</h2><p>C#中任何对象都具有GetType()方法，它的作用和typeof()相同，返回Type类型的当前对象的类型。</p>
 <p>typeof(x)中的x，必须是具体的类名、类型名称等(int ,string,自定义类等等)，不可以是变量名称；</p>
@@ -689,9 +689,9 @@ end
 <li>Sorting Layer</li>
 <li>Order in Layer（粒子）|Sorting Layer</li>
 <li>UI自然层级 | 2d或者3d 中z值</li>
-</ul><p>其实还有一个Camera Clear Flags。</p><p>SortingLayer差值2000.</p><a id="more"></a>
+</ul><p>其实还有一个Camera Clear Flags。</p><a id="more"></a>
 
-
+<p>SortingLayer差值2000.</p>
 <h5 id="渲染优先级"><a href="#渲染优先级" class="headerlink" title="渲染优先级"></a>渲染优先级</h5><p>渲染优先级有不同层次的控制 </p>
 <p>1.不同摄像机之间，通过Depth 来控制渲染顺序，这个优先级最高。 </p>
 <p>2.相同Depth情况下，通过修改SotingLayer来确定渲染顺序 </p>
@@ -901,10 +901,10 @@ end
   <entry>
     <title>LuaUnPack</title>
     <url>/2019/10/25/LuaUnPack/</url>
-    <content><![CDATA[<p>unpack( )函数是接受一个数组（table 连续的）来作为输入参数，并默认从下标为1开始返回所有元素。</p><figure class="highlight lua"><table><tr><td class="code"><pre><span class="line"><span class="keyword">local</span> t = &#123;<span class="string">"a"</span>,<span class="string">"b"</span>,<span class="string">"c"</span>,<span class="string">"d"</span>&#125; <span class="built_in">print</span>(<span class="built_in">unpack</span>(t))</span><br></pre></td></tr></table></figure><p>运行结果： a   b   c   d </p><a id="more"></a>
+    <content><![CDATA[<p>unpack( )函数是接受一个数组（table 连续的）来作为输入参数，并默认从下标为1开始返回所有元素。</p><figure class="highlight lua"><table><tr><td class="code"><pre><span class="line"><span class="keyword">local</span> t = &#123;<span class="string">"a"</span>,<span class="string">"b"</span>,<span class="string">"c"</span>,<span class="string">"d"</span>&#125; <span class="built_in">print</span>(<span class="built_in">unpack</span>(t))</span><br></pre></td></tr></table></figure><a id="more"></a>
 
 
-
+<p>运行结果： a   b   c   d </p>
 <figure class="highlight lua"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="built_in">unpack</span>(t,<span class="number">2</span>))</span><br><span class="line"><span class="keyword">local</span> x, y, z = <span class="built_in">unpack</span>(t,<span class="number">2</span>)</span><br></pre></td></tr></table></figure>
 
 <p>运行结果： b   c   d 从下标2开始返回所有元素。</p>
@@ -1023,9 +1023,9 @@ end
 </li>
 <li><p>派生类自己构造函数体中的内容。</p>
 </li>
-</ol><p><strong>派生类析构函数执行的次序</strong>：<br>派生类的析构函数的功能是在该对象消亡之前进行一些必要的清理工作，析构函数没有类型，也没有参数。</p><a id="more"></a>
+</ol><a id="more"></a>
 
-
+<p><strong>派生类析构函数执行的次序</strong>：<br>派生类的析构函数的功能是在该对象消亡之前进行一些必要的清理工作，析构函数没有类型，也没有参数。</p>
 <p>析构函数的执行顺序与构造函数相反。</p>
 ]]></content>
       <categories>
@@ -1101,9 +1101,9 @@ end
   <entry>
     <title>状态机</title>
     <url>/2019/07/27/%E7%8A%B6%E6%80%81%E6%9C%BA/</url>
-    <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>状态机：描述一个实体基于事件反应的动态行为，显示了该实体如何根据当前所处的状态对不同的事件做出反应的模型。</p><p>用来表示有限多个状态以及在这些状态（State）之间转移（Transition）和动作（Action）的数学模型。</p><p>简单的说它可以<strong>将单位的所有行为去划分状态，状态与状态之间通过事件的触发形成。</strong></p><a id="more"></a>
+    <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>状态机：描述一个实体基于事件反应的动态行为，显示了该实体如何根据当前所处的状态对不同的事件做出反应的模型。</p><p>用来表示有限多个状态以及在这些状态（State）之间转移（Transition）和动作（Action）的数学模型。</p><a id="more"></a>
 
-
+<p>简单的说它可以<strong>将单位的所有行为去划分状态，状态与状态之间通过事件的触发形成。</strong></p>
 <p><strong>状态机可归纳为4个要素，即现态，条件，动作，次态。</strong></p>
 <ul>
 <li>现态：是指当前所处的状态。</li>
