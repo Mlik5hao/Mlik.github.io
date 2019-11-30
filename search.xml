@@ -476,6 +476,34 @@ end
       </tags>
   </entry>
   <entry>
+    <title>C#this,base</title>
+    <url>/2019/10/31/C-this/</url>
+    <content><![CDATA[<h4 id="this"><a href="#this" class="headerlink" title="this"></a>this</h4><h5 id="原始类型扩展方法"><a href="#原始类型扩展方法" class="headerlink" title="原始类型扩展方法"></a>原始类型扩展方法</h5><pre><code>* 静态方法
+* 第一个参数作用类型
+* using引用命名空间</code></pre><blockquote>
+<p>​    static public GameObject AddChildNew(this GameObject parent) { return AddChild(parent, true); } </p>
+</blockquote>
+<h5 id="索引器"><a href="#索引器" class="headerlink" title="索引器"></a>索引器</h5><p>#####显式调用一个类的方法和成员  略</p>
+<h5 id="串联构造函数-lt-gt-对比Base"><a href="#串联构造函数-lt-gt-对比Base" class="headerlink" title="串联构造函数 &lt;=&gt; 对比Base"></a>串联构造函数 &lt;=&gt; 对比Base</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public class Test</span><br><span class="line">  &#123;</span><br><span class="line">    public Test()</span><br><span class="line">    &#123;</span><br><span class="line">      Console.WriteLine(&quot;无参构造函数&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">    // 这里的this()指向的是Test()无参构造函数</span><br><span class="line">    // 相当于继承了无参构造函数</span><br><span class="line">    public Test(string text) : this()</span><br><span class="line">    &#123;</span><br><span class="line">      // 程序进来后会先执行Test()无参函数，然后继续往下边执行</span><br><span class="line">      Console.WriteLine(text);</span><br><span class="line">      Console.WriteLine(&quot;有参构造函数&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://www.cnblogs.com/foolin/archive/2011/10/11/UsageThis.html" target="_blank" rel="noopener">轮子</a></p>
+<p>####Base</p>
+<h5 id="在派生类中调用基类的方法"><a href="#在派生类中调用基类的方法" class="headerlink" title="在派生类中调用基类的方法"></a>在派生类中调用基类的方法</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public class A</span><br><span class="line">&#123;</span><br><span class="line">        public virtual void Hello()</span><br><span class="line">        &#123;</span><br><span class="line">                Console.WiriteLine(&quot;Hello&quot;);</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br><span class="line">public class B : A</span><br><span class="line">&#123;</span><br><span class="line">        public override void Hello()</span><br><span class="line">        &#123;               </span><br><span class="line">                base.Hello();//调用基类的方法,显示Hello</span><br><span class="line">                Console.WiriteLine(&quot;World&quot;);</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="调用基类构造函数"><a href="#调用基类构造函数" class="headerlink" title="调用基类构造函数"></a>调用基类构造函数</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public class A</span><br><span class="line">&#123;</span><br><span class="line">        public A()</span><br><span class="line">        &#123;</span><br><span class="line">                Console.WriteLine(&quot;Build A&quot;);</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br><span class="line">public class B:A</span><br><span class="line">&#123;</span><br><span class="line">        public B():base()</span><br><span class="line">        &#123;</span><br><span class="line">                Console.WriteLine(&quot;Build B&quot;);</span><br><span class="line">        &#125;</span><br><span class="line">        static void Main()</span><br><span class="line">        &#123;</span><br><span class="line">                B b = new B();</span><br><span class="line">                Console.ReadLine();</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="区别-构造"><a href="#区别-构造" class="headerlink" title="区别 - 构造"></a>区别 - 构造</h4><p>修饰构造时，所代表的构造方法：一个时来自 父类base，一个是来自于当前类this。</p>
+]]></content>
+      <categories>
+        <category>C#</category>
+      </categories>
+      <tags>
+        <tag>C#</tag>
+        <tag>this</tag>
+        <tag>base</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>异步、并发、协程原理</title>
     <url>/2019/10/31/%E5%BC%82%E6%AD%A5%E3%80%81%E5%B9%B6%E5%8F%91%E3%80%81%E5%8D%8F%E7%A8%8B%E5%8E%9F%E7%90%86/</url>
     <content><![CDATA[<h2 id="一、异步"><a href="#一、异步" class="headerlink" title="一、异步"></a>一、异步</h2><h2 id="应用程序和内核"><a href="#应用程序和内核" class="headerlink" title="应用程序和内核"></a>应用程序和内核</h2><p>内核具有最高权限，可以访问受保护的内存空间，可以访问底层的硬件设备。而这些是应用程序所不具备的，但应用程序可以通过调用内核提供的接口来间接访问或操作。所谓的常见的 IO 模型就是基于应用程序和内核之间的交互所提出来的。以一次网络 IO 请求过程中的 read 操作为例，请求数据会先拷贝到系统内核的缓冲区（内核空间），再从操作系统的内核缓冲区拷贝到应用程序的地址空间（用户空间）。而从内核空间将数据拷贝到用户空间过程中，就会经历两个阶段：</p>
@@ -784,10 +812,10 @@ end
       </categories>
       <tags>
         <tag>C#</tag>
-        <tag>Unity</tag>
-        <tag>Lua</tag>
         <tag>协程</tag>
         <tag>语法糖</tag>
+        <tag>Lua</tag>
+        <tag>Unity</tag>
       </tags>
   </entry>
   <entry>
@@ -1132,8 +1160,8 @@ end
       </categories>
       <tags>
         <tag>算法</tag>
-        <tag>基础</tag>
         <tag>数据结构</tag>
+        <tag>基础</tag>
       </tags>
   </entry>
   <entry>
