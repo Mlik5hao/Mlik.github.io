@@ -337,8 +337,8 @@
       </categories>
       <tags>
         <tag>Unity</tag>
-        <tag>打印</tag>
         <tag>插件</tag>
+        <tag>打印</tag>
       </tags>
   </entry>
   <entry>
@@ -838,10 +838,10 @@
       </categories>
       <tags>
         <tag>C#</tag>
-        <tag>Unity</tag>
-        <tag>Lua</tag>
         <tag>协程</tag>
         <tag>语法糖</tag>
+        <tag>Lua</tag>
+        <tag>Unity</tag>
       </tags>
   </entry>
   <entry>
