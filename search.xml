@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Next添加搜索功能</title>
-    <url>/2019/12/01/Next%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</url>
+    <title>HexoNext添加搜索功能</title>
+    <url>/2019/12/01/HexoNext%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</url>
     <content><![CDATA[<h4 id="安装相关插件"><a href="#安装相关插件" class="headerlink" title="安装相关插件"></a>安装相关插件</h4><p>安装搜索插件： <code>hexo-generator-searchdb</code></p><p>在博客根目录下执行以下命令：</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure><h4 id="配置博客"><a href="#配置博客" class="headerlink" title="配置博客"></a>配置博客</h4><p>安装完成，编辑博客配置文件：<code>_config.yml</code></p><a id="more"></a>
 
 
@@ -17,8 +17,12 @@
 <p>hexo 重新部署</p>
 ]]></content>
       <categories>
-        <category>hexo</category>
+        <category>Hexo</category>
       </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Next</tag>
+      </tags>
   </entry>
   <entry>
     <title>Unity2D精灵阴影问题</title>
@@ -122,33 +126,9 @@
 
 <p>#####insert, remove</p>
 <p>insert 和 remove 只能用于数组元素的插入和移出， 进行插入和移出时，会将后面的元素对齐起来。<br>  所以在 for 循环中进行 insert 和 remove 的时候要注意插入和移除时是否<strong>漏掉</strong>了某些项：<br>    local t = {1,2,3,3,5,3,6}<br>    for i,v in ipairs(t) do<br>      if v == 3 then<br>        table.remove(t,i)<br>      end<br>    end<br>    – 错误，第四个 3 没有被移除，ipairs 内部会维护一个变量记录遍历的位置，remove 掉第三个数字 3 之后，ipairs 下一个返回的值是 5 而不是 3 </p>
-<pre><code>local t = {1,2,3,3,5,3,6} 
-for i=1, #t do 
-  if t[i] == 3 then 
-    table.remove(t,i) 
-    i = i-1 
-  end 
-end 
--- 错误，i=i-1 这段代码没有用，i 的值始终是从 1 到 #t，for 循环里修改 i 的值不起作用 
+<figure class="highlight lua"><table><tr><td class="code"><pre><span class="line"><span class="keyword">local</span> t = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">3</span>,<span class="number">5</span>,<span class="number">3</span>,<span class="number">6</span>&#125; </span><br><span class="line"><span class="keyword">for</span> i=<span class="number">1</span>, #t <span class="keyword">do</span> </span><br><span class="line">  <span class="keyword">if</span> t[i] == <span class="number">3</span> <span class="keyword">then</span> </span><br><span class="line">    <span class="built_in">table</span>.<span class="built_in">remove</span>(t,i) </span><br><span class="line">    i = i<span class="number">-1</span> </span><br><span class="line">  <span class="keyword">end</span> </span><br><span class="line"><span class="keyword">end</span> </span><br><span class="line"><span class="comment">-- 错误，i=i-1 这段代码没有用，i 的值始终是从 1 到 #t，for 循环里修改 i 的值不起作用 </span></span><br><span class="line"></span><br><span class="line"><span class="keyword">local</span> t = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">3</span>,<span class="number">5</span>,<span class="number">3</span>,<span class="number">6</span>&#125; </span><br><span class="line"><span class="keyword">for</span> i=#t, <span class="number">1</span>, <span class="number">-1</span> <span class="keyword">do</span> </span><br><span class="line">  <span class="keyword">if</span> t[i] == <span class="number">3</span> <span class="keyword">then</span> </span><br><span class="line">    <span class="built_in">table</span>.<span class="built_in">remove</span>(t,i) </span><br><span class="line">  <span class="keyword">end</span> </span><br><span class="line"><span class="keyword">end</span> </span><br><span class="line"><span class="comment">-- 正确，从后往前遍历 </span></span><br><span class="line"></span><br><span class="line"><span class="keyword">local</span> t = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">3</span>,<span class="number">5</span>,<span class="number">3</span>,<span class="number">6</span>&#125; </span><br><span class="line"><span class="keyword">local</span> i = <span class="number">1</span> </span><br><span class="line"><span class="keyword">while</span> t[i] <span class="keyword">do</span> </span><br><span class="line">  <span class="keyword">if</span> t[i] == <span class="number">3</span> <span class="keyword">then</span> </span><br><span class="line">    <span class="built_in">table</span>.<span class="built_in">remove</span>(t,i) </span><br><span class="line">  <span class="keyword">else</span> </span><br><span class="line">    i = i+<span class="number">1</span> </span><br><span class="line">  <span class="keyword">end</span> </span><br><span class="line"><span class="keyword">end</span> </span><br><span class="line"><span class="comment">-- 正确，自己控制 i 的值是否增加</span></span><br></pre></td></tr></table></figure>
 
-local t = {1,2,3,3,5,3,6} 
-for i=#t, 1, -1 do 
-  if t[i] == 3 then 
-    table.remove(t,i) 
-  end 
-end 
--- 正确，从后往前遍历 
-
-local t = {1,2,3,3,5,3,6} 
-local i = 1 
-while t[i] do 
-  if t[i] == 3 then 
-    table.remove(t,i) 
-  else 
-    i = i+1 
-  end 
-end 
--- 正确，自己控制 i 的值是否增加 </code></pre><h5 id="Concat"><a href="#Concat" class="headerlink" title="Concat"></a>Concat</h5><p>concat 可以将 table 的数组部分拼接成一个字符串，中间用 seq 分隔。<br>  lua 中字符串的存储方式与 C 不一样，lua 中的每个字符串都是单独的一个拷贝，拼接两个字符串会产生一个新的拷贝，如果拼接操作特别多，就会影响性能：<br>    local beginTime = os.clock()<br>    local str = “”<br>    for i=1, 30000 do<br>      str = str .. i<br>    end<br>    local endTime = os.clock()<br>    print(endTime - beginTime)<br>    – 消耗 0.613 秒，产生了 30000 个字符串拷贝，但只有最后一个是有用的</p>
+<h5 id="Concat"><a href="#Concat" class="headerlink" title="Concat"></a>Concat</h5><p>concat 可以将 table 的数组部分拼接成一个字符串，中间用 seq 分隔。<br>  lua 中字符串的存储方式与 C 不一样，lua 中的每个字符串都是单独的一个拷贝，拼接两个字符串会产生一个新的拷贝，如果拼接操作特别多，就会影响性能：<br>    local beginTime = os.clock()<br>    local str = “”<br>    for i=1, 30000 do<br>      str = str .. i<br>    end<br>    local endTime = os.clock()<br>    print(endTime - beginTime)<br>    – 消耗 0.613 秒，产生了 30000 个字符串拷贝，但只有最后一个是有用的</p>
 <p>​    local beginTime = os.clock()<br>​    local t = {}<br>​    for i=1, 30000 do<br>​      t[i] = i<br>​    end<br>​    local str = table.concat(t, “”)<br>​    local endTime = os.clock()<br>​    print(endTime - beginTime)<br>​    – 消耗 0.024 秒，利用 concat，一次性把字符串拼接出来，只产生了一个字符串拷贝 </p>
 <h5 id="maxn"><a href="#maxn" class="headerlink" title="maxn"></a>maxn</h5><ul>
 <li>原型：table.maxn (tab_table)</li>
@@ -359,6 +339,35 @@ end
         <tag>Unity</tag>
         <tag>打印</tag>
         <tag>插件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo博客文章插入图片</title>
+    <url>/2019/11/09/Hexo%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/</url>
+    <content><![CDATA[<p>在写文章时，常常有配图说明的需求。Hexo有多种图片插入方式，可以将图片存放在本地引用或者将图片放在CDN上引用。</p><h4 id="绝对路径"><a href="#绝对路径" class="headerlink" title="绝对路径"></a>绝对路径</h4><p>当Hexo项目中只用到少量图片时，可以将图片统一放在<code>source/images</code>文件夹中，通过markdown语法访问它们。</p><a id="more"></a>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">source/images/image.jpg![](/images/image.jpg)</span><br></pre></td></tr></table></figure>
+
+<p>图片既可以在首页内容中访问到，也可以在文章正文中访问到。</p>
+<h4 id="相对路径"><a href="#相对路径" class="headerlink" title="相对路径"></a>相对路径</h4><p>图片除了可以放在统一的<code>images</code>文件夹中，还可以放在文章自己的目录中。文章的目录可以通过配置<code>_config.yml</code>来生成。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">_config.ymlpost_asset_folder: true</span><br></pre></td></tr></table></figure>
+
+<p>将<code>_config.yml</code>文件中的配置项<code>post_asset_folder</code>设为<code>true</code>后，执行命令<code>$ hexo new post_name</code>，在<code>source/_posts</code>中会生成文章<code>post_name.md</code>和同名文件夹<code>post_name</code>。将图片资源放在<code>post_name</code>中，文章就可以使用相对路径引用图片资源了。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">_posts/Hexo博客文章插入图片/1.png![](1.png)</span><br></pre></td></tr></table></figure>
+
+<p><img src="1.png" alt></p>
+<p>上述是markdown的引用方式，图片只能在文章中显示，但无法在首页中正常显示。</p>
+<p>如果希望图片在文章和首页中同时显示，可以使用标签插件语法。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">_posts/post_name/image.jpg&#123;% asset_img image.jpg This is an image %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>####CDN引用</p>
+<p>除了在本地存储图片，还可以将图片上传到一些免费的CDN服务中。比如<a href="http://cloudinary.com/" target="_blank" rel="noopener">Cloudinary</a>提供的图片CDN服务，在Cloudinary中上传图片后，会生成对应的url地址，将地址直接拿来引用即可。</p>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -830,10 +839,10 @@ end
       </categories>
       <tags>
         <tag>C#</tag>
+        <tag>Unity</tag>
+        <tag>Lua</tag>
         <tag>协程</tag>
         <tag>语法糖</tag>
-        <tag>Lua</tag>
-        <tag>Unity</tag>
       </tags>
   </entry>
   <entry>
@@ -912,17 +921,6 @@ end
 <p>f（unpack（））泛型调用，作为参数返回。 </p>
 <p>或返回return unpack（t）结构元素的值</p>
 ]]></content>
-      <categories>
-        <category>Lua</category>
-      </categories>
-      <tags>
-        <tag>Lua</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Lua面试题</title>
-    <url>/2019/10/25/Lua%E9%9D%A2%E8%AF%95%E9%A2%98/</url>
-    <content><![CDATA[]]></content>
       <categories>
         <category>Lua</category>
       </categories>
@@ -1184,6 +1182,31 @@ end
       </tags>
   </entry>
   <entry>
+    <title>UnityTimeUitll</title>
+    <url>/2018/11/07/UnityTimeUitll/</url>
+    <content><![CDATA[<h1 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h1><p>为了解决代码到处存在倒计时，每次进行计时的时候，都要一向上传递Update方法。还有就是为了解决游戏中定时任务的触发问题</p><h1 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h1><p>设计了一个计时任务单元Event，来存放所需要触发的回调事件和属性</p><p>设计了一个计时管理Timetask来处理任务单元</p><a id="more"></a>
+
+
+<p>设计了一个对外的TimeUtil</p>
+<p>当然还有一些其他的，这个看源码你就知道了</p>
+<h1 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h1><p>我选择了限制计时器1秒走一次。来减少Update里函数的执行次数</p>
+<p>我选择了让服务器给我一个当前时间戳（一次）作游戏的起始时间。通过Time.realtimeSinceStartup来获取游戏运行时间，来保证了与服务器的时间的一致性。之前我错误的使用了Time.time</p>
+<h1 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h1><p>你可以在任何需要等待时间处理的事物上，选择使用它，哪怕是UI需要显示的倒计时。</p>
+<p>不过它不能在你第一次添加任务回调的时候立即执行你的回调。</p>
+<h1 id="源码"><a href="#源码" class="headerlink" title="源码"></a>源码</h1><p><a href="https://github.com/Mlik5hao/Time" target="_blank" rel="noopener">GitHub</a></p>
+]]></content>
+      <categories>
+        <category>C#</category>
+        <category>Unity</category>
+      </categories>
+      <tags>
+        <tag>C#</tag>
+        <tag>Unity</tag>
+        <tag>Time</tag>
+        <tag>管理器</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Unity打包ios并上架</title>
     <url>/2018/10/27/Unity%E6%89%93%E5%8C%85ios%E5%B9%B6%E4%B8%8A%E6%9E%B6/</url>
     <content><![CDATA[]]></content>
@@ -1233,6 +1256,34 @@ end
         <tag>Unity</tag>
         <tag>打包</tag>
         <tag>环境配置</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Lua其他</title>
+    <url>/2018/10/25/Lua%E5%85%B6%E4%BB%96/</url>
+    <content><![CDATA[<h5 id="lua特点"><a href="#lua特点" class="headerlink" title="lua特点"></a>lua特点</h5><p>脚本语言，嵌入式，标准C编写；8个数据类型1个数据结构；可作为脚本或者配置文件<br>特点：</p><ol>
+<li>可扩展（接口和机制）</li>
+<li>支持面向过程编程和函数式编程</li>
+</ol><p><del>动态语言，Lua轻量级嵌入式语言，标准C编写而成<br>可作为脚本或者配置文件,将table作为唯一的数据结构，官方将table分为两种一个为数组一个为哈希。<br>Lua解释器小<br>轻量级（由标C编写，嵌入式编程），可扩展（接口和机制）。支持面向过程编程和函数式编程。</del> </p><a id="more"></a>
+
+
+<h5 id="lua数据类型"><a href="#lua数据类型" class="headerlink" title="lua数据类型"></a>lua数据类型</h5><p>8个：nil、boolean、number、string、userdata、function、thread和table。<br>其中：Lua 把 false 和 nil 看作是”假”，其他的都为”真”</p>
+<h5 id="pairs-与-ipairs的区别"><a href="#pairs-与-ipairs的区别" class="headerlink" title="pairs 与 ipairs的区别"></a>pairs 与 ipairs的区别</h5><p>pairs：迭代table，可以遍历表中所有key可以返回nil<br>ipairs：迭代数组，不能返回nil，遇见nil退出</p>
+<h5 id="lua元表"><a href="#lua元表" class="headerlink" title="lua元表"></a>lua元表</h5><p>元表：对不同table之间进行操作，允许改变table行为且每个行为关联对应元方法。<br>setmetatable：设置table为元表（metatable）<br>      注：如果元表中存在__metatable键值，set会失败<br>getmetatable：返回对象元表（metatable）</p>
+<h5 id="LuaClass"><a href="#LuaClass" class="headerlink" title="LuaClass"></a>LuaClass</h5><p>见链接<br>云风 ：缺点 无法调用同名父类函数<br><a href="https://blog.csdn.net/MilerKey/article/details/96457594" target="_blank" rel="noopener">https://blog.csdn.net/MilerKey/article/details/96457594</a></p>
+<h5 id="Lua闭包"><a href="#Lua闭包" class="headerlink" title="Lua闭包"></a>Lua闭包</h5><p><a href="https://blog.csdn.net/MilerKey/article/details/96461578" target="_blank" rel="noopener">https://blog.csdn.net/MilerKey/article/details/96461578</a></p>
+<h5 id="Lua优化细节"><a href="#Lua优化细节" class="headerlink" title="Lua优化细节"></a>Lua优化细节</h5><h5 id="C-和Lua的互相调用"><a href="#C-和Lua的互相调用" class="headerlink" title="C#和Lua的互相调用"></a>C#和Lua的互相调用</h5><p><a href="https://blog.csdn.net/Pan_mouren/article/details/81000303" target="_blank" rel="noopener">https://blog.csdn.net/Pan_mouren/article/details/81000303</a><br>虚拟栈，wrap完成注册</p>
+<p> Lua Call C#:先生成C#源文件所对应的Wrap文件或者编写C#源文件所对应的c模块，然后将源文件内容通过Wrap文件或者C模块注册到Lua解释器中，然后由Lua去调用这个模块的函数。<br> C# Call Lua：C#把请求或数据放在栈顶，然后lua从栈顶取出该数据，在lua中做出相应处理（查询，改变），然后把处理结果放回栈顶，最后C#再从栈顶取出lua处理完的数据，完成交互。</p>
+<h5 id="C-和Lua交互以及注意事项"><a href="#C-和Lua交互以及注意事项" class="headerlink" title="C#和Lua交互以及注意事项"></a>C#和Lua交互以及注意事项</h5><p>lua-C-C#。C#调用lua的过程是C#-C-lua。<br><a href="https://blog.uwa4d.com/archives/USparkle_Lua.html" target="_blank" rel="noopener">https://blog.uwa4d.com/archives/USparkle_Lua.html</a></p>
+<h5 id="Lua热更新的原理实现"><a href="#Lua热更新的原理实现" class="headerlink" title="Lua热更新的原理实现"></a>Lua热更新的原理实现</h5><p>Lua的 require(modelname) 把一个lua文件加载存放到package.loaded[modelname]。<br>当我们加载一个模块的时候，会先判断是否在package.loaded中已存在，若存在则返回改模块，不存在才会加载(loadfile)，防止重复加载。<br>package.loaded是一个Table，其中包含了全局表_G、默认加载的模块(string, debug, package, io, os, table, math, coroutine)和用户加载的模块。</p>
+<h5 id="为什么选择Lua作为热更新"><a href="#为什么选择Lua作为热更新" class="headerlink" title="为什么选择Lua作为热更新"></a>为什么选择Lua作为热更新</h5><p>回答问题前先说明几个问题：<br>1、ios支持反射，C#写的反射代码都可以正常使用。但是不支持Reflection.Emit。<br>2、ios不能用c# jit，事实上我们在ios上的代码是AOT的。<br>3、ios不能用c#热更是因为启动了CPU的No eXecute bit，简单说就是AppStore审核过的代码才能执行。而lua解释器是审核过的，这才是为何lua可以运行在ios上的根本原因。</p>
+<p>回答正题：<br>Q：请问lua怎么做热更新？<br>A：lua的执行依赖于其解释器，通常来说就是lua.c中的代码。lua在unity中作为一个文本资源来使用，当我们通过tolua或者xlua调用lua代码中某个函数时，解释器会去对lua进行解释，因为lua解释器代码允许执行，因此它会执行lua解释后的代码。<br>Q：是把逻辑用lua脚本来写？<br>A：基本就是游戏玩法的代码。网络、资源加载等基础模块一般不会变，所有很多都是用C#写的。说白了，不变的代码用C#写更高效，变化的代码用lua写。<br>Q：还是lua只用来打包资源？<br>A：打包和lua唯一的关系就是lua代码文件作为资源被打包。</p>
+]]></content>
+      <categories>
+        <category>Lua</category>
+      </categories>
+      <tags>
+        <tag>Lua</tag>
       </tags>
   </entry>
 </search>
