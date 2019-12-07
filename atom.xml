@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>mlik5hao</title>
+  
+  <subtitle>空如此生,静若繁花,虚幻飘渺,心如明镜</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-12-07T04:58:50.131Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>冯海洋</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo添加RSS订阅</title>
+    <link href="http://yoursite.com/2019/12/07/Hexo%E6%B7%BB%E5%8A%A0RSS%E8%AE%A2%E9%98%85/"/>
+    <id>http://yoursite.com/2019/12/07/Hexo%E6%B7%BB%E5%8A%A0RSS%E8%AE%A2%E9%98%85/</id>
+    <published>2019-12-07T12:50:41.000Z</published>
+    <updated>2019-12-07T04:58:50.131Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="安装相关插件"><a href="#安装相关插件" class="headerlink" title="安装相关插件"></a>安装相关插件</h4><p>安装搜索插件： <code>hexo-generator-searchdb</code></p><p>在博客根目录下执行以下命令：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure><h4 id="配置博客"><a href="#配置博客" class="headerlink" title="配置博客"></a>配置博客</h4><p>安装完成，编辑博客配置文件：<code>_config.yml</code></p><a id="more"></a><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  limit: 10000</span><br></pre></td></tr></table></figure><h4 id="配置主题themes下"><a href="#配置主题themes下" class="headerlink" title="配置主题themes下"></a>配置主题themes下</h4><p>Next 主题自带搜索设置，编辑主题配置文件：<code>_config.yml</code></p><p>找到文件中 Local search 的相关配置，设为 <code>true</code></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># Local search</span><br><span class="line">local_search:</span><br><span class="line">  enable: true</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;安装相关插件&quot;&gt;&lt;a href=&quot;#安装相关插件&quot; class=&quot;headerlink&quot; title=&quot;安装相关插件&quot;&gt;&lt;/a&gt;安装相关插件&lt;/h4&gt;&lt;p&gt;安装搜索插件： &lt;code&gt;hexo-generator-searchdb&lt;/code&gt;&lt;/p&gt;&lt;p&gt;在博客根目录下执行以下命令：&lt;/p&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ npm install hexo-generator-searchdb --save&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h4 id=&quot;配置博客&quot;&gt;&lt;a href=&quot;#配置博客&quot; class=&quot;headerlink&quot; title=&quot;配置博客&quot;&gt;&lt;/a&gt;配置博客&lt;/h4&gt;&lt;p&gt;安装完成，编辑博客配置文件：&lt;code&gt;_config.yml&lt;/code&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo底部展示设置</title>
+    <link href="http://yoursite.com/2019/12/07/Hexo%E5%BA%95%E9%83%A8%E5%B1%95%E7%A4%BA%E8%AE%BE%E7%BD%AE/"/>
+    <id>http://yoursite.com/2019/12/07/Hexo%E5%BA%95%E9%83%A8%E5%B1%95%E7%A4%BA%E8%AE%BE%E7%BD%AE/</id>
+    <published>2019-12-07T12:15:36.000Z</published>
+    <updated>2019-12-07T04:36:03.892Z</updated>
+    
+    <content type="html"><![CDATA[<p>找到 <code>\themes\next\layout\_partials\</code>下面的<code>footer.swig</code>文件修改</p><p><a href="https://juejin.im/post/5a71ab9f518825735300ee6c" target="_blank" rel="noopener">https://juejin.im/post/5a71ab9f518825735300ee6c</a></p><p>略</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;找到 &lt;code&gt;\themes\next\layout\_partials\&lt;/code&gt;下面的&lt;code&gt;footer.swig&lt;/code&gt;文件修改&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://juejin.im/post/5a71ab9f518825735300
+      
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo右上角链接图标</title>
+    <link href="http://yoursite.com/2019/12/07/Hexo%E5%8F%B3%E4%B8%8A%E8%A7%92%E9%93%BE%E6%8E%A5%E5%9B%BE%E6%A0%87/"/>
+    <id>http://yoursite.com/2019/12/07/Hexo%E5%8F%B3%E4%B8%8A%E8%A7%92%E9%93%BE%E6%8E%A5%E5%9B%BE%E6%A0%87/</id>
+    <published>2019-12-07T11:59:37.000Z</published>
+    <updated>2019-12-07T04:47:20.331Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="左上角图片和链接"><a href="#左上角图片和链接" class="headerlink" title="左上角图片和链接"></a>左上角图片和链接</h4><h5 id="themes下配置"><a href="#themes下配置" class="headerlink" title="themes下配置"></a>themes下配置</h5><p>_config.yml:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># `Follow me on GitHub` banner in the top-right corner.</span><br><span class="line">github_banner:</span><br><span class="line">  enable: true</span><br><span class="line">  permalink: https://github.com/Mlik5hao</span><br><span class="line">  title: fork me on github</span><br></pre></td></tr></table></figure><a id="more"></a><h5 id="更换图标"><a href="#更换图标" class="headerlink" title="更换图标"></a>更换图标</h5><p>略</p><h5 id="更换位置"><a href="#更换位置" class="headerlink" title="更换位置"></a>更换位置</h5><p>略</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;左上角图片和链接&quot;&gt;&lt;a href=&quot;#左上角图片和链接&quot; class=&quot;headerlink&quot; title=&quot;左上角图片和链接&quot;&gt;&lt;/a&gt;左上角图片和链接&lt;/h4&gt;&lt;h5 id=&quot;themes下配置&quot;&gt;&lt;a href=&quot;#themes下配置&quot; class=&quot;headerlink&quot; title=&quot;themes下配置&quot;&gt;&lt;/a&gt;themes下配置&lt;/h5&gt;&lt;p&gt;_config.yml:&lt;/p&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;# `Follow me on GitHub` banner in the top-right corner.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;github_banner:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  enable: true&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  permalink: https://github.com/Mlik5hao&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  title: fork me on github&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Http和Https</title>
+    <link href="http://yoursite.com/2019/12/07/Http%E5%92%8CHttps/"/>
+    <id>http://yoursite.com/2019/12/07/Http%E5%92%8CHttps/</id>
+    <published>2019-12-06T22:05:13.000Z</published>
+    <updated>2019-12-06T14:16:35.436Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://blog.csdn.net/xiaoming100001/article/details/81109617" target="_blank" rel="noopener">https://blog.csdn.net/xiaoming100001/article/details/81109617</a></p><p>(无状态的意思是其数据包的发送、传输和接收都是相互独立的。无连接的意思是指通信双方都不长久的维持对方的任何信息。)</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/xiaoming100001/article/details/81109617&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://blog.csdn.net/xiaoming1000
+      
+    
+    </summary>
+    
+    
+      <category term="基础" scheme="http://yoursite.com/categories/%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="Http" scheme="http://yoursite.com/tags/Http/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HexoNext添加搜索功能</title>
+    <link href="http://yoursite.com/2019/12/01/HexoNext%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/"/>
+    <id>http://yoursite.com/2019/12/01/HexoNext%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</id>
+    <published>2019-12-01T00:21:25.000Z</published>
+    <updated>2019-12-07T04:48:11.655Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="安装相关插件"><a href="#安装相关插件" class="headerlink" title="安装相关插件"></a>安装相关插件</h4><p>安装搜索插件： <code>hexo-generator-searchdb</code></p><p>在博客根目录下执行以下命令：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure><h4 id="配置博客"><a href="#配置博客" class="headerlink" title="配置博客"></a>配置博客</h4><p>安装完成，编辑博客配置文件：<code>_config.yml</code></p><a id="more"></a><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  limit: 10000</span><br></pre></td></tr></table></figure><h4 id="配置主题themes下"><a href="#配置主题themes下" class="headerlink" title="配置主题themes下"></a>配置主题themes下</h4><p>Next 主题自带搜索设置，编辑主题配置文件：<code>_config.yml</code></p><p>找到文件中 Local search 的相关配置，设为 <code>true</code></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># Local search</span><br><span class="line">local_search:</span><br><span class="line">  enable: true</span><br></pre></td></tr></table></figure><p>hexo 重新部署</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;安装相关插件&quot;&gt;&lt;a href=&quot;#安装相关插件&quot; class=&quot;headerlink&quot; title=&quot;安装相关插件&quot;&gt;&lt;/a&gt;安装相关插件&lt;/h4&gt;&lt;p&gt;安装搜索插件： &lt;code&gt;hexo-generator-searchdb&lt;/code&gt;&lt;/p&gt;&lt;p&gt;在博客根目录下执行以下命令：&lt;/p&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ npm install hexo-generator-searchdb --save&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h4 id=&quot;配置博客&quot;&gt;&lt;a href=&quot;#配置博客&quot; class=&quot;headerlink&quot; title=&quot;配置博客&quot;&gt;&lt;/a&gt;配置博客&lt;/h4&gt;&lt;p&gt;安装完成，编辑博客配置文件：&lt;code&gt;_config.yml&lt;/code&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+    
+      <category term="Next" scheme="http://yoursite.com/tags/Next/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Unity2D精灵阴影问题</title>
+    <link href="http://yoursite.com/2019/11/30/Unity2D%E7%B2%BE%E7%81%B5%E9%98%B4%E5%BD%B1%E9%97%AE%E9%A2%98/"/>
+    <id>http://yoursite.com/2019/11/30/Unity2D%E7%B2%BE%E7%81%B5%E9%98%B4%E5%BD%B1%E9%97%AE%E9%A2%98/</id>
+    <published>2019-11-29T16:05:57.000Z</published>
+    <updated>2019-11-29T08:17:09.353Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> UnityEngine;</span><br><span class="line">[<span class="meta">RequireComponent(typeof(SpriteRenderer))</span>]</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">SpriteShadow</span> : <span class="title">MonoBehaviour</span>&#123;</span><br><span class="line">    [<span class="meta">HideInInspector</span>]</span><br><span class="line"><span class="keyword">public</span> Vector2 offset;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">float</span> offsetX;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">float</span> offsetY;</span><br><span class="line"><span class="keyword">private</span> SpriteRenderer sprRndCaster;</span><br><span class="line"><span class="keyword">private</span> SpriteRenderer sprRndShadow;</span><br><span class="line"><span class="keyword">private</span> Transform transCaster;</span><br><span class="line"><span class="keyword">private</span> Transform transShadow;</span><br><span class="line">    [<span class="meta">HideInInspector</span>]</span><br><span class="line">    <span class="keyword">public</span> Material ShadowMaterial;</span><br><span class="line">    [<span class="meta">Tooltip(<span class="meta-string">"Order in Layer"</span>)</span>]</span><br><span class="line">    <span class="comment">//public int sortingOrder;</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span> sortingOrderDifference;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//public int sortingOrderDifference;</span></span><br><span class="line">    <span class="comment">//public bool updateSpriteOverTime = true;</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">bool</span> updatePositionOverTime = <span class="literal">true</span>;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">Start</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"><span class="keyword">this</span>.offset = <span class="keyword">new</span> Vector2(<span class="keyword">this</span>.offsetX, <span class="keyword">this</span>.offsetY);</span><br><span class="line"><span class="keyword">this</span>.transCaster = <span class="keyword">this</span>.transform;</span><br><span class="line"><span class="keyword">this</span>.transShadow = <span class="keyword">new</span> GameObject().transform;</span><br><span class="line"><span class="keyword">this</span>.transShadow.parent = <span class="keyword">this</span>.transCaster;</span><br><span class="line"><span class="keyword">this</span>.transShadow.gameObject.name = <span class="string">"Shadow"</span>;</span><br><span class="line"><span class="keyword">this</span>.transShadow.localRotation = Quaternion.identity;</span><br><span class="line"><span class="keyword">var</span> vector = Vector3.one;</span><br><span class="line"><span class="keyword">var</span> parent = <span class="keyword">this</span>.transShadow;</span><br><span class="line"><span class="keyword">while</span> (parent != <span class="literal">null</span>)&#123;</span><br><span class="line">            <span class="comment">//vector.Multiply(parent.localScale);  //  放大 x * x， y * y</span></span><br><span class="line">            parent = parent.parent;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">this</span>.transShadow.localScale = vector;</span><br><span class="line"><span class="keyword">this</span>.sprRndCaster = <span class="keyword">this</span>.GetComponent&lt;SpriteRenderer&gt;();</span><br><span class="line">        <span class="keyword">this</span>.sprRndShadow = <span class="keyword">this</span>.transShadow.gameObject.AddComponent&lt;SpriteRenderer&gt;();</span><br><span class="line">        <span class="comment">//this.sprRndShadow.material = this.ShadowMaterial;</span></span><br><span class="line">        <span class="keyword">this</span>.sprRndShadow.material = <span class="keyword">this</span>.sprRndCaster.material;</span><br><span class="line">        <span class="comment">//HHLogger.DEBUG(this.ShadowMaterial, this.sprRndCaster.material);</span></span><br><span class="line">        <span class="keyword">this</span>.sprRndShadow.material.color = <span class="keyword">new</span> Color(<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>,<span class="number">0.35f</span>);</span><br><span class="line"><span class="comment">//this.sprRndShadow.color = Color.white;</span></span><br><span class="line">        <span class="keyword">this</span>.sprRndShadow.color = Color.black;</span><br><span class="line">        <span class="keyword">this</span>.sprRndShadow.sortingLayerName = <span class="keyword">this</span>.sprRndCaster.sortingLayerName;</span><br><span class="line">        <span class="keyword">this</span>.sprRndShadow.sortingOrder = <span class="keyword">this</span>.sprRndCaster.sortingOrder + <span class="keyword">this</span>.sortingOrderDifference - <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">this</span>.transShadow.position = <span class="keyword">new</span> Vector2(<span class="keyword">this</span>.transCaster.position.x + <span class="keyword">this</span>.offset.x, <span class="keyword">this</span>.transCaster.position.y + <span class="keyword">this</span>.offset.y);</span><br><span class="line">        <span class="comment">//this.transShadow.localPosition = new Vector3(this.offset.x, this.offset.y, 0);</span></span><br><span class="line">        <span class="keyword">this</span>.sprRndShadow.sprite = <span class="keyword">this</span>.sprRndCaster.sprite;</span><br><span class="line">        <span class="keyword">this</span>.sprRndShadow.flipX = <span class="keyword">this</span>.sprRndCaster.flipX;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">LateUpdate</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>    &#123;</span><br><span class="line">        <span class="comment">//if (this.updateSpriteOverTime)&#123;</span></span><br><span class="line">        <span class="comment">//this.sprRndShadow.sprite = this.sprRndCaster.sprite;</span></span><br><span class="line">        <span class="comment">//this.sprRndShadow.flipX = this.sprRndCaster.flipX;</span></span><br><span class="line">        <span class="comment">//&#125;</span></span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.updatePositionOverTime)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>.transShadow.position = <span class="keyword">new</span> Vector2(<span class="keyword">this</span>.transCaster.position.x + <span class="keyword">this</span>.offset.x, <span class="keyword">this</span>.transCaster.position.y + <span class="keyword">this</span>.offset.y);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;figure class=&quot;highlight c#&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;l
+      
+    
+    </summary>
+    
+    
+      <category term="Unity" scheme="http://yoursite.com/categories/Unity/"/>
+    
+    
+      <category term="Unity" scheme="http://yoursite.com/tags/Unity/"/>
+    
+      <category term="精灵" scheme="http://yoursite.com/tags/%E7%B2%BE%E7%81%B5/"/>
+    
+      <category term="阴影" scheme="http://yoursite.com/tags/%E9%98%B4%E5%BD%B1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C#文件处理</title>
+    <link href="http://yoursite.com/2019/11/26/C-%E6%96%87%E4%BB%B6%E5%A4%84%E7%90%86/"/>
+    <id>http://yoursite.com/2019/11/26/C-%E6%96%87%E4%BB%B6%E5%A4%84%E7%90%86/</id>
+    <published>2019-11-26T15:19:32.000Z</published>
+    <updated>2019-11-26T07:20:56.326Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="C#" scheme="http://yoursite.com/categories/C/"/>
+    
+    
+      <category term="C#" scheme="http://yoursite.com/tags/C/"/>
+    
+      <category term="文件处理" scheme="http://yoursite.com/tags/%E6%96%87%E4%BB%B6%E5%A4%84%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C#数据处理</title>
+    <link href="http://yoursite.com/2019/11/26/C-%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/"/>
+    <id>http://yoursite.com/2019/11/26/C-%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/</id>
+    <published>2019-11-26T15:19:09.000Z</published>
+    <updated>2019-11-26T07:20:22.982Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="C#" scheme="http://yoursite.com/categories/C/"/>
+    
+    
+      <category term="C#" scheme="http://yoursite.com/tags/C/"/>
+    
+      <category term="数据处理" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LuaTable拷贝</title>
+    <link href="http://yoursite.com/2019/11/26/LuaTable%E6%8B%B7%E8%B4%9D/"/>
+    <id>http://yoursite.com/2019/11/26/LuaTable%E6%8B%B7%E8%B4%9D/</id>
+    <published>2019-11-25T16:00:28.000Z</published>
+    <updated>2019-11-25T08:17:31.698Z</updated>
+    
+    <content type="html"><![CDATA[<h5 id="Shallow-Copy"><a href="#Shallow-Copy" class="headerlink" title="Shallow Copy"></a>Shallow Copy</h5><figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">shallowcopy</span><span class="params">(orig)</span></span></span><br><span class="line">    <span class="keyword">local</span> orig_type = <span class="built_in">type</span>(orig)</span><br><span class="line">    <span class="keyword">local</span> copy</span><br><span class="line">    <span class="keyword">if</span> orig_type == <span class="string">'table'</span> <span class="keyword">then</span></span><br><span class="line">        copy = &#123;&#125;</span><br><span class="line">        <span class="keyword">for</span> orig_key, orig_value <span class="keyword">in</span> <span class="built_in">pairs</span>(orig) <span class="keyword">do</span></span><br><span class="line">            copy[orig_key] = orig_value</span><br><span class="line">        <span class="keyword">end</span></span><br><span class="line">    <span class="keyword">else</span> <span class="comment">-- number, string, boolean, etc</span></span><br><span class="line">        copy = orig</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">    <span class="keyword">return</span> copy</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure><a id="more"></a><h5 id="DeepCopy"><a href="#DeepCopy" class="headerlink" title="DeepCopy"></a>DeepCopy</h5><figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">deepcopy</span><span class="params">(orig)</span></span></span><br><span class="line">    <span class="keyword">local</span> orig_type = <span class="built_in">type</span>(orig)</span><br><span class="line">    <span class="keyword">local</span> copy</span><br><span class="line">    <span class="keyword">if</span> orig_type == <span class="string">'table'</span> <span class="keyword">then</span></span><br><span class="line">        copy = &#123;&#125;</span><br><span class="line">        <span class="keyword">for</span> orig_key, orig_value <span class="keyword">in</span> <span class="built_in">next</span>, orig, <span class="literal">nil</span> <span class="keyword">do</span></span><br><span class="line">            copy[deepcopy(orig_key)] = deepcopy(orig_value)</span><br><span class="line">        <span class="keyword">end</span></span><br><span class="line">        <span class="built_in">setmetatable</span>(copy, deepcopy(<span class="built_in">getmetatable</span>(orig)))</span><br><span class="line">    <span class="keyword">else</span> <span class="comment">-- number, string, boolean, etc</span></span><br><span class="line">        copy = orig</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">    <span class="keyword">return</span> copy</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure><figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">deepcopy</span><span class="params">(orig, copies)</span></span></span><br><span class="line">    copies = copies <span class="keyword">or</span> &#123;&#125;</span><br><span class="line">    <span class="keyword">local</span> orig_type = <span class="built_in">type</span>(orig)</span><br><span class="line">    <span class="keyword">local</span> copy</span><br><span class="line">    <span class="keyword">if</span> orig_type == <span class="string">'table'</span> <span class="keyword">then</span></span><br><span class="line">        <span class="keyword">if</span> copies[orig] <span class="keyword">then</span></span><br><span class="line">            copy = copies[orig]</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            copy = &#123;&#125;</span><br><span class="line">            copies[orig] = copy</span><br><span class="line">            <span class="built_in">setmetatable</span>(copy, deepcopy(<span class="built_in">getmetatable</span>(orig), copies))</span><br><span class="line">            <span class="keyword">for</span> orig_key, orig_value <span class="keyword">in</span> <span class="built_in">next</span>, orig, <span class="literal">nil</span> <span class="keyword">do</span></span><br><span class="line">                copy[deepcopy(orig_key, copies)] = deepcopy(orig_value, copies)</span><br><span class="line">            <span class="keyword">end</span></span><br><span class="line">        <span class="keyword">end</span></span><br><span class="line">    <span class="keyword">else</span> <span class="comment">-- number, string, boolean, etc</span></span><br><span class="line">        copy = orig</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">    <span class="keyword">return</span> copy</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure><figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">// 见链接二https://gist.github.com/Deco/<span class="number">3985043</span></span><br></pre></td></tr></table></figure><p><a href="http://lua-users.org/wiki/CopyTable" target="_blank" rel="noopener">http://lua-users.org/wiki/CopyTable</a></p><p><a href="https://gist.github.com/Deco/3985043" target="_blank" rel="noopener">https://gist.github.com/Deco/3985043</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h5 id=&quot;Shallow-Copy&quot;&gt;&lt;a href=&quot;#Shallow-Copy&quot; class=&quot;headerlink&quot; title=&quot;Shallow Copy&quot;&gt;&lt;/a&gt;Shallow Copy&lt;/h5&gt;&lt;figure class=&quot;highlight lua&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;shallowcopy&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(orig)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;local&lt;/span&gt; orig_type = &lt;span class=&quot;built_in&quot;&gt;type&lt;/span&gt;(orig)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;local&lt;/span&gt; copy&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; orig_type == &lt;span class=&quot;string&quot;&gt;&#39;table&#39;&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;then&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        copy = &amp;#123;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; orig_key, orig_value &lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;pairs&lt;/span&gt;(orig) &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            copy[orig_key] = orig_value&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;-- number, string, boolean, etc&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        copy = orig&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; copy&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="Lua" scheme="http://yoursite.com/categories/Lua/"/>
+    
+    
+      <category term="Lua" scheme="http://yoursite.com/tags/Lua/"/>
+    
+      <category term="copy" scheme="http://yoursite.com/tags/copy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LuaTable判空</title>
+    <link href="http://yoursite.com/2019/11/25/LuaTable%E5%88%A4%E7%A9%BA/"/>
+    <id>http://yoursite.com/2019/11/25/LuaTable%E5%88%A4%E7%A9%BA/</id>
+    <published>2019-11-24T23:44:58.000Z</published>
+    <updated>2019-11-25T07:32:28.814Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>Lua判断表为空t = {}的逻辑</strong></p><figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="built_in">next</span>(a) == <span class="literal">nil</span> <span class="keyword">then</span></span><br></pre></td></tr></table></figure><p><strong>next(table[,index])</strong></p><blockquote><p>运行程序来遍历表中的所有域。 第一个参数是要遍历的表，第二个参数是表中的某个键。 <code>next</code> 返回该键的下一个键及其关联的值。 如果用 <strong>nil</strong> 作为第二个参数调用 <code>next</code> 将返回初始键及其关联值。 当以最后一个键去调用，或是以 <strong>nil</strong> 调用一张空表时， <code>next</code> 返回 <strong>nil</strong>。 如果不提供第二个参数，将认为它就是 <strong>nil</strong>。 特别指出，你可以用 <code>next(t)</code> 来判断一张表是否是空的。</p><p>索引在遍历过程中的次序无定义， <em>即使是数字索引也是这样</em>。 （如果想按数字次序遍历表，可以使用数字形式的 <strong>for</strong> 。） -Lua 5.3参考手册</p></blockquote><a id="more"></a><p><strong>(转)</strong>在项目的脚本lua中经常有这样的需求，</p><p>1、local a = {}</p><p>2、对a进行处理</p><p>3、对a是否为空表进行判断</p><p>关于对a是否为空表的判断，如果直接这样做：</p><p>if a == {} then</p><p>这样的结果就是a == {}永远返回false，是一个逻辑错误。因为这里比较的是table a和一个匿名table的内存地址。</p><p>也有些代码如此做：</p><p>if table.maxn(a) == 0 then</p><p>这样做也不保险，除非table的key都是数字，而没有hash部分。</p><p>难道真的要遍历table发现有东西就return false跳出才能断定它是否为空吗？这样做是可以的，至少目前项目中前人是这么封装的，不过代码太难看. </p><p>网上小搜了一下，发现原来官方手册里早已经给了答案，那就是靠lua内置的next函数</p><p>即如此用：if next(a) == nil then</p><p>next其实就是pairs遍历table时用来取下一个内容的函数.</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;Lua判断表为空t = {}的逻辑&lt;/strong&gt;&lt;/p&gt;&lt;figure class=&quot;highlight lua&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;next&lt;/span&gt;(a) == &lt;span class=&quot;literal&quot;&gt;nil&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;then&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;strong&gt;next(table[,index])&lt;/strong&gt;&lt;/p&gt;&lt;blockquote&gt;
+&lt;p&gt;运行程序来遍历表中的所有域。 第一个参数是要遍历的表，第二个参数是表中的某个键。 &lt;code&gt;next&lt;/code&gt; 返回该键的下一个键及其关联的值。 如果用 &lt;strong&gt;nil&lt;/strong&gt; 作为第二个参数调用 &lt;code&gt;next&lt;/code&gt; 将返回初始键及其关联值。 当以最后一个键去调用，或是以 &lt;strong&gt;nil&lt;/strong&gt; 调用一张空表时， &lt;code&gt;next&lt;/code&gt; 返回 &lt;strong&gt;nil&lt;/strong&gt;。 如果不提供第二个参数，将认为它就是 &lt;strong&gt;nil&lt;/strong&gt;。 特别指出，你可以用 &lt;code&gt;next(t)&lt;/code&gt; 来判断一张表是否是空的。&lt;/p&gt;
+&lt;p&gt;索引在遍历过程中的次序无定义， &lt;em&gt;即使是数字索引也是这样&lt;/em&gt;。 （如果想按数字次序遍历表，可以使用数字形式的 &lt;strong&gt;for&lt;/strong&gt; 。） -Lua 5.3参考手册&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="Lua" scheme="http://yoursite.com/categories/Lua/"/>
+    
+    
+      <category term="Lua" scheme="http://yoursite.com/tags/Lua/"/>
+    
+      <category term="next" scheme="http://yoursite.com/tags/next/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LuaTable函数库</title>
+    <link href="http://yoursite.com/2019/11/25/LuaTable%E5%87%BD%E6%95%B0%E5%BA%93/"/>
+    <id>http://yoursite.com/2019/11/25/LuaTable%E5%87%BD%E6%95%B0%E5%BA%93/</id>
+    <published>2019-11-24T23:32:43.000Z</published>
+    <updated>2019-12-01T05:32:56.937Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">table</span>.<span class="built_in">insert</span>(<span class="built_in">table</span>,[ pos,] value) </span><br><span class="line"><span class="built_in">table</span>.<span class="built_in">remove</span>(<span class="built_in">table</span>[, pos]) </span><br><span class="line"><span class="built_in">table</span>.<span class="built_in">concat</span>(<span class="built_in">table</span>[, sep[, i[, j]]]) </span><br><span class="line"><span class="built_in">table</span>.<span class="built_in">sort</span>(<span class="built_in">table</span>[, comp]) // 见Lua排序</span><br><span class="line"></span><br><span class="line"><span class="built_in">table</span>.<span class="built_in">getn</span>() //<span class="number">5.0</span>费</span><br><span class="line"><span class="built_in">table</span>.<span class="built_in">maxn</span>() //<span class="number">5.2</span>费</span><br></pre></td></tr></table></figure><a id="more"></a><p>#####insert, remove</p><p>insert 和 remove 只能用于数组元素的插入和移出， 进行插入和移出时，会将后面的元素对齐起来。<br>  所以在 for 循环中进行 insert 和 remove 的时候要注意插入和移除时是否<strong>漏掉</strong>了某些项：<br>    local t = {1,2,3,3,5,3,6}<br>    for i,v in ipairs(t) do<br>      if v == 3 then<br>        table.remove(t,i)<br>      end<br>    end<br>    – 错误，第四个 3 没有被移除，ipairs 内部会维护一个变量记录遍历的位置，remove 掉第三个数字 3 之后，ipairs 下一个返回的值是 5 而不是 3 </p><figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">local</span> t = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">3</span>,<span class="number">5</span>,<span class="number">3</span>,<span class="number">6</span>&#125; </span><br><span class="line"><span class="keyword">for</span> i=<span class="number">1</span>, #t <span class="keyword">do</span> </span><br><span class="line">  <span class="keyword">if</span> t[i] == <span class="number">3</span> <span class="keyword">then</span> </span><br><span class="line">    <span class="built_in">table</span>.<span class="built_in">remove</span>(t,i) </span><br><span class="line">    i = i<span class="number">-1</span> </span><br><span class="line">  <span class="keyword">end</span> </span><br><span class="line"><span class="keyword">end</span> </span><br><span class="line"><span class="comment">-- 错误，i=i-1 这段代码没有用，i 的值始终是从 1 到 #t，for 循环里修改 i 的值不起作用 </span></span><br><span class="line"></span><br><span class="line"><span class="keyword">local</span> t = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">3</span>,<span class="number">5</span>,<span class="number">3</span>,<span class="number">6</span>&#125; </span><br><span class="line"><span class="keyword">for</span> i=#t, <span class="number">1</span>, <span class="number">-1</span> <span class="keyword">do</span> </span><br><span class="line">  <span class="keyword">if</span> t[i] == <span class="number">3</span> <span class="keyword">then</span> </span><br><span class="line">    <span class="built_in">table</span>.<span class="built_in">remove</span>(t,i) </span><br><span class="line">  <span class="keyword">end</span> </span><br><span class="line"><span class="keyword">end</span> </span><br><span class="line"><span class="comment">-- 正确，从后往前遍历 </span></span><br><span class="line"></span><br><span class="line"><span class="keyword">local</span> t = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">3</span>,<span class="number">5</span>,<span class="number">3</span>,<span class="number">6</span>&#125; </span><br><span class="line"><span class="keyword">local</span> i = <span class="number">1</span> </span><br><span class="line"><span class="keyword">while</span> t[i] <span class="keyword">do</span> </span><br><span class="line">  <span class="keyword">if</span> t[i] == <span class="number">3</span> <span class="keyword">then</span> </span><br><span class="line">    <span class="built_in">table</span>.<span class="built_in">remove</span>(t,i) </span><br><span class="line">  <span class="keyword">else</span> </span><br><span class="line">    i = i+<span class="number">1</span> </span><br><span class="line">  <span class="keyword">end</span> </span><br><span class="line"><span class="keyword">end</span> </span><br><span class="line"><span class="comment">-- 正确，自己控制 i 的值是否增加</span></span><br></pre></td></tr></table></figure><h5 id="Concat"><a href="#Concat" class="headerlink" title="Concat"></a>Concat</h5><p>concat 可以将 table 的数组部分拼接成一个字符串，中间用 seq 分隔。<br>  lua 中字符串的存储方式与 C 不一样，lua 中的每个字符串都是单独的一个拷贝，拼接两个字符串会产生一个新的拷贝，如果拼接操作特别多，就会影响性能：<br>    local beginTime = os.clock()<br>    local str = “”<br>    for i=1, 30000 do<br>      str = str .. i<br>    end<br>    local endTime = os.clock()<br>    print(endTime - beginTime)<br>    – 消耗 0.613 秒，产生了 30000 个字符串拷贝，但只有最后一个是有用的</p><p>​    local beginTime = os.clock()<br>​    local t = {}<br>​    for i=1, 30000 do<br>​      t[i] = i<br>​    end<br>​    local str = table.concat(t, “”)<br>​    local endTime = os.clock()<br>​    print(endTime - beginTime)<br>​    – 消耗 0.024 秒，利用 concat，一次性把字符串拼接出来，只产生了一个字符串拷贝 </p><h5 id="maxn"><a href="#maxn" class="headerlink" title="maxn"></a>maxn</h5><ul><li>原型：table.maxn (tab_table)</li><li>解释：返回一个表<code>tab_table</code>中的最大正数索引，如果没有正数索引的话返回0。</li><li>总结#<ul><li>这个函数比较简单，行为和函数解释一致，<strong>不要求索引必须连续，返回一个最大的正数索引</strong>。</li><li>有运行结果可知，当表中<strong>只有</strong>非数字索引或者负数索引时，函数返回0。</li><li>其中官方文档中有一句话，大意是说这个函数的工作原理就是线性的遍历了这个表</li></ul></li></ul><p><a href="https://www.cnblogs.com/whiteyun/archive/2009/08/10/1543139.html" target="_blank" rel="noopener">https://www.cnblogs.com/whiteyun/archive/2009/08/10/1543139.html</a></p><p><a href="https://www.cnblogs.com/slysky/p/5360387.html" target="_blank" rel="noopener">https://www.cnblogs.com/slysky/p/5360387.html</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;figure class=&quot;highlight lua&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;table&lt;/span&gt;.&lt;span class=&quot;built_in&quot;&gt;insert&lt;/span&gt;(&lt;span class=&quot;built_in&quot;&gt;table&lt;/span&gt;,[ pos,] value) &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;table&lt;/span&gt;.&lt;span class=&quot;built_in&quot;&gt;remove&lt;/span&gt;(&lt;span class=&quot;built_in&quot;&gt;table&lt;/span&gt;[, pos]) &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;table&lt;/span&gt;.&lt;span class=&quot;built_in&quot;&gt;concat&lt;/span&gt;(&lt;span class=&quot;built_in&quot;&gt;table&lt;/span&gt;[, sep[, i[, j]]]) &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;table&lt;/span&gt;.&lt;span class=&quot;built_in&quot;&gt;sort&lt;/span&gt;(&lt;span class=&quot;built_in&quot;&gt;table&lt;/span&gt;[, comp]) // 见Lua排序&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;table&lt;/span&gt;.&lt;span class=&quot;built_in&quot;&gt;getn&lt;/span&gt;() //&lt;span class=&quot;number&quot;&gt;5.0&lt;/span&gt;费&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;table&lt;/span&gt;.&lt;span class=&quot;built_in&quot;&gt;maxn&lt;/span&gt;() //&lt;span class=&quot;number&quot;&gt;5.2&lt;/span&gt;费&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="Lua" scheme="http://yoursite.com/categories/Lua/"/>
+    
+    
+      <category term="Lua" scheme="http://yoursite.com/tags/Lua/"/>
+    
+      <category term="table函数" scheme="http://yoursite.com/tags/table%E5%87%BD%E6%95%B0/"/>
+    
+      <category term="maxn" scheme="http://yoursite.com/tags/maxn/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>泛型</title>
+    <link href="http://yoursite.com/2019/11/20/%E6%B3%9B%E5%9E%8B/"/>
+    <id>http://yoursite.com/2019/11/20/%E6%B3%9B%E5%9E%8B/</id>
+    <published>2019-11-19T19:52:49.000Z</published>
+    <updated>2019-11-19T11:53:21.737Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="读书" scheme="http://yoursite.com/categories/%E8%AF%BB%E4%B9%A6/"/>
+    
+      <category term="CLR via C#" scheme="http://yoursite.com/categories/%E8%AF%BB%E4%B9%A6/CLR-via-C/"/>
+    
+    
+      <category term="C#" scheme="http://yoursite.com/tags/C/"/>
+    
+      <category term="笔记" scheme="http://yoursite.com/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="泛型" scheme="http://yoursite.com/tags/%E6%B3%9B%E5%9E%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CLR的执行模型</title>
+    <link href="http://yoursite.com/2019/11/19/CLR%E7%9A%84%E6%89%A7%E8%A1%8C%E6%A8%A1%E5%9E%8B/"/>
+    <id>http://yoursite.com/2019/11/19/CLR%E7%9A%84%E6%89%A7%E8%A1%8C%E6%A8%A1%E5%9E%8B/</id>
+    <published>2019-11-19T01:31:36.000Z</published>
+    <updated>2019-11-18T18:33:33.370Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="C#" scheme="http://yoursite.com/categories/C/"/>
+    
+      <category term="读书" scheme="http://yoursite.com/categories/%E8%AF%BB%E4%B9%A6/"/>
+    
+      <category term="CLR via C#" scheme="http://yoursite.com/categories/%E8%AF%BB%E4%B9%A6/CLR-via-C/"/>
+    
+    
+      <category term="C#" scheme="http://yoursite.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>委托</title>
+    <link href="http://yoursite.com/2019/11/18/%E5%A7%94%E6%89%98/"/>
+    <id>http://yoursite.com/2019/11/18/%E5%A7%94%E6%89%98/</id>
+    <published>2019-11-18T14:04:50.000Z</published>
+    <updated>2019-11-29T08:03:35.037Z</updated>
+    
+    <content type="html"><![CDATA[<h5 id="委托"><a href="#委托" class="headerlink" title="委托"></a>委托</h5><p>是对方法的引用。本质类。</p><blockquote><p>委托是类型安全的：只能让委托引用与委托签名匹配的方法。</p><p>派生自System.MulticastDelegate(派生自System.Delegate)</p></blockquote><p>定义后，创建实例初始化</p><a id="more"></a><ul><li>显式初始化 </li><li>在用+=等时自动初始化</li></ul><blockquote><p>未初始化 抛出异常NullReferenException</p></blockquote><h5 id="内置"><a href="#内置" class="headerlink" title="内置"></a>内置</h5><ul><li>Func&lt;&gt;    返回值，最后一个参数是返回值</li><li>Action&lt;&gt; 无返回值</li><li>匿名方法 delegate(){}</li><li>Lambda表达式()=&gt;{}， x =&gt; return x;</li></ul><h5 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h5><p>类的成员。 </p><blockquote><p>公共事件只能在定义它的那个类中的方法引发。在类外部引用会造成编译时错误。</p><p>记得判null。</p></blockquote><h5 id="适配器"><a href="#适配器" class="headerlink" title="适配器"></a>适配器</h5><p>作为两个不兼容的接口之间的桥梁</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h5 id=&quot;委托&quot;&gt;&lt;a href=&quot;#委托&quot; class=&quot;headerlink&quot; title=&quot;委托&quot;&gt;&lt;/a&gt;委托&lt;/h5&gt;&lt;p&gt;是对方法的引用。本质类。&lt;/p&gt;&lt;blockquote&gt;
+&lt;p&gt;委托是类型安全的：只能让委托引用与委托签名匹配的方法。&lt;/p&gt;
+&lt;p&gt;派生自System.MulticastDelegate(派生自System.Delegate)&lt;/p&gt;
+&lt;/blockquote&gt;&lt;p&gt;定义后，创建实例初始化&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="C#" scheme="http://yoursite.com/categories/C/"/>
+    
+    
+      <category term="C#" scheme="http://yoursite.com/tags/C/"/>
+    
+      <category term="笔记" scheme="http://yoursite.com/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="委托" scheme="http://yoursite.com/tags/%E5%A7%94%E6%89%98/"/>
+    
+      <category term="事件" scheme="http://yoursite.com/tags/%E4%BA%8B%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Unity中的定制特性</title>
+    <link href="http://yoursite.com/2019/11/18/Unity%E4%B8%AD%E7%9A%84%E5%AE%9A%E5%88%B6%E7%89%B9%E6%80%A7/"/>
+    <id>http://yoursite.com/2019/11/18/Unity%E4%B8%AD%E7%9A%84%E5%AE%9A%E5%88%B6%E7%89%B9%E6%80%A7/</id>
+    <published>2019-11-17T23:16:52.000Z</published>
+    <updated>2019-11-18T17:43:39.151Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>C#特性</p><p>Unity特性</p></blockquote><h2 id="C"><a href="#C" class="headerlink" title="C#"></a>C#</h2><p>C#特性从本质上来说，自定义特性是一个标签。编译器会在托管模块的元数据中嵌入这些额外的信息。大多数的特性对编译器来说并没有意义，编译器只是机械的检测源码中的特性，并生成对应的元数据。</p><a id="more"></a><p>特性其实是一个类型的实例，特性类必须有公共构造用于实例化一个实例。就像<code>[DllImport(&quot;PluginName&quot;)]</code></p><p>所有特性直接或者间接的派生于<strong>System.Attribut</strong>，这样符合CLS(Common Language Specification)中关于特性的需求。</p><p><strong>Dllmpot特性</strong></p><p><strong>Serializable特性</strong></p><h2 id="Unity"><a href="#Unity" class="headerlink" title="Unity"></a>Unity</h2><p>Unity中的特性类定义在两个命名空间中- UnityEngine和UnityEditor。同样它们符合CLS。</p><h2 id="定义自己的特性类"><a href="#定义自己的特性类" class="headerlink" title="定义自己的特性类"></a>定义自己的特性类</h2><p>自定义的特性用<strong>基础库中的定义的特性类（System.AttributeAttribute）</strong>限制特性的适用范围。</p><p>检测特性。</p><p><img src="/Users/mlikeryour/Desktop/hexo/source/images/%E7%89%B9%E6%80%A7.png" alt="特性"></p><p>备注：</p><p>1.整理之前自己用到的C#特性与Unity特性。</p><p>2.整理之前写的Unity编辑器扩展。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;C#特性&lt;/p&gt;
+&lt;p&gt;Unity特性&lt;/p&gt;
+&lt;/blockquote&gt;&lt;h2 id=&quot;C&quot;&gt;&lt;a href=&quot;#C&quot; class=&quot;headerlink&quot; title=&quot;C#&quot;&gt;&lt;/a&gt;C#&lt;/h2&gt;&lt;p&gt;C#特性从本质上来说，自定义特性是一个标签。编译器会在托管模块的元数据中嵌入这些额外的信息。大多数的特性对编译器来说并没有意义，编译器只是机械的检测源码中的特性，并生成对应的元数据。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="读书" scheme="http://yoursite.com/categories/%E8%AF%BB%E4%B9%A6/"/>
+    
+      <category term="Unity" scheme="http://yoursite.com/categories/Unity/"/>
+    
+      <category term="Unity3D脚本编程" scheme="http://yoursite.com/categories/%E8%AF%BB%E4%B9%A6/Unity3D%E8%84%9A%E6%9C%AC%E7%BC%96%E7%A8%8B/"/>
+    
+    
+      <category term="Unity" scheme="http://yoursite.com/tags/Unity/"/>
+    
+      <category term="C#特性" scheme="http://yoursite.com/tags/C-%E7%89%B9%E6%80%A7/"/>
+    
+      <category term="笔记" scheme="http://yoursite.com/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>从序列化和反序列化看Unity3D的存储机制</title>
+    <link href="http://yoursite.com/2019/11/18/%E4%BB%8E%E5%BA%8F%E5%88%97%E5%8C%96%E5%92%8C%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E7%9C%8BUnity3D%E7%9A%84%E5%AD%98%E5%82%A8%E6%9C%BA%E5%88%B6/"/>
+    <id>http://yoursite.com/2019/11/18/%E4%BB%8E%E5%BA%8F%E5%88%97%E5%8C%96%E5%92%8C%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E7%9C%8BUnity3D%E7%9A%84%E5%AD%98%E5%82%A8%E6%9C%BA%E5%88%B6/</id>
+    <published>2019-11-17T17:18:27.000Z</published>
+    <updated>2019-11-18T17:39:16.034Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>貌似从来没有看过一本关于Unity的书籍就找了本看看。</p><p>本书为《Unity3D脚本编程》</p></blockquote><p>序列化对象的和反序列化的操作</p><p>序列化和反序列化与程序集的关系 </p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;貌似从来没有看过一本关于Unity的书籍就找了本看看。&lt;/p&gt;
+&lt;p&gt;本书为《Unity3D脚本编程》&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;序列化对象的和反序列化的操作&lt;/p&gt;
+&lt;p&gt;序列化和反序列化与程序集的关系 &lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="C#" scheme="http://yoursite.com/categories/C/"/>
+    
+      <category term="读书" scheme="http://yoursite.com/categories/%E8%AF%BB%E4%B9%A6/"/>
+    
+      <category term="Unity" scheme="http://yoursite.com/categories/Unity/"/>
+    
+      <category term="Unity3D脚本编程" scheme="http://yoursite.com/categories/%E8%AF%BB%E4%B9%A6/Unity3D%E8%84%9A%E6%9C%AC%E7%BC%96%E7%A8%8B/"/>
+    
+    
+      <category term="Unity" scheme="http://yoursite.com/tags/Unity/"/>
+    
+      <category term="序列化" scheme="http://yoursite.com/tags/%E5%BA%8F%E5%88%97%E5%8C%96/"/>
+    
+      <category term="反序列化" scheme="http://yoursite.com/tags/%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96/"/>
+    
+      <category term="存储机制" scheme="http://yoursite.com/tags/%E5%AD%98%E5%82%A8%E6%9C%BA%E5%88%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Type</title>
+    <link href="http://yoursite.com/2019/11/16/Type/"/>
+    <id>http://yoursite.com/2019/11/16/Type/</id>
+    <published>2019-11-15T19:06:39.000Z</published>
+    <updated>2019-11-17T16:09:39.686Z</updated>
+    
+    <content type="html"><![CDATA[<p>Type类，是一个用来存储类型的特性和信息的类。对于程序中的每一个类型，都会有他自己的类信息，而根据Type提供的书信和方法获得这个类型的一切信息，包括字段，属性，事件，参数，构造函数等。</p><h2 id="生成Type对象"><a href="#生成Type对象" class="headerlink" title="生成Type对象"></a>生成Type对象</h2><a id="more"></a><p>Type type = typeof(Test);<br>Test test= new Test();<br>Type type2 = Test.GetType();</p><h2 id="获取该类型的信息"><a href="#获取该类型的信息" class="headerlink" title="获取该类型的信息"></a>获取该类型的信息</h2><p>//类的名称<br>string name = type.Name;<br>//类的命名空间<br>string space = type.Namespace;<br>//类的程序集<br>Assembly assembly = type.Assembly;<br>//类的共有字段<br>FieldInfo[] fieldInfos = type.GetFields();<br>//类的属性<br>PropertyInfo[] propertyInfos = type.GetProperties();<br>//类的方法<br>MethodInfo[] methodInfos = type.GetMethods();</p><h2 id="typeof-和GetType的区别"><a href="#typeof-和GetType的区别" class="headerlink" title="typeof 和GetType的区别"></a>typeof 和GetType的区别</h2><p>C#中任何对象都具有GetType()方法，它的作用和typeof()相同，返回Type类型的当前对象的类型。</p><p>typeof(x)中的x，必须是具体的类名、类型名称等(int ,string,自定义类等等)，不可以是变量名称；</p><p>GetType()是基类System.Object的方法，因此只有建立一个实例之后才能够被调用</p><p>typeof是运算符，GetType是一个实例的方法。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Type类，是一个用来存储类型的特性和信息的类。对于程序中的每一个类型，都会有他自己的类信息，而根据Type提供的书信和方法获得这个类型的一切信息，包括字段，属性，事件，参数，构造函数等。&lt;/p&gt;&lt;h2 id=&quot;生成Type对象&quot;&gt;&lt;a href=&quot;#生成Type对象&quot; class=&quot;headerlink&quot; title=&quot;生成Type对象&quot;&gt;&lt;/a&gt;生成Type对象&lt;/h2&gt;
+    
+    </summary>
+    
+    
+      <category term="C#" scheme="http://yoursite.com/categories/C/"/>
+    
+    
+      <category term="C#" scheme="http://yoursite.com/tags/C/"/>
+    
+      <category term="Type" scheme="http://yoursite.com/tags/Type/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Unity封装DeBug.Log代码定位</title>
+    <link href="http://yoursite.com/2019/11/16/Unity%E5%B0%81%E8%A3%85DeBug-Log%E4%BB%A3%E7%A0%81%E5%AE%9A%E4%BD%8D/"/>
+    <id>http://yoursite.com/2019/11/16/Unity%E5%B0%81%E8%A3%85DeBug-Log%E4%BB%A3%E7%A0%81%E5%AE%9A%E4%BD%8D/</id>
+    <published>2019-11-15T17:14:59.000Z</published>
+    <updated>2019-11-30T15:02:58.499Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>UnityConsoleWindow双击定位Debug.Log输出日志。</p><p>但是一般封装Debug.Log日志定位就不是自己想要的。</p><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> System.Collections.Generic;</span><br><span class="line"><span class="keyword">using</span> System.Reflection;</span><br><span class="line"><span class="keyword">using</span> System.Text.RegularExpressions;</span><br><span class="line"><span class="keyword">using</span> UnityEditor;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">LogEditor</span></span><br><span class="line">&#123;  </span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">static</span> LogEditor m_Instance;  </span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> LogEditor <span class="title">GetInstacne</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>  &#123;</span><br><span class="line">    <span class="keyword">if</span> (m_Instance == <span class="literal">null</span>)</span><br><span class="line">    &#123;</span><br><span class="line">      m_Instance = <span class="keyword">new</span> LogEditor();</span><br><span class="line">    &#125;    <span class="keyword">return</span> m_Instance;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">const</span> <span class="keyword">string</span> DEBUGERFILEPATH = <span class="string">"Assets/Script/Util/HHLogger.cs"</span>;<span class="comment">//替换成你自己的封装类地址</span></span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">int</span> m_DebugerFileInstanceId;</span><br><span class="line">  <span class="keyword">private</span> Type m_ConsoleWindowType = <span class="literal">null</span>;</span><br><span class="line">  <span class="keyword">private</span> FieldInfo m_ActiveTextInfo;</span><br><span class="line">  <span class="keyword">private</span> FieldInfo m_ConsoleWindowFileInfo;  </span><br><span class="line">  </span><br><span class="line">  <span class="function"><span class="keyword">private</span> <span class="title">LogEditor</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>  &#123;</span><br><span class="line">    UnityEngine. Object debuggerFile = AssetDatabase.LoadAssetAtPath(DEBUGERFILEPATH,<span class="keyword">typeof</span>(UnityEngine.Object));</span><br><span class="line">    m_DebugerFileInstanceId = debuggerFile.GetInstanceID();    </span><br><span class="line">    m_ConsoleWindowType = Type.GetType(<span class="string">"UnityEditor.ConsoleWindow,UnityEditor"</span>);</span><br><span class="line">    m_ActiveTextInfo = m_ConsoleWindowType.GetField(<span class="string">"m_ActiveText"</span>, BindingFlags.Instance | BindingFlags.NonPublic);</span><br><span class="line">    m_ConsoleWindowFileInfo = m_ConsoleWindowType.GetField(<span class="string">"ms_ConsoleWindow"</span>, BindingFlags.Static | BindingFlags.NonPublic);</span><br><span class="line">  &#125; </span><br><span class="line">  </span><br><span class="line">  [<span class="meta">UnityEditor.Callbacks.OnOpenAssetAttribute(-1)</span>]</span><br><span class="line">  <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">bool</span> <span class="title">OnOpenAsset</span>(<span class="params"><span class="keyword">int</span> instanceID, <span class="keyword">int</span> line</span>)</span></span><br><span class="line"><span class="function"></span>  &#123;</span><br><span class="line">    <span class="keyword">if</span> (instanceID == LogEditor.GetInstacne().m_DebugerFileInstanceId &amp;&amp; line != <span class="number">-1</span>)</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="keyword">return</span> LogEditor.GetInstacne().FindCode();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">  &#125;  </span><br><span class="line">  </span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">bool</span> <span class="title">FindCode</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>  &#123;</span><br><span class="line">    <span class="keyword">var</span> windowInstance = m_ConsoleWindowFileInfo.GetValue(<span class="literal">null</span>);</span><br><span class="line">    <span class="keyword">var</span> activeText = m_ActiveTextInfo.GetValue(windowInstance);    </span><br><span class="line">    <span class="keyword">string</span>[] contentStrings = activeText.ToString().Split(<span class="string">'\n'</span>);</span><br><span class="line">    List&lt;<span class="keyword">string</span>&gt; filePath = <span class="keyword">new</span> List&lt;<span class="keyword">string</span>&gt;();</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> index = <span class="number">0</span>; index &lt; contentStrings.Length; index++)</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="keyword">if</span> (contentStrings[index].Contains(<span class="string">"at"</span>))</span><br><span class="line">      &#123;</span><br><span class="line">        filePath.Add(contentStrings[index]);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;    <span class="keyword">bool</span> success = PingAndOpen(filePath[<span class="number">1</span>]);</span><br><span class="line">    <span class="keyword">return</span> success;</span><br><span class="line">  &#125;   </span><br><span class="line">  </span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">bool</span> <span class="title">PingAndOpen</span>(<span class="params"><span class="keyword">string</span> fileContext</span>)</span></span><br><span class="line"><span class="function"></span>  &#123;</span><br><span class="line">    <span class="keyword">string</span> regexRule = <span class="string">@"at ([\w\W]*):(\d+)\)"</span>;    </span><br><span class="line">    Match match = Regex.Match(fileContext, regexRule);</span><br><span class="line">    <span class="keyword">if</span> (match.Groups.Count &gt; <span class="number">1</span>)</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="keyword">string</span> path = match.Groups[<span class="number">1</span>].Value;</span><br><span class="line">      <span class="keyword">string</span> line = match.Groups[<span class="number">2</span>].Value;</span><br><span class="line">      UnityEngine.Object codeObject = AssetDatabase.LoadAssetAtPath(path, <span class="keyword">typeof</span>(UnityEngine.Object));</span><br><span class="line">      <span class="keyword">if</span> (codeObject == <span class="literal">null</span>)</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">      &#125;      </span><br><span class="line">      EditorGUIUtility.PingObject(codeObject);</span><br><span class="line">      AssetDatabase.OpenAsset(codeObject, <span class="keyword">int</span>.Parse(line));      </span><br><span class="line">      <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;    </span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><a id="more"></a><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class</span> <span class="title">HHLogger</span></span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 正式发布改成true</span></span><br><span class="line">  <span class="keyword">static</span> <span class="keyword">bool</span> isTrue = <span class="literal">false</span>;</span><br><span class="line">  <span class="comment">//static bool isTrue = true;</span></span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">DEBUG</span>(<span class="params"><span class="keyword">params</span> <span class="keyword">object</span>[] arrParams</span>)</span></span><br><span class="line"><span class="function"></span>  &#123;</span><br><span class="line">    <span class="keyword">if</span> (isTrue)</span><br><span class="line">      <span class="keyword">return</span>;</span><br><span class="line">    <span class="keyword">object</span> msg;</span><br><span class="line">    parseParams(<span class="keyword">out</span> msg, arrParams);</span><br><span class="line">    Debug.Log(msg);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">WARN</span>(<span class="params"><span class="keyword">params</span> <span class="keyword">object</span>[] arrParams</span>)</span></span><br><span class="line"><span class="function"></span>  &#123;</span><br><span class="line">    <span class="keyword">if</span> (isTrue)</span><br><span class="line">      <span class="keyword">return</span>;</span><br><span class="line">    <span class="keyword">object</span> msg;</span><br><span class="line">    parseParams(<span class="keyword">out</span> msg, arrParams);</span><br><span class="line">    Debug.LogWarning(msg);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">ERROR</span>(<span class="params"><span class="keyword">params</span> <span class="keyword">object</span>[] arrParams</span>)</span></span><br><span class="line"><span class="function"></span>  &#123;</span><br><span class="line">    <span class="keyword">if</span> (isTrue)</span><br><span class="line">      <span class="keyword">return</span>;</span><br><span class="line">    <span class="keyword">object</span> msg;</span><br><span class="line">    parseParams(<span class="keyword">out</span> msg, arrParams);</span><br><span class="line">    Debug.LogError(msg);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">parseParams</span>(<span class="params"><span class="keyword">out</span> <span class="keyword">object</span> msg, <span class="keyword">params</span> <span class="keyword">object</span>[] arrParams</span>)</span></span><br><span class="line"><span class="function"></span>  &#123;</span><br><span class="line">    msg = <span class="keyword">string</span>.Empty;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arrParams.Length; i++)</span><br><span class="line">    &#123;</span><br><span class="line">      msg += <span class="string">"["</span> + arrParams[i] + <span class="string">"]"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><a href="http://www.cppblog.com/heath/archive/2016/06/21/213777.html" target="_blank" rel="noopener">解决在Unity中封装Debug.Log后代码行定位问题</a></p><p><a href="https://blog.csdn.net/sinat_34870723/article/details/84979106" target="_blank" rel="noopener">https://blog.csdn.net/sinat_34870723/article/details/84979106</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;UnityConsoleWindow双击定位Debug.Log输出日志。&lt;/p&gt;&lt;p&gt;但是一般封装Debug.Log日志定位就不是自己想要的。&lt;/p&gt;&lt;figure class=&quot;highlight c#&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;45&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;46&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;47&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;48&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;49&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;50&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;51&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;52&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;53&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;54&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;55&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;56&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;57&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;58&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;59&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;60&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;61&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;62&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;63&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;64&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;65&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;66&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;67&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;68&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;69&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;70&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;71&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;72&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;73&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;74&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;75&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;using&lt;/span&gt; System.Collections.Generic;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;using&lt;/span&gt; System.Reflection;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;using&lt;/span&gt; System.Text.RegularExpressions;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;using&lt;/span&gt; UnityEditor;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;LogEditor&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#123;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; LogEditor m_Instance;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; LogEditor &lt;span class=&quot;title&quot;&gt;GetInstacne&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;/span&gt;  &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (m_Instance == &lt;span class=&quot;literal&quot;&gt;null&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      m_Instance = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; LogEditor();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; m_Instance;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;string&lt;/span&gt; DEBUGERFILEPATH = &lt;span class=&quot;string&quot;&gt;&quot;Assets/Script/Util/HHLogger.cs&quot;&lt;/span&gt;;&lt;span class=&quot;comment&quot;&gt;//替换成你自己的封装类地址&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; m_DebugerFileInstanceId;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; Type m_ConsoleWindowType = &lt;span class=&quot;literal&quot;&gt;null&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; FieldInfo m_ActiveTextInfo;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; FieldInfo m_ConsoleWindowFileInfo;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;LogEditor&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;/span&gt;  &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    UnityEngine. Object debuggerFile = AssetDatabase.LoadAssetAtPath(DEBUGERFILEPATH,&lt;span class=&quot;keyword&quot;&gt;typeof&lt;/span&gt;(UnityEngine.Object));&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    m_DebugerFileInstanceId = debuggerFile.GetInstanceID();    &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    m_ConsoleWindowType = Type.GetType(&lt;span class=&quot;string&quot;&gt;&quot;UnityEditor.ConsoleWindow,UnityEditor&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    m_ActiveTextInfo = m_ConsoleWindowType.GetField(&lt;span class=&quot;string&quot;&gt;&quot;m_ActiveText&quot;&lt;/span&gt;, BindingFlags.Instance | BindingFlags.NonPublic);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    m_ConsoleWindowFileInfo = m_ConsoleWindowType.GetField(&lt;span class=&quot;string&quot;&gt;&quot;ms_ConsoleWindow&quot;&lt;/span&gt;, BindingFlags.Static | BindingFlags.NonPublic);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  [&lt;span class=&quot;meta&quot;&gt;UnityEditor.Callbacks.OnOpenAssetAttribute(-1)&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;bool&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;OnOpenAsset&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; instanceID, &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; line&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;/span&gt;  &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (instanceID == LogEditor.GetInstacne().m_DebugerFileInstanceId &amp;amp;&amp;amp; line != &lt;span class=&quot;number&quot;&gt;-1&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; LogEditor.GetInstacne().FindCode();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;bool&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;FindCode&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;/span&gt;  &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; windowInstance = m_ConsoleWindowFileInfo.GetValue(&lt;span class=&quot;literal&quot;&gt;null&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; activeText = m_ActiveTextInfo.GetValue(windowInstance);    &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;string&lt;/span&gt;[] contentStrings = activeText.ToString().Split(&lt;span class=&quot;string&quot;&gt;&#39;\n&#39;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    List&amp;lt;&lt;span class=&quot;keyword&quot;&gt;string&lt;/span&gt;&amp;gt; filePath = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; List&amp;lt;&lt;span class=&quot;keyword&quot;&gt;string&lt;/span&gt;&amp;gt;();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; index = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;; index &amp;lt; contentStrings.Length; index++)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (contentStrings[index].Contains(&lt;span class=&quot;string&quot;&gt;&quot;at&quot;&lt;/span&gt;))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        filePath.Add(contentStrings[index]);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;    &lt;span class=&quot;keyword&quot;&gt;bool&lt;/span&gt; success = PingAndOpen(filePath[&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;]);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; success;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;   &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;bool&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;PingAndOpen&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;string&lt;/span&gt; fileContext&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;/span&gt;  &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;string&lt;/span&gt; regexRule = &lt;span class=&quot;string&quot;&gt;@&quot;at ([\w\W]*):(\d+)\)&quot;&lt;/span&gt;;    &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    Match match = Regex.Match(fileContext, regexRule);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (match.Groups.Count &amp;gt; &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;keyword&quot;&gt;string&lt;/span&gt; path = match.Groups[&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;].Value;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;keyword&quot;&gt;string&lt;/span&gt; line = match.Groups[&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;].Value;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      UnityEngine.Object codeObject = AssetDatabase.LoadAssetAtPath(path, &lt;span class=&quot;keyword&quot;&gt;typeof&lt;/span&gt;(UnityEngine.Object));&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (codeObject == &lt;span class=&quot;literal&quot;&gt;null&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;#125;      &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      EditorGUIUtility.PingObject(codeObject);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      AssetDatabase.OpenAsset(codeObject, &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt;.Parse(line));      &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;    &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="Unity" scheme="http://yoursite.com/categories/Unity/"/>
+    
+    
+      <category term="Unity" scheme="http://yoursite.com/tags/Unity/"/>
+    
+      <category term="代码块" scheme="http://yoursite.com/tags/%E4%BB%A3%E7%A0%81%E5%9D%97/"/>
+    
+      <category term="打印" scheme="http://yoursite.com/tags/%E6%89%93%E5%8D%B0/"/>
+    
+      <category term="跳转" scheme="http://yoursite.com/tags/%E8%B7%B3%E8%BD%AC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Unity-打印帧率</title>
+    <link href="http://yoursite.com/2019/11/14/Unity-%E6%89%93%E5%8D%B0%E5%B8%A7%E7%8E%87/"/>
+    <id>http://yoursite.com/2019/11/14/Unity-%E6%89%93%E5%8D%B0%E5%B8%A7%E7%8E%87/</id>
+    <published>2019-11-13T20:36:36.000Z</published>
+    <updated>2019-11-30T15:02:34.288Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> UnityEngine;</span><br><span class="line"><span class="keyword">using</span> System.Collections;</span><br><span class="line"><span class="keyword">using</span> System.Collections.Generic;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">ShowFPS</span> : <span class="title">MonoBehaviour</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span> fpsTarget;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">float</span> updateInterval = <span class="number">0.5f</span>;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">float</span> lastInterval;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> frames = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">float</span> fps;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Start</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>    &#123;</span><br><span class="line">        <span class="comment">//设置帧率</span></span><br><span class="line">        Application.targetFrameRate = <span class="number">60</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        lastInterval = Time.realtimeSinceStartup;</span><br><span class="line">        frames = <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Update is called once per frame  </span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Update</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>    &#123;</span><br><span class="line">        ++frames;</span><br><span class="line">        <span class="keyword">float</span> timeNow = Time.realtimeSinceStartup;</span><br><span class="line">        <span class="keyword">if</span> (timeNow &gt;= lastInterval + updateInterval)</span><br><span class="line">        &#123;</span><br><span class="line">            fps = frames / (timeNow - lastInterval);</span><br><span class="line">            frames = <span class="number">0</span>;</span><br><span class="line">            lastInterval = timeNow;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">OnGUI</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>    &#123;</span><br><span class="line">        GUI.Label(<span class="keyword">new</span> Rect(<span class="number">200</span>, <span class="number">40</span>, <span class="number">100</span>, <span class="number">30</span>), fps.ToString());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;figure class=&quot;highlight c#&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;l
+      
+    
+    </summary>
+    
+    
+      <category term="Unity" scheme="http://yoursite.com/categories/Unity/"/>
+    
+    
+      <category term="Unity" scheme="http://yoursite.com/tags/Unity/"/>
+    
+      <category term="代码块" scheme="http://yoursite.com/tags/%E4%BB%A3%E7%A0%81%E5%9D%97/"/>
+    
+      <category term="帧率" scheme="http://yoursite.com/tags/%E5%B8%A7%E7%8E%87/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Unity插件-TouchConsole</title>
+    <link href="http://yoursite.com/2019/11/14/Unity%E6%8F%92%E4%BB%B6-TouchConsole/"/>
+    <id>http://yoursite.com/2019/11/14/Unity%E6%8F%92%E4%BB%B6-TouchConsole/</id>
+    <published>2019-11-13T20:31:27.000Z</published>
+    <updated>2019-11-15T11:37:54.583Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="Unity" scheme="http://yoursite.com/categories/Unity/"/>
+    
+    
+      <category term="Unity" scheme="http://yoursite.com/tags/Unity/"/>
+    
+      <category term="打印" scheme="http://yoursite.com/tags/%E6%89%93%E5%8D%B0/"/>
+    
+      <category term="插件" scheme="http://yoursite.com/tags/%E6%8F%92%E4%BB%B6/"/>
+    
+  </entry>
+  
+</feed>

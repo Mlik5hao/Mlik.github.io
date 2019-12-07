@@ -370,7 +370,7 @@
 <p><a href="https://cloud.tencent.com/developer/article/1437157" target="_blank" rel="noopener">生命周期</a></p>
 <p>​        通过设置MonoBehaviour脚本的enabled对协程是没有影响的，但如果 gameObject.SetActive(false) 则已经启动的协程则完全停止了，即使在Inspector把gameObject 激活还是没有继续执行。也就说协程虽然是在MonoBehvaviour启动的（StartCoroutine）但是协程函数的地位完全是跟MonoBehaviour是一个层次的，不受MonoBehaviour的状态影响，但跟MonoBehaviour脚本一样受gameObject 控制，也应该是和MonoBehaviour脚本一样每帧“轮询” yield 的条件是否满足。</p>
 <p>####开启函数</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">StartCoroutine(Test_00()); // IEnumerator</span><br><span class="line">StartCoroutine(&quot;Test_01&quot;);</span><br><span class="line">StartCoroutine(Test_02(5, 9));</span><br></pre></td></tr></table></figure>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">StartCoroutine(Test_00()); <span class="comment">// IEnumerator</span></span><br><span class="line">StartCoroutine(<span class="string">"Test_01"</span>);</span><br><span class="line">StartCoroutine(Test_02(<span class="number">5</span>, <span class="number">9</span>));</span><br></pre></td></tr></table></figure>
 
 <h4 id="终止函数"><a href="#终止函数" class="headerlink" title="终止函数"></a>终止函数</h4><ul>
 <li>StopCoroutine(“<strong>name</strong>“)</li>
@@ -508,7 +508,7 @@
         
           <a href="/archives">
         
-          <span class="site-state-item-count">49</span>
+          <span class="site-state-item-count">52</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
