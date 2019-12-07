@@ -1,47 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hexo添加RSS订阅</title>
-    <url>/2019/12/07/Hexo%E6%B7%BB%E5%8A%A0RSS%E8%AE%A2%E9%98%85/</url>
-    <content><![CDATA[<h4 id="安装相关插件"><a href="#安装相关插件" class="headerlink" title="安装相关插件"></a>安装相关插件</h4><p>安装搜索插件： <code>hexo-generator-searchdb</code></p><p>在博客根目录下执行以下命令：</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure><h4 id="配置博客"><a href="#配置博客" class="headerlink" title="配置博客"></a>配置博客</h4><p>安装完成，编辑博客配置文件：<code>_config.yml</code></p><a id="more"></a>
-
-
-
-
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  limit: 10000</span><br></pre></td></tr></table></figure>
-
-<h4 id="配置主题themes下"><a href="#配置主题themes下" class="headerlink" title="配置主题themes下"></a>配置主题themes下</h4><p>Next 主题自带搜索设置，编辑主题配置文件：<code>_config.yml</code></p>
-<p>找到文件中 Local search 的相关配置，设为 <code>true</code></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># Local search</span><br><span class="line">local_search:</span><br><span class="line">  enable: true</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Hexo底部展示设置</title>
-    <url>/2019/12/07/Hexo%E5%BA%95%E9%83%A8%E5%B1%95%E7%A4%BA%E8%AE%BE%E7%BD%AE/</url>
-    <content><![CDATA[<p>找到 <code>\themes\next\layout\_partials\</code>下面的<code>footer.swig</code>文件修改</p>
-<p><a href="https://juejin.im/post/5a71ab9f518825735300ee6c" target="_blank" rel="noopener">https://juejin.im/post/5a71ab9f518825735300ee6c</a></p>
-<p>略</p>
-]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Hexo右上角链接图标</title>
-    <url>/2019/12/07/Hexo%E5%8F%B3%E4%B8%8A%E8%A7%92%E9%93%BE%E6%8E%A5%E5%9B%BE%E6%A0%87/</url>
-    <content><![CDATA[<h4 id="左上角图片和链接"><a href="#左上角图片和链接" class="headerlink" title="左上角图片和链接"></a>左上角图片和链接</h4><h5 id="themes下配置"><a href="#themes下配置" class="headerlink" title="themes下配置"></a>themes下配置</h5><p>_config.yml:</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># `Follow me on GitHub` banner in the top-right corner.</span><br><span class="line">github_banner:</span><br><span class="line">  enable: true</span><br><span class="line">  permalink: https://github.com/Mlik5hao</span><br><span class="line">  title: fork me on github</span><br></pre></td></tr></table></figure><a id="more"></a>
-
-
-<h5 id="更换图标"><a href="#更换图标" class="headerlink" title="更换图标"></a>更换图标</h5><p>略</p>
-<h5 id="更换位置"><a href="#更换位置" class="headerlink" title="更换位置"></a>更换位置</h5><p>略</p>
-]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Http和Https</title>
     <url>/2019/12/07/Http%E5%92%8CHttps/</url>
     <content><![CDATA[<p><a href="https://blog.csdn.net/xiaoming100001/article/details/81109617" target="_blank" rel="noopener">https://blog.csdn.net/xiaoming100001/article/details/81109617</a></p>
@@ -52,30 +11,6 @@
       </categories>
       <tags>
         <tag>Http</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HexoNext添加搜索功能</title>
-    <url>/2019/12/01/HexoNext%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</url>
-    <content><![CDATA[<h4 id="安装相关插件"><a href="#安装相关插件" class="headerlink" title="安装相关插件"></a>安装相关插件</h4><p>安装搜索插件： <code>hexo-generator-searchdb</code></p><p>在博客根目录下执行以下命令：</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure><h4 id="配置博客"><a href="#配置博客" class="headerlink" title="配置博客"></a>配置博客</h4><p>安装完成，编辑博客配置文件：<code>_config.yml</code></p><a id="more"></a>
-
-
-
-
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  limit: 10000</span><br></pre></td></tr></table></figure>
-
-<h4 id="配置主题themes下"><a href="#配置主题themes下" class="headerlink" title="配置主题themes下"></a>配置主题themes下</h4><p>Next 主题自带搜索设置，编辑主题配置文件：<code>_config.yml</code></p>
-<p>找到文件中 Local search 的相关配置，设为 <code>true</code></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># Local search</span><br><span class="line">local_search:</span><br><span class="line">  enable: true</span><br></pre></td></tr></table></figure>
-
-<p>hexo 重新部署</p>
-]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>Next</tag>
       </tags>
   </entry>
   <entry>
@@ -522,6 +457,47 @@
       </tags>
   </entry>
   <entry>
+    <title>Hexo添加RSS订阅</title>
+    <url>/2019/11/07/Hexo%E6%B7%BB%E5%8A%A0RSS%E8%AE%A2%E9%98%85/</url>
+    <content><![CDATA[<h4 id="安装相关插件"><a href="#安装相关插件" class="headerlink" title="安装相关插件"></a>安装相关插件</h4><p>安装搜索插件： <code>hexo-generator-searchdb</code></p><p>在博客根目录下执行以下命令：</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure><h4 id="配置博客"><a href="#配置博客" class="headerlink" title="配置博客"></a>配置博客</h4><p>安装完成，编辑博客配置文件：<code>_config.yml</code></p><a id="more"></a>
+
+
+
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  limit: 10000</span><br></pre></td></tr></table></figure>
+
+<h4 id="配置主题themes下"><a href="#配置主题themes下" class="headerlink" title="配置主题themes下"></a>配置主题themes下</h4><p>Next 主题自带搜索设置，编辑主题配置文件：<code>_config.yml</code></p>
+<p>找到文件中 Local search 的相关配置，设为 <code>true</code></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># Local search</span><br><span class="line">local_search:</span><br><span class="line">  enable: true</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Hexo底部展示设置</title>
+    <url>/2019/11/07/Hexo%E5%BA%95%E9%83%A8%E5%B1%95%E7%A4%BA%E8%AE%BE%E7%BD%AE/</url>
+    <content><![CDATA[<p>找到 <code>\themes\next\layout\_partials\</code>下面的<code>footer.swig</code>文件修改</p>
+<p><a href="https://juejin.im/post/5a71ab9f518825735300ee6c" target="_blank" rel="noopener">https://juejin.im/post/5a71ab9f518825735300ee6c</a></p>
+<p>略</p>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Hexo右上角链接图标</title>
+    <url>/2019/11/07/Hexo%E5%8F%B3%E4%B8%8A%E8%A7%92%E9%93%BE%E6%8E%A5%E5%9B%BE%E6%A0%87/</url>
+    <content><![CDATA[<h4 id="左上角图片和链接"><a href="#左上角图片和链接" class="headerlink" title="左上角图片和链接"></a>左上角图片和链接</h4><h5 id="themes下配置"><a href="#themes下配置" class="headerlink" title="themes下配置"></a>themes下配置</h5><p>_config.yml:</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># `Follow me on GitHub` banner in the top-right corner.</span><br><span class="line">github_banner:</span><br><span class="line">  enable: true</span><br><span class="line">  permalink: https://github.com/Mlik5hao</span><br><span class="line">  title: fork me on github</span><br></pre></td></tr></table></figure><a id="more"></a>
+
+
+<h5 id="更换图标"><a href="#更换图标" class="headerlink" title="更换图标"></a>更换图标</h5><p>略</p>
+<h5 id="更换位置"><a href="#更换位置" class="headerlink" title="更换位置"></a>更换位置</h5><p>略</p>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+  </entry>
+  <entry>
     <title>一个大小写引发的血案</title>
     <url>/2019/11/07/%E4%B8%80%E4%B8%AA%E5%A4%A7%E5%B0%8F%E5%86%99%E5%BC%95%E5%8F%91%E7%9A%84%E8%A1%80%E6%A1%88/</url>
     <content><![CDATA[<p>记录一下Hexo博客中遇到的一个坑，今天更新博客添加了一个 分类“hexo”，并上等我写完博客上传github后。将分类hexo 改成了 Hexo再次上传github。我发现我的博客 分类“Hexo”是正确的，但是显示 cannot get。然而我本地预览的时候却一切正常。</p><a id="more"></a>
@@ -565,6 +541,30 @@
       </categories>
       <tags>
         <tag>Unity</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HexoNext添加搜索功能</title>
+    <url>/2019/11/01/HexoNext%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</url>
+    <content><![CDATA[<h4 id="安装相关插件"><a href="#安装相关插件" class="headerlink" title="安装相关插件"></a>安装相关插件</h4><p>安装搜索插件： <code>hexo-generator-searchdb</code></p><p>在博客根目录下执行以下命令：</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure><h4 id="配置博客"><a href="#配置博客" class="headerlink" title="配置博客"></a>配置博客</h4><p>安装完成，编辑博客配置文件：<code>_config.yml</code></p><a id="more"></a>
+
+
+
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  limit: 10000</span><br></pre></td></tr></table></figure>
+
+<h4 id="配置主题themes下"><a href="#配置主题themes下" class="headerlink" title="配置主题themes下"></a>配置主题themes下</h4><p>Next 主题自带搜索设置，编辑主题配置文件：<code>_config.yml</code></p>
+<p>找到文件中 Local search 的相关配置，设为 <code>true</code></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># Local search</span><br><span class="line">local_search:</span><br><span class="line">  enable: true</span><br></pre></td></tr></table></figure>
+
+<p>hexo 重新部署</p>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Next</tag>
       </tags>
   </entry>
   <entry>

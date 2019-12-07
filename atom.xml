@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-12-07T04:58:50.131Z</updated>
+  <updated>2019-12-06T14:16:35.436Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,73 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Hexo添加RSS订阅</title>
-    <link href="http://yoursite.com/2019/12/07/Hexo%E6%B7%BB%E5%8A%A0RSS%E8%AE%A2%E9%98%85/"/>
-    <id>http://yoursite.com/2019/12/07/Hexo%E6%B7%BB%E5%8A%A0RSS%E8%AE%A2%E9%98%85/</id>
-    <published>2019-12-07T12:50:41.000Z</published>
-    <updated>2019-12-07T04:58:50.131Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="安装相关插件"><a href="#安装相关插件" class="headerlink" title="安装相关插件"></a>安装相关插件</h4><p>安装搜索插件： <code>hexo-generator-searchdb</code></p><p>在博客根目录下执行以下命令：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure><h4 id="配置博客"><a href="#配置博客" class="headerlink" title="配置博客"></a>配置博客</h4><p>安装完成，编辑博客配置文件：<code>_config.yml</code></p><a id="more"></a><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  limit: 10000</span><br></pre></td></tr></table></figure><h4 id="配置主题themes下"><a href="#配置主题themes下" class="headerlink" title="配置主题themes下"></a>配置主题themes下</h4><p>Next 主题自带搜索设置，编辑主题配置文件：<code>_config.yml</code></p><p>找到文件中 Local search 的相关配置，设为 <code>true</code></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># Local search</span><br><span class="line">local_search:</span><br><span class="line">  enable: true</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;安装相关插件&quot;&gt;&lt;a href=&quot;#安装相关插件&quot; class=&quot;headerlink&quot; title=&quot;安装相关插件&quot;&gt;&lt;/a&gt;安装相关插件&lt;/h4&gt;&lt;p&gt;安装搜索插件： &lt;code&gt;hexo-generator-searchdb&lt;/code&gt;&lt;/p&gt;&lt;p&gt;在博客根目录下执行以下命令：&lt;/p&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ npm install hexo-generator-searchdb --save&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h4 id=&quot;配置博客&quot;&gt;&lt;a href=&quot;#配置博客&quot; class=&quot;headerlink&quot; title=&quot;配置博客&quot;&gt;&lt;/a&gt;配置博客&lt;/h4&gt;&lt;p&gt;安装完成，编辑博客配置文件：&lt;code&gt;_config.yml&lt;/code&gt;&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo底部展示设置</title>
-    <link href="http://yoursite.com/2019/12/07/Hexo%E5%BA%95%E9%83%A8%E5%B1%95%E7%A4%BA%E8%AE%BE%E7%BD%AE/"/>
-    <id>http://yoursite.com/2019/12/07/Hexo%E5%BA%95%E9%83%A8%E5%B1%95%E7%A4%BA%E8%AE%BE%E7%BD%AE/</id>
-    <published>2019-12-07T12:15:36.000Z</published>
-    <updated>2019-12-07T04:36:03.892Z</updated>
-    
-    <content type="html"><![CDATA[<p>找到 <code>\themes\next\layout\_partials\</code>下面的<code>footer.swig</code>文件修改</p><p><a href="https://juejin.im/post/5a71ab9f518825735300ee6c" target="_blank" rel="noopener">https://juejin.im/post/5a71ab9f518825735300ee6c</a></p><p>略</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;找到 &lt;code&gt;\themes\next\layout\_partials\&lt;/code&gt;下面的&lt;code&gt;footer.swig&lt;/code&gt;文件修改&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://juejin.im/post/5a71ab9f518825735300
-      
-    
-    </summary>
-    
-    
-      <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo右上角链接图标</title>
-    <link href="http://yoursite.com/2019/12/07/Hexo%E5%8F%B3%E4%B8%8A%E8%A7%92%E9%93%BE%E6%8E%A5%E5%9B%BE%E6%A0%87/"/>
-    <id>http://yoursite.com/2019/12/07/Hexo%E5%8F%B3%E4%B8%8A%E8%A7%92%E9%93%BE%E6%8E%A5%E5%9B%BE%E6%A0%87/</id>
-    <published>2019-12-07T11:59:37.000Z</published>
-    <updated>2019-12-07T04:47:20.331Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="左上角图片和链接"><a href="#左上角图片和链接" class="headerlink" title="左上角图片和链接"></a>左上角图片和链接</h4><h5 id="themes下配置"><a href="#themes下配置" class="headerlink" title="themes下配置"></a>themes下配置</h5><p>_config.yml:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># `Follow me on GitHub` banner in the top-right corner.</span><br><span class="line">github_banner:</span><br><span class="line">  enable: true</span><br><span class="line">  permalink: https://github.com/Mlik5hao</span><br><span class="line">  title: fork me on github</span><br></pre></td></tr></table></figure><a id="more"></a><h5 id="更换图标"><a href="#更换图标" class="headerlink" title="更换图标"></a>更换图标</h5><p>略</p><h5 id="更换位置"><a href="#更换位置" class="headerlink" title="更换位置"></a>更换位置</h5><p>略</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;左上角图片和链接&quot;&gt;&lt;a href=&quot;#左上角图片和链接&quot; class=&quot;headerlink&quot; title=&quot;左上角图片和链接&quot;&gt;&lt;/a&gt;左上角图片和链接&lt;/h4&gt;&lt;h5 id=&quot;themes下配置&quot;&gt;&lt;a href=&quot;#themes下配置&quot; class=&quot;headerlink&quot; title=&quot;themes下配置&quot;&gt;&lt;/a&gt;themes下配置&lt;/h5&gt;&lt;p&gt;_config.yml:&lt;/p&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;# `Follow me on GitHub` banner in the top-right corner.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;github_banner:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  enable: true&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  permalink: https://github.com/Mlik5hao&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  title: fork me on github&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-    
-      <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
-    
-    
-  </entry>
   
   <entry>
     <title>Http和Https</title>
@@ -106,31 +39,6 @@
     
     
       <category term="Http" scheme="http://yoursite.com/tags/Http/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>HexoNext添加搜索功能</title>
-    <link href="http://yoursite.com/2019/12/01/HexoNext%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/"/>
-    <id>http://yoursite.com/2019/12/01/HexoNext%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</id>
-    <published>2019-12-01T00:21:25.000Z</published>
-    <updated>2019-12-07T04:48:11.655Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="安装相关插件"><a href="#安装相关插件" class="headerlink" title="安装相关插件"></a>安装相关插件</h4><p>安装搜索插件： <code>hexo-generator-searchdb</code></p><p>在博客根目录下执行以下命令：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure><h4 id="配置博客"><a href="#配置博客" class="headerlink" title="配置博客"></a>配置博客</h4><p>安装完成，编辑博客配置文件：<code>_config.yml</code></p><a id="more"></a><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  limit: 10000</span><br></pre></td></tr></table></figure><h4 id="配置主题themes下"><a href="#配置主题themes下" class="headerlink" title="配置主题themes下"></a>配置主题themes下</h4><p>Next 主题自带搜索设置，编辑主题配置文件：<code>_config.yml</code></p><p>找到文件中 Local search 的相关配置，设为 <code>true</code></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># Local search</span><br><span class="line">local_search:</span><br><span class="line">  enable: true</span><br></pre></td></tr></table></figure><p>hexo 重新部署</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;安装相关插件&quot;&gt;&lt;a href=&quot;#安装相关插件&quot; class=&quot;headerlink&quot; title=&quot;安装相关插件&quot;&gt;&lt;/a&gt;安装相关插件&lt;/h4&gt;&lt;p&gt;安装搜索插件： &lt;code&gt;hexo-generator-searchdb&lt;/code&gt;&lt;/p&gt;&lt;p&gt;在博客根目录下执行以下命令：&lt;/p&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ npm install hexo-generator-searchdb --save&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h4 id=&quot;配置博客&quot;&gt;&lt;a href=&quot;#配置博客&quot; class=&quot;headerlink&quot; title=&quot;配置博客&quot;&gt;&lt;/a&gt;配置博客&lt;/h4&gt;&lt;p&gt;安装完成，编辑博客配置文件：&lt;code&gt;_config.yml&lt;/code&gt;&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
-    
-    
-      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
-    
-      <category term="Next" scheme="http://yoursite.com/tags/Next/"/>
     
   </entry>
   
@@ -548,6 +456,114 @@
       <category term="打印" scheme="http://yoursite.com/tags/%E6%89%93%E5%8D%B0/"/>
     
       <category term="插件" scheme="http://yoursite.com/tags/%E6%8F%92%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo博客文章插入图片</title>
+    <link href="http://yoursite.com/2019/11/09/Hexo%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/"/>
+    <id>http://yoursite.com/2019/11/09/Hexo%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/</id>
+    <published>2019-11-08T20:29:11.000Z</published>
+    <updated>2019-12-06T12:59:18.543Z</updated>
+    
+    <content type="html"><![CDATA[<p>在写文章时，常常有配图说明的需求。Hexo有多种图片插入方式，可以将图片存放在本地引用或者将图片放在CDN上引用。</p><h4 id="绝对路径"><a href="#绝对路径" class="headerlink" title="绝对路径"></a>绝对路径</h4><p>当Hexo项目中只用到少量图片时，可以将图片统一放在<code>source/images</code>文件夹中，通过markdown语法访问它们。</p><a id="more"></a><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source/images/image.jpg![](/images/image.jpg)</span><br></pre></td></tr></table></figure><p>图片既可以在首页内容中访问到，也可以在文章正文中访问到。</p><h4 id="相对路径"><a href="#相对路径" class="headerlink" title="相对路径"></a>相对路径</h4><p>图片除了可以放在统一的<code>images</code>文件夹中，还可以放在文章自己的目录中。文章的目录可以通过配置<code>_config.yml</code>来生成。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">_config.ymlpost_asset_folder: true</span><br></pre></td></tr></table></figure><p>将<code>_config.yml</code>文件中的配置项<code>post_asset_folder</code>设为<code>true</code>后，执行命令<code>$ hexo new post_name</code>，在<code>source/_posts</code>中会生成文章<code>post_name.md</code>和同名文件夹<code>post_name</code>。将图片资源放在<code>post_name</code>中，文章就可以使用相对路径引用图片资源了。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">_posts/Hexo博客文章插入图片/1.png![](1.png)</span><br></pre></td></tr></table></figure><p><img src="1.png" alt></p><p>上述是markdown的引用方式，图片只能在文章中显示，但无法在首页中正常显示。</p><p>如果希望图片在文章和首页中同时显示，可以使用标签插件语法。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">_posts/post_name/image.jpg&#123;% asset_img image.jpg This is an image %&#125;</span><br></pre></td></tr></table></figure><h4 id="CDN引用"><a href="#CDN引用" class="headerlink" title="CDN引用"></a>CDN引用</h4><p>除了在本地存储图片，还可以将图片上传到一些免费的CDN服务中。比如<a href="http://cloudinary.com/" target="_blank" rel="noopener">Cloudinary</a>提供的图片CDN服务，在Cloudinary中上传图片后，会生成对应的url地址，将地址直接拿来引用即可。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在写文章时，常常有配图说明的需求。Hexo有多种图片插入方式，可以将图片存放在本地引用或者将图片放在CDN上引用。&lt;/p&gt;&lt;h4 id=&quot;绝对路径&quot;&gt;&lt;a href=&quot;#绝对路径&quot; class=&quot;headerlink&quot; title=&quot;绝对路径&quot;&gt;&lt;/a&gt;绝对路径&lt;/h4&gt;&lt;p&gt;当Hexo项目中只用到少量图片时，可以将图片统一放在&lt;code&gt;source/images&lt;/code&gt;文件夹中，通过markdown语法访问它们。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在Unity中使用AssetBundle</title>
+    <link href="http://yoursite.com/2019/11/09/%E5%9C%A8Unity%E4%B8%AD%E4%BD%BF%E7%94%A8AssetBundle/"/>
+    <id>http://yoursite.com/2019/11/09/%E5%9C%A8Unity%E4%B8%AD%E4%BD%BF%E7%94%A8AssetBundle/</id>
+    <published>2019-11-08T17:25:23.000Z</published>
+    <updated>2019-11-24T09:52:37.137Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="AssetBundle"><a href="#AssetBundle" class="headerlink" title="AssetBundle"></a>AssetBundle</h1><h2 id="初识"><a href="#初识" class="headerlink" title="初识"></a>初识</h2><p>Unity引擎识别的资源格式，自定义的二进制文件后缀必须是“bytes”</p><h2 id="工作流程"><a href="#工作流程" class="headerlink" title="工作流程"></a>工作流程</h2><h2 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h2><p>Unity自己有一个</p><p>博主<a href="https://blog.csdn.net/qq992817263/article/list/2?t=1&amp;" target="_blank" rel="noopener">https://blog.csdn.net/qq992817263/article/list/2?t=1&amp;</a></p><a id="more"></a><h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><p> <a href="https://blog.csdn.net/lodypig/article/details/51863683#comments" target="_blank" rel="noopener">https://blog.csdn.net/lodypig/article/details/51863683#comments</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;AssetBundle&quot;&gt;&lt;a href=&quot;#AssetBundle&quot; class=&quot;headerlink&quot; title=&quot;AssetBundle&quot;&gt;&lt;/a&gt;AssetBundle&lt;/h1&gt;&lt;h2 id=&quot;初识&quot;&gt;&lt;a href=&quot;#初识&quot; class=&quot;headerlink&quot; title=&quot;初识&quot;&gt;&lt;/a&gt;初识&lt;/h2&gt;&lt;p&gt;Unity引擎识别的资源格式，自定义的二进制文件后缀必须是“bytes”&lt;/p&gt;&lt;h2 id=&quot;工作流程&quot;&gt;&lt;a href=&quot;#工作流程&quot; class=&quot;headerlink&quot; title=&quot;工作流程&quot;&gt;&lt;/a&gt;工作流程&lt;/h2&gt;&lt;h2 id=&quot;工具&quot;&gt;&lt;a href=&quot;#工具&quot; class=&quot;headerlink&quot; title=&quot;工具&quot;&gt;&lt;/a&gt;工具&lt;/h2&gt;&lt;p&gt;Unity自己有一个&lt;/p&gt;&lt;p&gt;博主&lt;a href=&quot;https://blog.csdn.net/qq992817263/article/list/2?t=1&amp;amp;&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://blog.csdn.net/qq992817263/article/list/2?t=1&amp;amp;&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="Unity" scheme="http://yoursite.com/tags/Unity/"/>
+    
+      <category term="笔记" scheme="http://yoursite.com/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="AssetBundle" scheme="http://yoursite.com/tags/AssetBundle/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>编程语言</title>
+    <link href="http://yoursite.com/2019/11/08/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    <id>http://yoursite.com/2019/11/08/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/</id>
+    <published>2019-11-07T16:48:06.000Z</published>
+    <updated>2019-11-18T17:46:59.692Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="编程语言"><a href="#编程语言" class="headerlink" title="编程语言"></a>编程语言</h1><h2 id="汇编语言"><a href="#汇编语言" class="headerlink" title="汇编语言"></a>汇编语言</h2><p>提到汇编语言不得不提机器语言</p><ul><li>机器语言</li></ul><p>机器语言：机器指令的集合（二进制数字0，1）<br>计算机转变为一列高低电平，以使计算机的电子器受到驱动，进行运算。</p><ul><li>汇编语言 </li></ul><p>实质与机器语言相同，直接对硬件操作。将源程序汇编生成的<strong>可执行文件</strong><br>组成：指令、伪指令和宏指令</p><a id="more"></a><h2 id="高级语言"><a href="#高级语言" class="headerlink" title="高级语言"></a>高级语言</h2><p>高级语言是依赖编译或者解析的<br>如：C、C++、Python、Java、Matlab、LabVIEW等等</p><ul><li>低级语言：泛指机器语言和汇编语言</li></ul><h3 id="按转换方式划分"><a href="#按转换方式划分" class="headerlink" title="按转换方式划分"></a>按转换方式划分</h3><ul><li>解释型：一边“翻译”成目标代码（机器语言）一边执行</li><li>编译型：应用源程序执行之前，就将程序源代码“翻译”成目标代码（机器语言）</li></ul><p>解释型语言中包括脚本语言（又叫动态语言，扩建的语言）</p><ul><li>脚本语言：shell，Lua，php</li></ul><p>脚本语言作为一钟解释型语言，一般以文本的形式存在，<strong>脚本语言可分为独立型和嵌入型</strong>，独立型脚本语言在其执行时完全依赖于解释器，而嵌入型脚本语言通常在编程语言中（如C，C++，VB，Java等）被嵌入使用。</p><h3 id="其他分类方式"><a href="#其他分类方式" class="headerlink" title="其他分类方式"></a>其他分类方式</h3><ul><li>动态语言：语言的数据类型判断是在运行中判断</li><li>静态语言：语言的数据类型判断是在运行前判断（如编译阶段）如：C、C++，C#，java</li></ul><ul><li>强类型语言：变量不经过强制转换，它永远是这个数据类型，不允许隐式的类型转换 如：Java</li><li>弱类型语言：它与强类型语言定义相反,允许编译器进行隐式的类型转换如：C、C++<h2 id="优缺点对比"><a href="#优缺点对比" class="headerlink" title="优缺点对比"></a>优缺点对比</h2></li><li>动态语言和静态语言</li><li>强类型语言和弱类型语言</li><li>解释型语言和编译型语言</li><li>机器语言和汇编语言<h2 id="分析案例"><a href="#分析案例" class="headerlink" title="分析案例"></a>分析案例</h2></li><li>C#</li><li>C</li><li>C++</li><li>Java</li><li>Lua</li><li>Pyhon<h2 id="补充说明"><a href="#补充说明" class="headerlink" title="补充说明"></a>补充说明</h2></li><li>CLR和.Net</li></ul><p>.Net是一种解决方案; C# 是.Net解决方案中的一种语言; CLR是.Net的运行架构.</p><ol><li>CLR是公共语言运行库(Common Language Runtime)和Java虚拟机<br>一样也是一个运行时环境，它负责资源管理(内存分配和垃圾收集等),并保<br>证应用和底层操作系统之间必要的分离。</li><li>NET FrameWork的核心是其运行库执行环境，称为公共语言运行库(Common Language Runtime)。</li><li>作用：<br>（1）CLR是一个类似于JVM的虚拟机，为微软的.Net产品提供运行环境。<br>（2）CLR上实际运行的并不是我们通常所用的编程语言(例如C#、VB等)，而是一种字节码形态的“中间语言”。<br>这意味着只要能将代码编译成这种特定的“中间语言”(MSIL),任何语言的产品都能运行在CLR上。<br>（3）CLR通常被运行在Windows系统上，但是也有一些非Windows的版本。这意味着.Net也很容易实现<br>“跨平台”。(至于为什么大家的印象中.Net的跨平台性不如Java，更多的是微软商业战略导致的)。<br>语言支持：<br>微软已经为多种语言开发了基于CLR的编译器，这些语言包括：C++/CLI、C#、Visual Basic、F#、<br>Iron Python、 Iron Ruby和IL。除此之外，其他的一些公司和大学等机构也位一些语言开发了基于CLR<br>的编译器，例如Ada、APL、Caml、COBOL、Eiffel、Forth、Fortran、Haskell、Lexicon、LISP、<br>LOGO、Lua、Mercury、ML、Mondrian、Oberon、Pascal、Perl、PHP、Prolog、RPG、Scheme、<br>Smaltak、Tcl/Tk。</li></ol><p>CLR为不同的编程语言提供了统一的运行平台，在很大程度上对上层开发者屏蔽了语言之间才特性差异。<br>对于CLR来说，不同语言的编译器(Compiler)就相当于一个这种语言的代码审查者(Checker),所做的<br>工作就是检查源码语法是否正确，然后将源码编译成CLR所需要的中间语言(IL)。所以编程语言对于CLR<br>是透明的，也就是说CLR只知道IL的存在，而不知道IL是由哪种语言编译而来。<br>功能：<br>（1）基类库支持 (Base Class Library Support)<br>（2）内存管理 (Memory Management)<br>（3）线程管理 (Thread Management)<br>（4）垃圾回收 (Garbage Collection)<br>（5）安全性 (Security)<br>（6）类型检查 (Type Checker)<br>（7）异常处理 (Exception Manager)<br>（8）即时编译 (JIT)<br><img src="https://img-blog.csdnimg.cn/20190729183322381.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L01pbGVyS2V5,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20190729190632358.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L01pbGVyS2V5,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>具体过程：<br>CIL（IL）： CIL类似一个面向对象的汇编语言，并且它是完全基于堆栈的，它运行在虚拟机上（.Net Framework, Mono VM）的语言<br>遵循LI规范的高级语言，被先被各自的编译器编译成中间语言：IL（CIL），等到需要真正执行的时候，这些IL会被加载到运行时库，也就是VM中，由<strong>VM</strong>动态的编译成汇编代码（JIT）然后在执行。<br>IL2CPP <a href="https://www.cnblogs.com/lancidie/p/6258154.html" target="_blank" rel="noopener">https://www.cnblogs.com/lancidie/p/6258154.html</a> ：Mono vm –&gt;IL2CPP vm</p><ul><li>AOT和JIT</li></ul><p><a href="https://blog.csdn.net/h1130189083/article/details/78302502" target="_blank" rel="noopener">https://blog.csdn.net/h1130189083/article/details/78302502</a></p><ul><li>程序集的组成</li></ul><p>1.程序集清单，包含描述该程序集中各元素彼此如何关联的数据集合，还包含指定该程序集的版本要求和安全标识所需的所有元数据，以及定义该程序集的范围和解析对资源和类的应用所需的全部元数据。<br>2.元数据，提供有关程序集中定义的类型的信息，包括类型的名称，可见性，基类和类型所实现的接口。注意：程序集清单和元数据说明了程序集是自我描述的。<br>3.实现这些类型的MSIL代码。<br>4.资源集，诸如位图，指针，静态文本等。</p><ul><li>程序集和命名空间的关系</li></ul><p>命名空间用于对类型进行逻辑分组。<strong>程序集则是程序的物理分组，对应于一个dll或exe文件。</strong><br>程序集1：<br>namespace1{<br>    public class A1{…}<br>    public class A2{…}<br>}</p><p>namespace2{<br>    public class A3{…}<br>    public class A4{…}<br>}</p><p>程序集2：<br>namespace1{<br>    public class B1{…}<br>    public class B2{…}<br>}</p><p>namesapce2{<br>    public class B3{…}<br>    public class B4{…}<br>}<br><a href="https://blog.csdn.net/DY_1024/article/details/82946643" target="_blank" rel="noopener">https://blog.csdn.net/DY_1024/article/details/82946643</a> </p><ul><li>托管模块</li></ul><p>中间语言代码（Microsoft Intermediate Language MSIL==IL)就是托管代码）<br><img src="https://img-blog.csdnimg.cn/2019072919413937.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L01pbGVyS2V5,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20190729194154717.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L01pbGVyS2V5,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;编程语言&quot;&gt;&lt;a href=&quot;#编程语言&quot; class=&quot;headerlink&quot; title=&quot;编程语言&quot;&gt;&lt;/a&gt;编程语言&lt;/h1&gt;&lt;h2 id=&quot;汇编语言&quot;&gt;&lt;a href=&quot;#汇编语言&quot; class=&quot;headerlink&quot; title=&quot;汇编语言&quot;&gt;&lt;/a&gt;汇编语言&lt;/h2&gt;&lt;p&gt;提到汇编语言不得不提机器语言&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;机器语言&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;机器语言：机器指令的集合（二进制数字0，1）&lt;br&gt;计算机转变为一列高低电平，以使计算机的电子器受到驱动，进行运算。&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;汇编语言 &lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;实质与机器语言相同，直接对硬件操作。将源程序汇编生成的&lt;strong&gt;可执行文件&lt;/strong&gt;&lt;br&gt;组成：指令、伪指令和宏指令&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="基础" scheme="http://yoursite.com/categories/%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="C#" scheme="http://yoursite.com/tags/C/"/>
+    
+      <category term="编程语言" scheme="http://yoursite.com/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+      <category term="CLR" scheme="http://yoursite.com/tags/CLR/"/>
+    
+      <category term=".Net" scheme="http://yoursite.com/tags/Net/"/>
+    
+      <category term="程序集" scheme="http://yoursite.com/tags/%E7%A8%8B%E5%BA%8F%E9%9B%86/"/>
+    
+      <category term="托管模块" scheme="http://yoursite.com/tags/%E6%89%98%E7%AE%A1%E6%A8%A1%E5%9D%97/"/>
+    
+      <category term="托管语言" scheme="http://yoursite.com/tags/%E6%89%98%E7%AE%A1%E8%AF%AD%E8%A8%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo添加RSS订阅</title>
+    <link href="http://yoursite.com/2019/11/07/Hexo%E6%B7%BB%E5%8A%A0RSS%E8%AE%A2%E9%98%85/"/>
+    <id>http://yoursite.com/2019/11/07/Hexo%E6%B7%BB%E5%8A%A0RSS%E8%AE%A2%E9%98%85/</id>
+    <published>2019-11-07T12:50:41.000Z</published>
+    <updated>2019-12-07T05:03:47.324Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="安装相关插件"><a href="#安装相关插件" class="headerlink" title="安装相关插件"></a>安装相关插件</h4><p>安装搜索插件： <code>hexo-generator-searchdb</code></p><p>在博客根目录下执行以下命令：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure><h4 id="配置博客"><a href="#配置博客" class="headerlink" title="配置博客"></a>配置博客</h4><p>安装完成，编辑博客配置文件：<code>_config.yml</code></p><a id="more"></a><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  limit: 10000</span><br></pre></td></tr></table></figure><h4 id="配置主题themes下"><a href="#配置主题themes下" class="headerlink" title="配置主题themes下"></a>配置主题themes下</h4><p>Next 主题自带搜索设置，编辑主题配置文件：<code>_config.yml</code></p><p>找到文件中 Local search 的相关配置，设为 <code>true</code></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># Local search</span><br><span class="line">local_search:</span><br><span class="line">  enable: true</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;安装相关插件&quot;&gt;&lt;a href=&quot;#安装相关插件&quot; class=&quot;headerlink&quot; title=&quot;安装相关插件&quot;&gt;&lt;/a&gt;安装相关插件&lt;/h4&gt;&lt;p&gt;安装搜索插件： &lt;code&gt;hexo-generator-searchdb&lt;/code&gt;&lt;/p&gt;&lt;p&gt;在博客根目录下执行以下命令：&lt;/p&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ npm install hexo-generator-searchdb --save&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h4 id=&quot;配置博客&quot;&gt;&lt;a href=&quot;#配置博客&quot; class=&quot;headerlink&quot; title=&quot;配置博客&quot;&gt;&lt;/a&gt;配置博客&lt;/h4&gt;&lt;p&gt;安装完成，编辑博客配置文件：&lt;code&gt;_config.yml&lt;/code&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
+    
     
   </entry>
   
