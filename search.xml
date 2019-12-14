@@ -1,6 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>n的阶乘溢出问题</title>
+    <url>/2019/12/13/n%E7%9A%84%E9%98%B6%E4%B9%98%E6%BA%A2%E5%87%BA%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<p><a href="https://blog.csdn.net/qq_34587892/article/details/76070330" target="_blank" rel="noopener">https://blog.csdn.net/qq_34587892/article/details/76070330</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>C#静态类</title>
+    <url>/2019/12/09/C-%E9%9D%99%E6%80%81%E7%B1%BB/</url>
+    <content><![CDATA[<p>静态类</p>
+<p>不能实例化，不能被继承(自带sealed)。</p>
+<p>特征</p>
+<p>1.仅包含静态成员</p>
+<p>2.无法实例化</p>
+<p>3.不能被继承</p>
+<p>4.只能包含静态构造函数</p>
+<p>静态方法</p>
+<p>静态构造</p>
+<p>静态变量</p>
+<p>初始化时机</p>
+]]></content>
+      <categories>
+        <category>C#</category>
+      </categories>
+      <tags>
+        <tag>静态类</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>C#抽象类-abstract</title>
+    <url>/2019/12/09/C-%E6%8A%BD%E8%B1%A1%E7%B1%BB/</url>
+    <content><![CDATA[<p>*<em>abstract *</em></p>
+<p><strong>可以</strong>包含抽象方法(没办法抽象方法只能放在抽象类中)，其他所包含的成员跟类一样。</p>
+<p>特性介于类和接口之间。</p>
+]]></content>
+      <categories>
+        <category>C#</category>
+      </categories>
+      <tags>
+        <tag>C#</tag>
+        <tag>抽象类</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>UnityHubForMac破解安装</title>
+    <url>/2019/12/08/UnityHubForMac%E7%A0%B4%E8%A7%A3%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<p>1.安装 node.js 并终端输入 </p><figure class="highlight plain"><figcaption><span>npm install -g asar  </span></figcaption><table><tr><td class="code"><pre><span class="line">sudo npm install -g asar</span><br></pre></td></tr></table></figure><p>2.打开<code>访达</code>，在<code>应用程序</code>中找到<code>Unity Hub</code>，然后打开<code>显示包内容</code>，然后依次进入<code>Contents ——&gt; Resources</code></p><a id="more"></a>
+
+
+
+<p>3.在Resources文件夹上打开终端，输入</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">asar extract app.asar app</span><br></pre></td></tr></table></figure>
+
+<p>4.Resources文件下,搜索并修改</p>
+<p>licenseClient.js</p>
+<p><img src="1.jpg" alt></p>
+<p>licenseCore.js</p>
+<p><img src="2.jpg" alt></p>
+<p><a href="https://www.jianshu.com/p/57238ebb023a" target="_blank" rel="noopener">原文链接</a></p>
+]]></content>
+      <categories>
+        <category>Unity</category>
+      </categories>
+      <tags>
+        <tag>UnityHub</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>C#索引器</title>
+    <url>/2019/12/08/C-%E7%B4%A2%E5%BC%95%E5%99%A8/</url>
+    <content><![CDATA[<h4 id="this的意义"><a href="#this的意义" class="headerlink" title="this的意义"></a>this的意义</h4><p>代表类实例化后的对象。所以不能声明为static索引器。</p>
+<h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4><p>允许<strong>重载</strong>，可多参。</p>
+<h4 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h4><p>补1.数据过滤下标异常</p>
+]]></content>
+      <categories>
+        <category>C#</category>
+      </categories>
+      <tags>
+        <tag>this</tag>
+        <tag>C#</tag>
+        <tag>索引器</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>C#接口</title>
+    <url>/2019/12/08/C-%E6%8E%A5%E5%8F%A3/</url>
+    <content><![CDATA[<p>接口中只能包含方法、属性、事件和索引的组合。</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public interface IWorker &#123;</span><br><span class="line">    void Ork(string s);   // 方法</span><br><span class="line">    int Orop &#123;get; &#125;      // 属性</span><br><span class="line">    event Action Oract;   // 事件</span><br><span class="line">    int this[int index] &#123; // 索引器</span><br><span class="line">        get;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><a id="more"></a>
+
+
+<p>接口成员不能有 new、static、abstract、override、virtual 修饰符。有一点要注意，当一个接口实现一个接口，这2个接口中有相同的方法时，可用 new 关键字隐藏父接口中的方法。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public interface IWorker &#123; </span><br><span class="line">    void Ork(string s); </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">internal interface Ir : IWorker</span><br><span class="line">&#123;</span><br><span class="line">    new void Ork(string s);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>接口本身可以被    internal ，public 修饰。 默认public</p>
+<figure class="highlight plain"><figcaption><span>interface IWorker &#123; </span></figcaption><table><tr><td class="code"><pre><span class="line">internal interface IWorker &#123; </span><br><span class="line">    void work(string s); </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public interface IWorker &#123; </span><br><span class="line">    void work(string s); </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>其他略</p>
+]]></content>
+      <categories>
+        <category>C#</category>
+      </categories>
+      <tags>
+        <tag>C#</tag>
+        <tag>接口</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Http和Https</title>
     <url>/2019/12/07/Http%E5%92%8CHttps/</url>
     <content><![CDATA[<p><a href="https://blog.csdn.net/xiaoming100001/article/details/81109617" target="_blank" rel="noopener">https://blog.csdn.net/xiaoming100001/article/details/81109617</a></p>
@@ -234,8 +339,8 @@
       </categories>
       <tags>
         <tag>Unity</tag>
-        <tag>C#特性</tag>
         <tag>笔记</tag>
+        <tag>C#特性</tag>
       </tags>
   </entry>
   <entry>
@@ -344,7 +449,7 @@
 <p>将<code>_config.yml</code>文件中的配置项<code>post_asset_folder</code>设为<code>true</code>后，执行命令<code>$ hexo new post_name</code>，在<code>source/_posts</code>中会生成文章<code>post_name.md</code>和同名文件夹<code>post_name</code>。将图片资源放在<code>post_name</code>中，文章就可以使用相对路径引用图片资源了。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">_posts/Hexo博客文章插入图片/1.png![](1.png)</span><br></pre></td></tr></table></figure>
 
-<p><img src="1.png" alt></p>
+<p><img src="1.png" alt> </p>
 <p>上述是markdown的引用方式，图片只能在文章中显示，但无法在首页中正常显示。</p>
 <p>如果希望图片在文章和首页中同时显示，可以使用标签插件语法。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">_posts/post_name/image.jpg&#123;% asset_img image.jpg This is an image %&#125;</span><br></pre></td></tr></table></figure>
@@ -368,8 +473,8 @@
 ]]></content>
       <tags>
         <tag>Unity</tag>
-        <tag>笔记</tag>
         <tag>AssetBundle</tag>
+        <tag>笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -599,9 +704,9 @@
         <category>C#</category>
       </categories>
       <tags>
-        <tag>C#</tag>
         <tag>this</tag>
         <tag>base</tag>
+        <tag>C#</tag>
       </tags>
   </entry>
   <entry>
@@ -913,10 +1018,10 @@
       </categories>
       <tags>
         <tag>C#</tag>
+        <tag>Unity</tag>
+        <tag>Lua</tag>
         <tag>协程</tag>
         <tag>语法糖</tag>
-        <tag>Lua</tag>
-        <tag>Unity</tag>
       </tags>
   </entry>
   <entry>
@@ -1251,8 +1356,8 @@
       </categories>
       <tags>
         <tag>算法</tag>
-        <tag>数据结构</tag>
         <tag>基础</tag>
+        <tag>数据结构</tag>
       </tags>
   </entry>
   <entry>
