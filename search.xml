@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hexo文章页末美化</title>
+    <url>/2019/12/16/Hexo%E6%96%87%E7%AB%A0%E9%A1%B5%E6%9C%AB%E7%BE%8E%E5%8C%96/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Hexo添加访问量等</title>
     <url>/2019/12/15/Hexo%E6%B7%BB%E5%8A%A0%E8%AE%BF%E9%97%AE%E9%87%8F%E7%AD%89/</url>
     <content><![CDATA[<p>Next主题已经更新至6.X版本,不蒜子统计插件配置</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">文件：主题配置文件_config.ymlcopy# Show Views/Visitors of the website/page with busuanzi.</span><br><span class="line"># Get more information on http://ibruce.info/2015/04/04/busuanzi/</span><br><span class="line">busuanzi_count:</span><br><span class="line">  enable: true</span><br><span class="line">  total_visitors: true</span><br><span class="line">  total_visitors_icon: user</span><br><span class="line">  total_views: true</span><br><span class="line">  total_views_icon: eye</span><br><span class="line">  post_views: false</span><br><span class="line">  post_views_icon: eye</span><br></pre></td></tr></table></figure><a id="more"></a>
@@ -8,12 +16,6 @@
 
 <h4 id="LeanCloud阅读次数统计"><a href="#LeanCloud阅读次数统计" class="headerlink" title="LeanCloud阅读次数统计"></a>LeanCloud阅读次数统计</h4><p>略</p>
 <p><a href="https://yfzhou.coding.me/2018/08/08/Hexo-Next搭建个人博客（添加统计访客量以及文章阅读量）/" target="_blank" rel="noopener">https://yfzhou.coding.me/2018/08/08/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E6%B7%BB%E5%8A%A0%E7%BB%9F%E8%AE%A1%E8%AE%BF%E5%AE%A2%E9%87%8F%E4%BB%A5%E5%8F%8A%E6%96%87%E7%AB%A0%E9%98%85%E8%AF%BB%E9%87%8F%EF%BC%89/</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>n的阶乘溢出问题</title>
-    <url>/2019/12/13/n%E7%9A%84%E9%98%B6%E4%B9%98%E6%BA%A2%E5%87%BA%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<p><a href="https://blog.csdn.net/qq_34587892/article/details/76070330" target="_blank" rel="noopener">https://blog.csdn.net/qq_34587892/article/details/76070330</a></p>
 ]]></content>
   </entry>
   <entry>
@@ -462,6 +464,18 @@
         <tag>Unity</tag>
         <tag>打印</tag>
         <tag>插件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>n的阶乘溢出问题</title>
+    <url>/2019/11/13/n%E7%9A%84%E9%98%B6%E4%B9%98%E6%BA%A2%E5%87%BA%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<p><a href="https://blog.csdn.net/qq_34587892/article/details/76070330" target="_blank" rel="noopener">https://blog.csdn.net/qq_34587892/article/details/76070330</a></p>
+]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
       </tags>
   </entry>
   <entry>
@@ -1285,9 +1299,9 @@
         <category>设计模式</category>
       </categories>
       <tags>
-        <tag>状态机</tag>
-        <tag>FSM</tag>
         <tag>AI</tag>
+        <tag>FSM</tag>
+        <tag>状态机</tag>
       </tags>
   </entry>
   <entry>
@@ -1340,9 +1354,9 @@
         <category>AI</category>
       </categories>
       <tags>
-        <tag>基础</tag>
-        <tag>状态机</tag>
         <tag>FSM</tag>
+        <tag>状态机</tag>
+        <tag>基础</tag>
       </tags>
   </entry>
   <entry>
