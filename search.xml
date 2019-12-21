@@ -90,8 +90,8 @@
         <category>C#</category>
       </categories>
       <tags>
-        <tag>C#</tag>
         <tag>this</tag>
+        <tag>C#</tag>
         <tag>索引器</tag>
       </tags>
   </entry>
@@ -747,9 +747,9 @@
         <category>C#</category>
       </categories>
       <tags>
-        <tag>C#</tag>
         <tag>this</tag>
         <tag>base</tag>
+        <tag>C#</tag>
       </tags>
   </entry>
   <entry>
@@ -1061,10 +1061,10 @@
       </categories>
       <tags>
         <tag>C#</tag>
+        <tag>Unity</tag>
+        <tag>Lua</tag>
         <tag>协程</tag>
         <tag>语法糖</tag>
-        <tag>Lua</tag>
-        <tag>Unity</tag>
       </tags>
   </entry>
   <entry>

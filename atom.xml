@@ -163,9 +163,9 @@
       <category term="C#" scheme="http://yoursite.com/categories/C/"/>
     
     
-      <category term="C#" scheme="http://yoursite.com/tags/C/"/>
-    
       <category term="this" scheme="http://yoursite.com/tags/this/"/>
+    
+      <category term="C#" scheme="http://yoursite.com/tags/C/"/>
     
       <category term="索引器" scheme="http://yoursite.com/tags/%E7%B4%A2%E5%BC%95%E5%99%A8/"/>
     
