@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>.asmdef和Timelinemiss</title>
+    <url>/2019/12/22/asmdef%E5%92%8CTimelinemiss/</url>
+    <content><![CDATA[<p>2018-2019版本升级后报错：Timeline.dll miss</p>
+<p>pakegerMnager -&gt; Install Timeline</p>
+<p>.asmdef –&gt; Add  dll</p>
+]]></content>
+      <categories>
+        <category>Unity</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Hexo文章页末美化</title>
     <url>/2019/12/16/Hexo%E6%96%87%E7%AB%A0%E9%A1%B5%E6%9C%AB%E7%BE%8E%E5%8C%96/</url>
     <content><![CDATA[]]></content>
@@ -90,8 +101,8 @@
         <category>C#</category>
       </categories>
       <tags>
-        <tag>this</tag>
         <tag>C#</tag>
+        <tag>this</tag>
         <tag>索引器</tag>
       </tags>
   </entry>
@@ -747,9 +758,9 @@
         <category>C#</category>
       </categories>
       <tags>
+        <tag>C#</tag>
         <tag>this</tag>
         <tag>base</tag>
-        <tag>C#</tag>
       </tags>
   </entry>
   <entry>
@@ -1061,10 +1072,10 @@
       </categories>
       <tags>
         <tag>C#</tag>
-        <tag>Unity</tag>
-        <tag>Lua</tag>
         <tag>协程</tag>
         <tag>语法糖</tag>
+        <tag>Lua</tag>
+        <tag>Unity</tag>
       </tags>
   </entry>
   <entry>
@@ -1299,9 +1310,9 @@
         <category>设计模式</category>
       </categories>
       <tags>
-        <tag>AI</tag>
-        <tag>FSM</tag>
         <tag>状态机</tag>
+        <tag>FSM</tag>
+        <tag>AI</tag>
       </tags>
   </entry>
   <entry>
@@ -1354,9 +1365,9 @@
         <category>AI</category>
       </categories>
       <tags>
-        <tag>FSM</tag>
-        <tag>状态机</tag>
         <tag>基础</tag>
+        <tag>状态机</tag>
+        <tag>FSM</tag>
       </tags>
   </entry>
   <entry>

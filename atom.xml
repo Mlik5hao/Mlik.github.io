@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-12-16T03:53:30.604Z</updated>
+  <updated>2019-12-21T14:37:31.741Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>.asmdef和Timelinemiss</title>
+    <link href="http://yoursite.com/2019/12/22/asmdef%E5%92%8CTimelinemiss/"/>
+    <id>http://yoursite.com/2019/12/22/asmdef%E5%92%8CTimelinemiss/</id>
+    <published>2019-12-21T22:34:51.000Z</published>
+    <updated>2019-12-21T14:37:31.741Z</updated>
+    
+    <content type="html"><![CDATA[<p>2018-2019版本升级后报错：Timeline.dll miss</p><p>pakegerMnager -&gt; Install Timeline</p><p>.asmdef –&gt; Add  dll</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;2018-2019版本升级后报错：Timeline.dll miss&lt;/p&gt;
+&lt;p&gt;pakegerMnager -&amp;gt; Install Timeline&lt;/p&gt;
+&lt;p&gt;.asmdef –&amp;gt; Add  dll&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="Unity" scheme="http://yoursite.com/categories/Unity/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Hexo文章页末美化</title>
@@ -163,9 +190,9 @@
       <category term="C#" scheme="http://yoursite.com/categories/C/"/>
     
     
-      <category term="this" scheme="http://yoursite.com/tags/this/"/>
-    
       <category term="C#" scheme="http://yoursite.com/tags/C/"/>
+    
+      <category term="this" scheme="http://yoursite.com/tags/this/"/>
     
       <category term="索引器" scheme="http://yoursite.com/tags/%E7%B4%A2%E5%BC%95%E5%99%A8/"/>
     
@@ -529,31 +556,6 @@
       <category term="反序列化" scheme="http://yoursite.com/tags/%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96/"/>
     
       <category term="存储机制" scheme="http://yoursite.com/tags/%E5%AD%98%E5%82%A8%E6%9C%BA%E5%88%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Type</title>
-    <link href="http://yoursite.com/2019/11/16/Type/"/>
-    <id>http://yoursite.com/2019/11/16/Type/</id>
-    <published>2019-11-15T19:06:39.000Z</published>
-    <updated>2019-11-17T16:09:39.686Z</updated>
-    
-    <content type="html"><![CDATA[<p>Type类，是一个用来存储类型的特性和信息的类。对于程序中的每一个类型，都会有他自己的类信息，而根据Type提供的书信和方法获得这个类型的一切信息，包括字段，属性，事件，参数，构造函数等。</p><h2 id="生成Type对象"><a href="#生成Type对象" class="headerlink" title="生成Type对象"></a>生成Type对象</h2><a id="more"></a><p>Type type = typeof(Test);<br>Test test= new Test();<br>Type type2 = Test.GetType();</p><h2 id="获取该类型的信息"><a href="#获取该类型的信息" class="headerlink" title="获取该类型的信息"></a>获取该类型的信息</h2><p>//类的名称<br>string name = type.Name;<br>//类的命名空间<br>string space = type.Namespace;<br>//类的程序集<br>Assembly assembly = type.Assembly;<br>//类的共有字段<br>FieldInfo[] fieldInfos = type.GetFields();<br>//类的属性<br>PropertyInfo[] propertyInfos = type.GetProperties();<br>//类的方法<br>MethodInfo[] methodInfos = type.GetMethods();</p><h2 id="typeof-和GetType的区别"><a href="#typeof-和GetType的区别" class="headerlink" title="typeof 和GetType的区别"></a>typeof 和GetType的区别</h2><p>C#中任何对象都具有GetType()方法，它的作用和typeof()相同，返回Type类型的当前对象的类型。</p><p>typeof(x)中的x，必须是具体的类名、类型名称等(int ,string,自定义类等等)，不可以是变量名称；</p><p>GetType()是基类System.Object的方法，因此只有建立一个实例之后才能够被调用</p><p>typeof是运算符，GetType是一个实例的方法。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Type类，是一个用来存储类型的特性和信息的类。对于程序中的每一个类型，都会有他自己的类信息，而根据Type提供的书信和方法获得这个类型的一切信息，包括字段，属性，事件，参数，构造函数等。&lt;/p&gt;&lt;h2 id=&quot;生成Type对象&quot;&gt;&lt;a href=&quot;#生成Type对象&quot; class=&quot;headerlink&quot; title=&quot;生成Type对象&quot;&gt;&lt;/a&gt;生成Type对象&lt;/h2&gt;
-    
-    </summary>
-    
-    
-      <category term="C#" scheme="http://yoursite.com/categories/C/"/>
-    
-    
-      <category term="C#" scheme="http://yoursite.com/tags/C/"/>
-    
-      <category term="Type" scheme="http://yoursite.com/tags/Type/"/>
     
   </entry>
   
