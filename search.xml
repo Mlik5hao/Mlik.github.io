@@ -1310,9 +1310,9 @@
         <category>设计模式</category>
       </categories>
       <tags>
-        <tag>状态机</tag>
-        <tag>FSM</tag>
         <tag>AI</tag>
+        <tag>FSM</tag>
+        <tag>状态机</tag>
       </tags>
   </entry>
   <entry>
@@ -1365,9 +1365,9 @@
         <category>AI</category>
       </categories>
       <tags>
-        <tag>基础</tag>
-        <tag>状态机</tag>
         <tag>FSM</tag>
+        <tag>状态机</tag>
+        <tag>基础</tag>
       </tags>
   </entry>
   <entry>
