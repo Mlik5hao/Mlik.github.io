@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-01-12T11:47:32.052Z</updated>
+  <updated>2019-12-21T14:37:31.741Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,62 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>UnityAnimation和Animator那些事一篇就够了</title>
-    <link href="http://yoursite.com/2020/01/13/UnityAnimation%E5%92%8CAnimator/"/>
-    <id>http://yoursite.com/2020/01/13/UnityAnimation%E5%92%8CAnimator/</id>
-    <published>2020-01-12T16:18:32.000Z</published>
-    <updated>2020-01-12T11:47:32.052Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Unity动画系统"><a href="#Unity动画系统" class="headerlink" title="Unity动画系统"></a>Unity动画系统</h1><blockquote><p>历来版本介绍</p></blockquote><p>–TODO</p><p>组件</p><p>API</p><p>常见问题</p><p>封装源码</p><h2 id="组件"><a href="#组件" class="headerlink" title="组件"></a>组件</h2><ul><li>AnimationClip</li></ul><p><strong>组件介绍</strong></p><ul><li>Animation</li></ul><p><strong>组件介绍</strong></p><p>Animation：默认的动画；</p><p>Animations：所有的组件，</p><a id="more"></a><p>Size：组件的个数；</p><p>Element X：组件；</p><p>Play Automatically：在开始时自动播放默认动画；</p><p>Animate Physics：如果打开这个选项，动画会在物理循环过程中被执行，只有在结合运动学刚体的时候才有用。</p><p>Culling Type：Based On Renderers：当渲染不可见时动画停止。</p><p>​               Always Animate：禁用动画消隐（一直播放）。</p><p><strong>编辑窗口</strong></p><ul><li>Animator</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;Unity动画系统&quot;&gt;&lt;a href=&quot;#Unity动画系统&quot; class=&quot;headerlink&quot; title=&quot;Unity动画系统&quot;&gt;&lt;/a&gt;Unity动画系统&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;历来版本介绍&lt;/p&gt;
-&lt;/blockquote&gt;&lt;p&gt;–TODO&lt;/p&gt;&lt;p&gt;组件&lt;/p&gt;&lt;p&gt;API&lt;/p&gt;&lt;p&gt;常见问题&lt;/p&gt;&lt;p&gt;封装源码&lt;/p&gt;&lt;h2 id=&quot;组件&quot;&gt;&lt;a href=&quot;#组件&quot; class=&quot;headerlink&quot; title=&quot;组件&quot;&gt;&lt;/a&gt;组件&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;AnimationClip&lt;/li&gt;
-&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;组件介绍&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
-&lt;li&gt;Animation&lt;/li&gt;
-&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;组件介绍&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Animation：默认的动画；&lt;/p&gt;&lt;p&gt;Animations：所有的组件，&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Unity" scheme="http://yoursite.com/categories/Unity/"/>
-    
-    
-      <category term="Unity" scheme="http://yoursite.com/tags/Unity/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Unity项目升级</title>
-    <link href="http://yoursite.com/2020/01/07/Unity%E9%A1%B9%E7%9B%AE%E5%8D%87%E7%BA%A7/"/>
-    <id>http://yoursite.com/2020/01/07/Unity%E9%A1%B9%E7%9B%AE%E5%8D%87%E7%BA%A7/</id>
-    <published>2020-01-07T00:06:07.000Z</published>
-    <updated>2020-01-12T06:25:04.534Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id><a href="#" class="headerlink" title></a></h3><blockquote><p>原版本：Unity2018.4</p><p>升级后版本：Unity2019.3</p><p>涉及插件：TODO</p></blockquote><p>关于改版本升级，由于差距并不大，所以升级并没有带来什么太大的麻烦。由于项目具有很多插件在使用，所以升级的过程中主要担心插件不兼容。在升级前我们对主要插件做了调查，由于2019.3这个版本是最新的版本，这使我们很多插件还没有相应版本的更新。不过由于年前是我们也是最好的一次升级时机，也唯一一次升级的机会，在CTO的考量下决定让我提前升级2019版本，待稳定后全公司配合升级。CTO认为升级版本利大于弊且他已经做了调查，认为风险不大。正如CTO所料升级到过程中并没有遇到什么大问题。</p><a id="more"></a><h3 id="关于本次升级到总结："><a href="#关于本次升级到总结：" class="headerlink" title="关于本次升级到总结："></a>关于本次升级到总结：</h3><ol><li><p>pakegerMnager升级对应稳定版本并添加丢失的模块</p></li><li><p>.asmdef与命名空间丢失</p></li><li><p>插件的升级以及兼容性检查</p></li><li><p>其他问题-BUG以及报错检查</p></li></ol><p>在接手升级后，我将Spine升级到3.8，当时Spine3.8才兼容到2019.2测试并将所有</p><ol><li>pakegerMnager升级对应稳定版本并添加丢失的模块</li></ol><p>报错为命名空间miss</p><ol start="2"><li>.asmdef</li></ol><p>同样报错为命名空间丢失，在.asmdef中添加对应的命名空间引用，也可以重新编译</p><ol start="3"><li><h3 id="关于是否升级版本的深思："><a href="#关于是否升级版本的深思：" class="headerlink" title="关于是否升级版本的深思："></a>关于是否升级版本的深思：</h3></li></ol>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h3 id&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title&gt;&lt;/a&gt;&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;原版本：Unity2018.4&lt;/p&gt;
-&lt;p&gt;升级后版本：Unity2019.3&lt;/p&gt;
-&lt;p&gt;涉及插件：TODO&lt;/p&gt;
-&lt;/blockquote&gt;&lt;p&gt;关于改版本升级，由于差距并不大，所以升级并没有带来什么太大的麻烦。由于项目具有很多插件在使用，所以升级的过程中主要担心插件不兼容。在升级前我们对主要插件做了调查，由于2019.3这个版本是最新的版本，这使我们很多插件还没有相应版本的更新。不过由于年前是我们也是最好的一次升级时机，也唯一一次升级的机会，在CTO的考量下决定让我提前升级2019版本，待稳定后全公司配合升级。CTO认为升级版本利大于弊且他已经做了调查，认为风险不大。正如CTO所料升级到过程中并没有遇到什么大问题。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Unity" scheme="http://yoursite.com/categories/Unity/"/>
-    
-    
-      <category term="Unity" scheme="http://yoursite.com/tags/Unity/"/>
-    
-  </entry>
   
   <entry>
     <title>.asmdef和Timelinemiss</title>
@@ -534,6 +478,84 @@
       <category term="委托" scheme="http://yoursite.com/tags/%E5%A7%94%E6%89%98/"/>
     
       <category term="事件" scheme="http://yoursite.com/tags/%E4%BA%8B%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Unity中的定制特性</title>
+    <link href="http://yoursite.com/2019/11/18/Unity%E4%B8%AD%E7%9A%84%E5%AE%9A%E5%88%B6%E7%89%B9%E6%80%A7/"/>
+    <id>http://yoursite.com/2019/11/18/Unity%E4%B8%AD%E7%9A%84%E5%AE%9A%E5%88%B6%E7%89%B9%E6%80%A7/</id>
+    <published>2019-11-17T23:16:52.000Z</published>
+    <updated>2019-11-18T17:43:39.151Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>C#特性</p><p>Unity特性</p></blockquote><h2 id="C"><a href="#C" class="headerlink" title="C#"></a>C#</h2><p>C#特性从本质上来说，自定义特性是一个标签。编译器会在托管模块的元数据中嵌入这些额外的信息。大多数的特性对编译器来说并没有意义，编译器只是机械的检测源码中的特性，并生成对应的元数据。</p><a id="more"></a><p>特性其实是一个类型的实例，特性类必须有公共构造用于实例化一个实例。就像<code>[DllImport(&quot;PluginName&quot;)]</code></p><p>所有特性直接或者间接的派生于<strong>System.Attribut</strong>，这样符合CLS(Common Language Specification)中关于特性的需求。</p><p><strong>Dllmpot特性</strong></p><p><strong>Serializable特性</strong></p><h2 id="Unity"><a href="#Unity" class="headerlink" title="Unity"></a>Unity</h2><p>Unity中的特性类定义在两个命名空间中- UnityEngine和UnityEditor。同样它们符合CLS。</p><h2 id="定义自己的特性类"><a href="#定义自己的特性类" class="headerlink" title="定义自己的特性类"></a>定义自己的特性类</h2><p>自定义的特性用<strong>基础库中的定义的特性类（System.AttributeAttribute）</strong>限制特性的适用范围。</p><p>检测特性。</p><p><img src="/Users/mlikeryour/Desktop/hexo/source/images/%E7%89%B9%E6%80%A7.png" alt="特性"></p><p>备注：</p><p>1.整理之前自己用到的C#特性与Unity特性。</p><p>2.整理之前写的Unity编辑器扩展。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;C#特性&lt;/p&gt;
+&lt;p&gt;Unity特性&lt;/p&gt;
+&lt;/blockquote&gt;&lt;h2 id=&quot;C&quot;&gt;&lt;a href=&quot;#C&quot; class=&quot;headerlink&quot; title=&quot;C#&quot;&gt;&lt;/a&gt;C#&lt;/h2&gt;&lt;p&gt;C#特性从本质上来说，自定义特性是一个标签。编译器会在托管模块的元数据中嵌入这些额外的信息。大多数的特性对编译器来说并没有意义，编译器只是机械的检测源码中的特性，并生成对应的元数据。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="读书" scheme="http://yoursite.com/categories/%E8%AF%BB%E4%B9%A6/"/>
+    
+      <category term="Unity" scheme="http://yoursite.com/categories/Unity/"/>
+    
+      <category term="Unity3D脚本编程" scheme="http://yoursite.com/categories/%E8%AF%BB%E4%B9%A6/Unity3D%E8%84%9A%E6%9C%AC%E7%BC%96%E7%A8%8B/"/>
+    
+    
+      <category term="Unity" scheme="http://yoursite.com/tags/Unity/"/>
+    
+      <category term="C#特性" scheme="http://yoursite.com/tags/C-%E7%89%B9%E6%80%A7/"/>
+    
+      <category term="笔记" scheme="http://yoursite.com/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>从序列化和反序列化看Unity3D的存储机制</title>
+    <link href="http://yoursite.com/2019/11/18/%E4%BB%8E%E5%BA%8F%E5%88%97%E5%8C%96%E5%92%8C%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E7%9C%8BUnity3D%E7%9A%84%E5%AD%98%E5%82%A8%E6%9C%BA%E5%88%B6/"/>
+    <id>http://yoursite.com/2019/11/18/%E4%BB%8E%E5%BA%8F%E5%88%97%E5%8C%96%E5%92%8C%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E7%9C%8BUnity3D%E7%9A%84%E5%AD%98%E5%82%A8%E6%9C%BA%E5%88%B6/</id>
+    <published>2019-11-17T17:18:27.000Z</published>
+    <updated>2019-11-18T17:39:16.034Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>貌似从来没有看过一本关于Unity的书籍就找了本看看。</p><p>本书为《Unity3D脚本编程》</p></blockquote><p>序列化对象的和反序列化的操作</p><p>序列化和反序列化与程序集的关系 </p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;貌似从来没有看过一本关于Unity的书籍就找了本看看。&lt;/p&gt;
+&lt;p&gt;本书为《Unity3D脚本编程》&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;序列化对象的和反序列化的操作&lt;/p&gt;
+&lt;p&gt;序列化和反序列化与程序集的关系 &lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="C#" scheme="http://yoursite.com/categories/C/"/>
+    
+      <category term="读书" scheme="http://yoursite.com/categories/%E8%AF%BB%E4%B9%A6/"/>
+    
+      <category term="Unity" scheme="http://yoursite.com/categories/Unity/"/>
+    
+      <category term="Unity3D脚本编程" scheme="http://yoursite.com/categories/%E8%AF%BB%E4%B9%A6/Unity3D%E8%84%9A%E6%9C%AC%E7%BC%96%E7%A8%8B/"/>
+    
+    
+      <category term="Unity" scheme="http://yoursite.com/tags/Unity/"/>
+    
+      <category term="序列化" scheme="http://yoursite.com/tags/%E5%BA%8F%E5%88%97%E5%8C%96/"/>
+    
+      <category term="反序列化" scheme="http://yoursite.com/tags/%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96/"/>
+    
+      <category term="存储机制" scheme="http://yoursite.com/tags/%E5%AD%98%E5%82%A8%E6%9C%BA%E5%88%B6/"/>
     
   </entry>
   
