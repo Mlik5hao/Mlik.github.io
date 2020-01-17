@@ -1,0 +1,101 @@
+<hr>
+<p>title: UnityScriptableObject类<br>date: 2019-12-18 11:05:20<br>tags:</p>
+<hr>
+<p>[CreateAssetMenu(fileName = “Bullet”, menuName = “New Bullet”, order = 1)]</p>
+<pre><code class="C#"><span class="comment">// create by DongLei 2019-11-08 17:58:13</span>
+
+<span class="keyword">using</span> System;
+<span class="keyword">using</span> System.Collections.Generic;
+<span class="keyword">using</span> ThinkingStars.HitSystem;
+<span class="keyword">using</span> UnityEngine;
+
+<span class="keyword">namespace</span> <span class="title">ThinkingStars.Bullet</span>
+{
+
+    <span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;summary&gt;</span></span>
+    <span class="comment"><span class="doctag">///</span> 碰撞类型</span>
+    <span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;/summary&gt;</span></span>
+    <span class="keyword">public</span> <span class="keyword">enum</span> BombType
+    {
+        Count,
+    }
+
+    <span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;summary&gt;</span></span>
+    <span class="comment"><span class="doctag">///</span> 子弹类型</span>
+    <span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;/summary&gt;</span></span>
+    <span class="keyword">public</span> <span class="keyword">enum</span> BulletType
+    {
+        Count,
+    }
+
+    [<span class="meta">CreateAssetMenu(fileName = <span class="meta-string">"BulletAsset"</span>, menuName = <span class="meta-string">"Character/Bullt/Bullt"</span>)</span>]
+    <span class="keyword">public</span> <span class="keyword">class</span> <span class="title">BulletData</span> : <span class="title">ScriptableObject</span>
+    {
+
+        <span class="comment">//[CreateAssetMenu(fileName = "BulletBombAsset", menuName = "Character/Bullt/Bomb")]</span>
+        <span class="comment">//public class BombData : ScriptableObject</span>
+        <span class="comment">//{</span>
+        <span class="comment">//    public BombType type;</span>
+        <span class="comment">//    public GameObject bombObj;</span>
+        <span class="comment">//}</span>
+
+        <span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;summary&gt;</span></span>
+        <span class="comment"><span class="doctag">///</span> 子弹类型</span>
+        <span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;/summary&gt;</span></span>
+        [<span class="meta">Header(<span class="meta-string">"子弹类型"</span>)</span>]
+        <span class="keyword">public</span> BulletType bulletType;
+
+        <span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;summary&gt;</span></span>
+        <span class="comment"><span class="doctag">///</span> 速度</span>
+        <span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;/summary&gt;</span></span>
+        [<span class="meta">Header(<span class="meta-string">"速度"</span>)</span>]
+        <span class="keyword">public</span> <span class="keyword">float</span> speed;
+        <span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;summary&gt;</span></span>
+        <span class="comment"><span class="doctag">///</span> 持续时间</span>
+        <span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;/summary&gt;</span></span>
+        [<span class="meta">Header(<span class="meta-string">"持续时间"</span>)</span>]
+        <span class="keyword">public</span> <span class="keyword">float</span> liftTime;
+
+        <span class="comment">//public GameObject bodyEffect;</span>
+
+        <span class="comment"><span class="doctag">///</span>// <span class="doctag">&lt;summary&gt;</span></span>
+        <span class="comment"><span class="doctag">///</span>// 碰撞后出发预设体 </span>
+        <span class="comment"><span class="doctag">///</span>// <span class="doctag">&lt;/summary&gt;</span></span>
+        <span class="comment">//private Dictionary&lt;BombType, GameObject&gt; bombDic;</span>
+
+        <span class="comment">//public BombData[] bombDatas;</span>
+
+        <span class="keyword">public</span> DamageData damageData;
+        <span class="keyword">public</span> <span class="keyword">int</span> characterBaseInstanceId { <span class="keyword">get</span>; <span class="keyword">set</span>; }
+
+
+        <span class="comment">//public GameObject GetBombDic(BombType bombType) {</span>
+        <span class="comment">//    if (bombDic == null)</span>
+        <span class="comment">//    {</span>
+        <span class="comment">//        Init();</span>
+        <span class="comment">//    }</span>
+        <span class="comment">//    GameObject ret = null;</span>
+        <span class="comment">//    if (bombDic.ContainsKey(bombType))</span>
+        <span class="comment">//    {</span>
+        <span class="comment">//        ret = bombDic[bombType];</span>
+        <span class="comment">//    }</span>
+        <span class="comment">//    return ret;</span>
+        <span class="comment">//}</span>
+
+        <span class="comment">//private void Init() {</span>
+        <span class="comment">//    bombDic = new Dictionary&lt;BombType, GameObject&gt;();</span>
+        <span class="comment">//    for (int i = 0; i &lt; bombDatas.Length; i++)</span>
+        <span class="comment">//    {</span>
+        <span class="comment">//        if (!bombDic.ContainsKey(bombDatas[i].type))</span>
+        <span class="comment">//        {</span>
+        <span class="comment">//            bombDic.Add(bombDatas[i].type, bombDatas[i].bombObj);</span>
+        <span class="comment">//        }</span>
+        <span class="comment">//    }</span>
+        <span class="comment">//}</span>
+    }
+
+
+
+
+}</code></pre>
+<p>序列号字典问题：：：</p>

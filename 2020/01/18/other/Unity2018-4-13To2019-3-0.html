@@ -1,0 +1,36 @@
+<hr>
+<p>title: Unity2018.4.13To2019.3.0<br>date: 2019-12-18 16:51:20<br>tags:</p>
+<hr>
+<p>OnLevelWasLoaded was found on Reporter</p>
+<p><a href="https://www.jianshu.com/p/a7efb2631d72">https://www.jianshu.com/p/a7efb2631d72</a></p>
+<p>粒子</p>
+<p><a href="https://networm.me/2018/09/23/unity-2017.4-upgrade-2018.3/">https://networm.me/2018/09/23/unity-2017.4-upgrade-2018.3/</a></p>
+<p>Spine 3-8 </p>
+<p>版本博客<a href="http://zh.esotericsoftware.com/blog/Spine-3-8-released">http://zh.esotericsoftware.com/blog/Spine-3-8-released</a></p>
+<p>运行库更新日志<a href="https://github.com/EsotericSoftware/spine-runtimes/blob/3.8/CHANGELOG.md">https://github.com/EsotericSoftware/spine-runtimes/blob/3.8/CHANGELOG.md</a></p>
+<p>文档：</p>
+<p>中文<a href="http://zh.esotericsoftware.com/spine-unity">http://zh.esotericsoftware.com/spine-unity</a></p>
+<p>英文<a href="http://esotericsoftware.com/spine-unity#SkeletonMecanim-Component">http://esotericsoftware.com/spine-unity#SkeletonMecanim-Component</a></p>
+<p>SpineAPtor替换</p>
+<p>DO：TrySetAnimation</p>
+<p>​        //_animation.TrySetAnimation(an, isLoop);</p>
+<pre><code>var obj = anim.skeletonDataAsset.GetSkeletonData(false).FindAnimation(animationName);
+if (obj != null)
+{
+    anim.state.SetAnimation(0, animationName, );
+}</code></pre><p>DO：SetSlot</p>
+<p>DO：ReplaceMat and SpriceMat</p>
+<p>SkeletonUtilityBone</p>
+<p>DO：_disableUpdate丢失</p>
+<p>_beforeDoBoneUpdate丢失</p>
+<p>DO：Spine</p>
+<p>Shader error in ‘Lightweight Render Pipeline/Spine/Skeleton Lit’: failed to open source file:</p>
+<p>–&gt;添加PakeManger LWRP </p>
+<p><a href="http://zh.esotericsoftware.com/blog/2015/2">http://zh.esotericsoftware.com/blog/2015/2</a></p>
+<p><a href="https://www.cnblogs.com/leixinyue/articles/11050076.html">https://www.cnblogs.com/leixinyue/articles/11050076.html</a></p>
+<p>DO：Spine Asset</p>
+<p>-&gt; PayerSetting - &gt;</p>
+<p>问题：</p>
+<p>Internal error: Recursion detected while updating scripts (assembly name: Unity.Settings.Editor.dll)</p>
+<p>-&gt;更新 Cun nuni 或 LWPRP 后就没了</p>
+<p>—&gt;</p>
